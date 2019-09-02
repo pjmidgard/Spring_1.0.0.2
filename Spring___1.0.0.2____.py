@@ -3,10 +3,12 @@ import json
 name = input("What is name of file? ")
 qwert=0
 asj=0
+qwp=0
 qwtl=0
 dfq=0
 cvzj=0
 asjx=0
+cvqwz=0
 
 cvz=0
 cvqz=0
@@ -17,7 +19,7 @@ while qwert<2:
     a=0
     b=0
     
-    cvqwz=0
+    
     cvzq=0
     ghjdq=0
     asdft=0
@@ -159,13 +161,14 @@ while qwert<2:
                         if qwa<=1:
                             numberschangenotexistq.append(bnk)
                             numberschangenotexistqz.append(bnks)
+                            if qwa<=1:
+                                bnk=numberschangenotexistq[p]
+                                ghjdq=254*bnk
                         if lenfg>0:
                             bnk=numberschangenotexistq[p]
                             
                             ghjd=ghj*bnk
-                            if qwa<=1:
-                                bnk=numberschangenotexistq[p]
-                                ghjdq=254*bnk
+                            
 
                             
                         if lenfg==0:
@@ -173,9 +176,7 @@ while qwert<2:
                             
                             ghjdd=ghj*bnks
 
-                            if qwa<=1:
-                                bnk=numberschangenotexistq[p]
-                                ghjdq=254*bnk
+                            
                         if qwa<=1:    
                             cvzq=cvzq+ghjdq
                         
@@ -191,8 +192,10 @@ while qwert<2:
                     
                    
                     if lenfg>0:
+                       
                         szx=bin(cvz)[2:]
                         lenf=len(szx)
+                        
                         xc=12183-lenf
                         z=0
                         if xc!=0:
@@ -201,17 +204,8 @@ while qwert<2:
                                 z=z+1
                         wer=wer+szx
                         lenf=len(szx)
-                        if qwert==1:
-                            aaqwq=szx[0:12182]
-                            cvz=int(aaqwq,2)
                         
-                            if cvqwz<cvz:
-                                dfq=cvz
-                                asj=qwtl
-                        if qwert==1:
-                            cvqwz=cvz
-                            asjx=qwtl
-
+                       
                         szx=""
 
                         notexist=k[0]
@@ -225,12 +219,25 @@ while qwert<2:
                                 z=z+1
                         wer=wer+szx
                         lenf=len(szx)
+
+                        if qwert==1:
+                            aaqwq=szx[0:12190]
+                            cvz=int(aaqwq,2)
+                        
+                            if cvqwz<cvz:
+                                
+                                dfq=cvz
+                                asj=qwtl
+                        if qwert==1:
+                            cvqwz=cvz
+                            asjx=qwtl
                         
                         szx=""
                         
                     if lenfg==0:
                         szx=bin(cvzl)[2:]
                         lenf=len(szx)
+                        
                         xc=12192-lenf
                         
                         z=0
@@ -241,13 +248,13 @@ while qwert<2:
                         wer=wer+szx
                         lenf=len(szx)
                         if qwert==2:
-                            aaqw=szx[0:12182]
+                            aaqw=szx[0:12190]
                             aqwret=int(aaqw,2)
                             
                             
-                            if aqwret>cvqwz:
+                            if aqwret>dfq:
                                 asdft=1
-                            if aqwret<=cvqwz:
+                            if aqwret<=dfq:
                                 asdft=0
                                 raise SystemExit
                         
@@ -345,18 +352,7 @@ while qwert<2:
                             
                         szx=""
 
-                    szx=bin(asjx)[2:]
-                    lenf=len(szx)
-                    xc=32-lenf
-                    z=0
-                    if xc!=0:
-                        while z<xc:
-                            szx="0"+szx
-                            z=z+1
-                        wer=wer+szx
-                        lenf=len(szx)
-                            
-                        szx=""
+                 
                            
                             
                      
