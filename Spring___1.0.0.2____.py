@@ -232,7 +232,7 @@ while qwert<2:
                         szx=bin(cvzl)[2:]
                         lenf=len(szx)
                         xc=12192-lenf
-                        aaqw=szx[0:12182]
+                        
                         z=0
                         if xc!=0:
                             while z<xc:
@@ -241,7 +241,7 @@ while qwert<2:
                         wer=wer+szx
                         lenf=len(szx)
                         if qwert==2:
-                            
+                            aaqw=szx[0:12182]
                             aqwret=int(aaqw,2)
                             
                             
