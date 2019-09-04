@@ -130,7 +130,9 @@ with open(name, "rb") as binary_file:
                         notexist=k[0]
                         
                         szx=bin(notexist)[2:]
+                        
                         lenf=len(szx)
+                        
                         if lenf>10:
                             lenfg=0    
                    
@@ -148,7 +150,7 @@ with open(name, "rb") as binary_file:
                     print(lenfg)
 
                     if lenfg>0:
-                        wer=wer+"0" 
+                         
                        
                         
                         xc=10-lenf
