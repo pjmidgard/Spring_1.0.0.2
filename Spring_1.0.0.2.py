@@ -25,7 +25,7 @@ asd=""
 b=0
 szx=""
 asf2="0b"
-while b<163840:
+while b<180224:
     m+=[-1]
     b=b+1
 k = []
@@ -80,7 +80,7 @@ with open(name, "rb") as binary_file:
             b=0
             szx=""
             asf2="0b"
-            while b<163840:
+            while b<180224:
                 m+=[-1]
                 b=b+1
             k = []
@@ -100,13 +100,13 @@ with open(name, "rb") as binary_file:
                         
                 av=bin(aqwq)
                    
-                if a<=163840 and aqwer==14:
+                if a<=180224 and aqwer==14:
                     aqwer=0
                     m[aqwq] = aqwq
                     numbers.append(aqwq)
                         
                         
-                if a == 163840:
+                if a == 180224:
                     p=0
                     while p<16384:
                         if p!=m[p]:
@@ -147,7 +147,7 @@ with open(name, "rb") as binary_file:
                        wer=wer+"1" 
                     b=-1
                     bb=0
-                    kl=163840
+                    kl=180224
                     bnk=0
                     cb=0
                         
@@ -160,7 +160,7 @@ with open(name, "rb") as binary_file:
                     p=-1
                     cvz=0
                     qwa=qwa+1
-                    while p<163839:
+                    while p<180223:
                         p=p+1
                         if lenfg>0:
                             if 16383!=numbers[p]:
@@ -231,7 +231,7 @@ with open(name, "rb") as binary_file:
                         
                        
                     if lenfg>0:
-                        xc=2293745-lenf
+                        xc=2523120-lenf
                         z=0
                         if xc!=0:
                             while z<xc:
@@ -244,7 +244,7 @@ with open(name, "rb") as binary_file:
                             
                         szx=""
                     if lenfg==0:
-                        xc=2293760-lenf
+                        xc=2523136-lenf
                         z=0
                         if xc!=0:
                             while z<xc:
@@ -270,12 +270,12 @@ with open(name, "rb") as binary_file:
                     b=0
                                
                                 
-                r=h%163840
+                r=h%180224
             if r!=0:
                     
                 r=r-1
                 p=-1
-                if r!=163839:
+                if r!=180223:
                     b=-1
                     bb=0
                     kl=r+1
