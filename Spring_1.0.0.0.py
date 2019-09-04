@@ -140,10 +140,7 @@ with open(name, "rb") as binary_file:
                         lenfg=0
                         ertfa=0
                         ertf=0
-                    elif ertf==2:
-                        wer=wer+"0"
-                        ertfa=0
-                        ertf=0
+                    
                             
                     
                         
@@ -261,6 +258,7 @@ with open(name, "rb") as binary_file:
                                 z=z+1
                         wer=wer+szx
                         lenf=len(szx)
+
                             
                             
                             
