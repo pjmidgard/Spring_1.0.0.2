@@ -116,9 +116,10 @@ with open(name, "rb") as binary_file:
                         
                     #lenf count
                     lenfg=len(k)
+
                     
                     
-                            
+                    
                     
                         
                     
@@ -203,7 +204,7 @@ with open(name, "rb") as binary_file:
                                        
                             if qwa<=1:
                                 if kl>0:
-                                    bnks=16384*kl
+                                    bnks=16384**kl
                                 if kl==0:
                                     bnks=1
                               
