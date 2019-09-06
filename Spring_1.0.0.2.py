@@ -62,10 +62,11 @@ while dd<1:
         lenf=len(sda)
         xc=8-lenf%8
         z=0
-        if xc!=0 and xc!=8:
-             while z<xc:
-                szx="0"+szx
-                z=z+1
+        if xc!=0:
+            if xc!=8:
+                 while z<xc:
+                    szx="0"+szx
+                    z=z+1
         sda=szx+sda
                 
         lenf=len(szx)
@@ -368,10 +369,11 @@ while dd<1:
             lenf=len(wer)
             xc=8-lenf%8
             z=0
-            if xc!=0 and xc!=8:
-                while z<xc:
-                    szx="0"+szx
-                    z=z+1
+            if xc!=0:
+                if xc!=8:
+                    while z<xc:
+                        szx="0"+szx
+                        z=z+1
                 wer=szx+wer
                 lenf=len(szx)
                                     
