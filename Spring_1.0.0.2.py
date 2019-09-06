@@ -341,7 +341,6 @@ while dd<1:
                                 
                         szx=""
             lenf=len(qwt)
-            if lenf!=0:
             wer=wer+qwt
             szx=""
             szx=bin(lenf)[2:]
