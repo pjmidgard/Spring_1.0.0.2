@@ -54,55 +54,42 @@ with open(name, "rb") as binary_file:
     
     s=str(data)
     lenf=len(data)
-    
-    with open(namea, "ab") as f2:
+while dd<1:
+        dd=dd+1
+        sda=bin(int(binascii.hexlify(data),16))[2:]
         
-        while dd<1:
-            dd=dd+1
-            sda=bin(int(binascii.hexlify(data),16))[2:]
-            lenf=len(sda)
-            xc=8-lenf%8
-            z=0
-            if xc!=0:
-                while z<xc:
-                    szx="0"+szx
-                    z=z+1
-                sda=sda+szx
+        lenf=len(sda)
+        xc=8-lenf%8
+        z=0
+        if xc!=0:
+             while z<xc:
+                szx="0"+szx
+                z=z+1
+                sda=szx+sda
+                
                 lenf=len(szx)
-                                    
-                szx="" 
-            a=0
-            ertfa=0 
-            b=0
-            ertf=0
-            l=""
-            j=0
-            b=0
-            aq=0
-            qfl=0
-            t=0
-            h=0
-            byteb=""
-            notexist=""
-            lenf=0
-            m = []
-            p=0
-            namea=""
-            asd=""
-            b=0
-            szx=""
-            asf2="0b"
-            while b<180224:
-                m+=[-1]
-                b=b+1
-            k = []
-            wer=""
-            numberschangenotexist = []
-            numbers = []
+                szx=""
+        
+        
+            
+        with open(namea, "ab") as f2:
+        
+        
+                             
+                
+                
+           
             for byte in sda:
                 aqwer=aqwer+1
                 if aqwer<=14:
                     qwt=qwt+byte
+                if aqwer==8:
+                    aqwq=int(qwt,2)
+                    if aqwq==0:
+                        s=""
+                        with open(namea, "w") as f4w:
+                            f4w.write(s)
+                        raise SystemExit
                 if aqwer==14:
                     aqwq=int(qwt,2)
                     qwt=""
@@ -372,7 +359,7 @@ with open(name, "rb") as binary_file:
             a=0 
                     
                     
-            wer="0b1"+wer+"1"
+            wer="1"+wer+"1"
 
 
             lenf=len(wer)
@@ -382,16 +369,16 @@ with open(name, "rb") as binary_file:
                 while z<xc:
                     szx="0"+szx
                     z=z+1
-                wer=wer+szx
+                wer=szx+wer
                 lenf=len(szx)
                                     
                 szx=""        
                 
-                        
+            wer="0b"+wer+"1"            
             n = int(wer, 2)
             jl=binascii.unhexlify('%x' % n)
-            data=jl   
-        f2.write(jl)        
+             
+            f2.write(jl)        
         
                 
                      
