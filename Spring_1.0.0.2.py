@@ -377,7 +377,7 @@ while dd<1:
                                     
                 szx=""        
                 
-            wer="0b"+wer+"1"            
+            wer="0b"+wer           
             n = int(wer, 2)
             jl=binascii.unhexlify('%x' % n)
              
