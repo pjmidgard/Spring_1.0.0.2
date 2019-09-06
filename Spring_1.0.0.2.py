@@ -17,6 +17,7 @@ lenf=0
 numberschangenotexistq = []
 numberschangenotexistqz = []
 qwa=0
+z=0
 m = []
 p=0
 r=0
@@ -59,6 +60,17 @@ with open(name, "rb") as binary_file:
         while dd<1:
             dd=dd+1
             sda=bin(int(binascii.hexlify(data),16))[2:]
+            lenf=len(sda)
+            xc=8-lenf%8
+            z=0
+            if xc!=0:
+                while z<xc:
+                    szx="0"+szx
+                    z=z+1
+                sda=sda+szx
+                lenf=len(szx)
+                                    
+                szx="" 
             a=0
             ertfa=0 
             b=0
@@ -326,7 +338,7 @@ with open(name, "rb") as binary_file:
                             
                     xc=ert-lenf
                     z=0
-                    if xc!=ert:
+                    if xc!=0:
                         while z<xc:
                             szx="0"+szx
                             z=z+1
@@ -339,11 +351,12 @@ with open(name, "rb") as binary_file:
                 aqwq=int(qwt,2)
                 szx=bin(aqwq)[2:]
                 lenf=len(szx)
-            wer=wer+szx
+            wer=wer+qwt
             szx=""
             szx=bin(lenf)[2:]
             wer=wer+szx
             szx=""
+            z=0
             xc=4-lenf
             if xc!=0:
                 while z<xc:
@@ -365,7 +378,7 @@ with open(name, "rb") as binary_file:
             lenf=len(wer)
             xc=8-lenf%8
             z=0
-            if xc!=ert:
+            if xc!=0:
                 while z<xc:
                     szx="0"+szx
                     z=z+1
