@@ -44,6 +44,7 @@ ertfa=0
 aqwer=0
 aqwq=0
 aqwq=0
+aqwers=0
 with open(namea, "w") as f4:
         f4.write(s)
 with open(namea, "a") as f3:
@@ -81,9 +82,10 @@ while dd<1:
            
             for byte in sda:
                 aqwer=aqwer+1
+                aqwers=aqwers+1
                 if aqwer<=14:
                     qwt=qwt+byte
-                if aqwer==8:
+                if aqwers==8:
                     aqwq=int(qwt,2)
                     if aqwq==0:
                         s=""
@@ -316,6 +318,11 @@ while dd<1:
                         ghjd=0
                         ghjd=ghj*bnk
                         cvz=cvz+ghjd
+                        if cvz==0:
+                            s=""
+                            with open(namea, "w") as f4ww:
+                                f4ww.write(s)
+                            raise SystemExit  
                     szx=bin(cvz)[2:]
                     lenf=len(szx)
                            
