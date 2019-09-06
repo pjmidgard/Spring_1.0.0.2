@@ -66,10 +66,10 @@ while dd<1:
              while z<xc:
                 szx="0"+szx
                 z=z+1
-                sda=szx+sda
+        sda=szx+sda
                 
-                lenf=len(szx)
-                szx=""
+        lenf=len(szx)
+        szx=""
         
         
             
