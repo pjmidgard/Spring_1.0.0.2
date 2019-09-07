@@ -337,25 +337,23 @@ while dd<1:
                         while z<xc:
                             szx="0"+szx
                             z=z+1
-                        wer=wer+szx
-                        lenf=len(szx)
-                                
-                        szx=""
+                    wer=wer+szx
+                    lenf=len(szx)
+                          
+                    szx=""
             lenf=len(qwt)
             wer=wer+qwt
-            szx=""
             szx=bin(lenf)[2:]
-            wer=wer+szx
-            szx=""
             z=0
             xc=4-lenf
             if xc!=0:
-                while z<xc:
-                    szx="0"+szx
-                    z=z+1
-                wer=wer+szx
-                lenf=len(szx)
-                szx=""
+                if xc!=4:
+                    while z<xc:
+                        szx="0"+szx
+                        z=z+1
+            wer=wer+szx
+            lenf=len(szx)
+            szx=""
                                 
                                 
                          
@@ -374,16 +372,16 @@ while dd<1:
                     while z<xc:
                         szx="0"+szx
                         z=z+1
-                wer=szx+wer
-                lenf=len(szx)
+            wer=szx+wer
+            lenf=len(szx)
                                     
-                szx=""        
+            szx=""        
                 
-            wer="0b"+wer           
+            wer="0b"+wer
             n = int(wer, 2)
             jl=binascii.unhexlify('%x' % n)
-             
-            f2.write(jl)        
+with open(namea, "ab") as f2ww:             
+    f2ww.write(jl)        
         
                 
                      
