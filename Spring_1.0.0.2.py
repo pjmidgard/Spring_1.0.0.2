@@ -86,7 +86,7 @@ while dd<1:
                 aqwers=aqwers+1
                 if aqwer<=14:
                     qwt=qwt+byte
-                if aqwers==8:
+                if aqwers==14:
                     aqwq=int(qwt,2)
                     if aqwq==0:
                         s=""
