@@ -45,6 +45,7 @@ aqwer=0
 aqwq=0
 aqwq=0
 aqwers=0
+qwaw=""
 with open(namea, "w") as f4:
         f4.write(s)
 with open(namea, "a") as f3:
@@ -58,9 +59,11 @@ with open(name, "rb") as binary_file:
 while dd<1:
         dd=dd+1
         sda=bin(int(binascii.hexlify(data),16))[2:]
-        
+        szx=""
         lenf=len(sda)
+    
         xc=8-lenf%8
+        
         z=0
         if xc!=0:
             if xc!=8:
@@ -68,8 +71,10 @@ while dd<1:
                     szx="0"+szx
                     z=z+1
         sda=szx+sda
+        
                 
-        lenf=len(szx)
+        lenf=len(sda)
+        
         szx=""
         
         
@@ -84,8 +89,10 @@ while dd<1:
             for byte in sda:
                 aqwer=aqwer+1
                 aqwers=aqwers+1
+                qwaw=qwaw+byte
                 if aqwer<=14:
                     qwt=qwt+byte
+                    
                 if aqwers==14:
                     aqwq=int(qwt,2)
                     if aqwq==0:
@@ -109,6 +116,7 @@ while dd<1:
                         
                         
                 if a == 180224:
+                    qwaw="" 
                     p=0
                     while p<16384:
                         if p!=m[p]:
@@ -307,11 +315,13 @@ while dd<1:
                             
                             
                                             
-                        ghj=numberschangenotexist[b]         
-                        ghjd=ghj
+                        ghj=numberschangenotexist[b]
+                       
+                        
                         bnk=1
                         bb=-1
                         kl=kl-1
+                        wer=wer+szx
                         if kl>0:   
                             bnk=16384**kl
                         if kl==0:
@@ -337,12 +347,12 @@ while dd<1:
                         while z<xc:
                             szx="0"+szx
                             z=z+1
-                    wer=wer+szx
+                    
                     lenf=len(szx)
                           
                     szx=""
             lenf=len(qwt)
-            wer=wer+qwt
+            
             szx=bin(lenf)[2:]
             z=0
             xc=4-lenf
@@ -351,7 +361,7 @@ while dd<1:
                     while z<xc:
                         szx="0"+szx
                         z=z+1
-            wer=wer+szx
+            
             lenf=len(szx)
             szx=""
                                 
@@ -360,11 +370,14 @@ while dd<1:
                         
             a=0 
                     
-                    
+            wer=wer+qwaw
+            
+            qwaw=""
             wer="1"+wer+"1"
 
 
             lenf=len(wer)
+            
             xc=8-lenf%8
             z=0
             if xc!=0:
@@ -372,7 +385,7 @@ while dd<1:
                     while z<xc:
                         szx="0"+szx
                         z=z+1
-            wer=szx+wer
+            wer=wer+szx
             lenf=len(szx)
                                     
             szx=""        
