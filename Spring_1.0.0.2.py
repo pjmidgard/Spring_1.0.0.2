@@ -321,7 +321,7 @@ while dd<1:
                         bnk=1
                         bb=-1
                         kl=kl-1
-                        wer=wer+szx
+                        
                         if kl>0:   
                             bnk=16384**kl
                         if kl==0:
