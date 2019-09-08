@@ -187,22 +187,21 @@ while dd<1:
                         ghjd=ghj
                         bnk=1
                         bnks=1
-                        bb=-1
+                        
                         bnkd=1
                                
                                     
                         kl=kl-1
                         if qwa<=1:
             
-                            if qwa<=1:
-                                bb=bb+1
+                            
                                     
                                         
-                            if qwa<=1:
-                                if kl>0:
-                                    bnk=pow(16383,kl)
-                                if kl==0:
-                                    bnk=1
+                            
+                            if kl>0:
+                                bnk=pow(16383,kl)
+                            if kl==0:
+                                bnk=1
                                     
                                        
                             
@@ -210,10 +209,10 @@ while dd<1:
                                 
                                         
                         if qwa<=1:
-                            numberschangenotexistq.append(bnk)
+                            
                             
                         if lenfg>0:
-                            bnk=numberschangenotexistq[p]
+                            
                             ghjd=0
                             ghjd=ghj*bnk
                         cvz=cvz+ghjd
