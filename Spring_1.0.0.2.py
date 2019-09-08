@@ -206,11 +206,7 @@ while dd<1:
                                     bnk=1
                                     
                                        
-                            if qwa<=1:
-                                if kl>0:
-                                    
-                                if kl==0:
-                                    bnks=1
+                            
                               
                                 
                                         
