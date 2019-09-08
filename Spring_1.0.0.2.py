@@ -166,6 +166,7 @@ while dd<1:
                     cvz=0
                     qwa=qwa+1
                     for p in range(180223):
+                        
                         if lenfg>0:
                             if 16383!=numbers[p]:
                                 byteb=numbers[p]
@@ -209,10 +210,10 @@ while dd<1:
                                 
                                         
                         if qwa<=1:
-                            
+                            numberschangenotexistq.append(bnk)    
                             
                         if lenfg>0:
-                            
+                            bnk=numberschangenotexistq[p]
                             ghjd=0
                             ghjd=ghj*bnk
                         cvz=cvz+ghjd
