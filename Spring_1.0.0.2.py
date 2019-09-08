@@ -110,7 +110,7 @@ while dd<1:
                         
                         
                 if a == 180224:
-                    qwaw="" 
+                     
                     p=0
                     while p<16384:
                         if p!=m[p]:
@@ -208,7 +208,7 @@ while dd<1:
                                        
                             if qwa<=1:
                                 if kl>0:
-                                    bnks=16384**kl
+                                    
                                 if kl==0:
                                     bnks=1
                               
@@ -216,15 +216,12 @@ while dd<1:
                                         
                         if qwa<=1:
                             numberschangenotexistq.append(bnk)
-                            numberschangenotexistqz.append(bnks)
+                            
                         if lenfg>0:
                             bnk=numberschangenotexistq[p]
                             ghjd=0
                             ghjd=ghj*bnk
-                        if lenfg==0:
-                            bnks=numberschangenotexistqz[p]
-                            ghjd=0
-                            ghjd=ghj*bnks
+                       
                         cvz=cvz+ghjd
                     szx=bin(cvz)[2:]
                     lenf=len(szx)
@@ -249,18 +246,12 @@ while dd<1:
                             
                         szx=""
                     if lenfg==0:
-                        xc=2523136-lenf
-                        z=0
-                        if xc!=0:
-                            while z<xc:
-                                szx="0"+szx
-                                z=z+1
-                        wer=wer+szx
-                        lenf=len(szx)
+                        wer=wer+qwaw
+                        
                             
                         szx=""
                         
-                   
+                    qwaw=""
                     a=0
                     numberschangenotexist = []    
                     del k[:]
