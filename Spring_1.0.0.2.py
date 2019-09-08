@@ -162,11 +162,10 @@ while dd<1:
                     ghj=0
                     ghjd=1
                     bnk=1
-                    p=-1
+                    p=0
                     cvz=0
                     qwa=qwa+1
-                    while p<180223:
-                        p=p+1
+                    for p in range(180223):
                         if lenfg>0:
                             if 16383!=numbers[p]:
                                 byteb=numbers[p]
@@ -201,7 +200,7 @@ while dd<1:
                                         
                             if qwa<=1:
                                 if kl>0:
-                                    bnk=16383**kl
+                                    bnk=pow(16383,kl)
                                 if kl==0:
                                     bnk=1
                                     
@@ -217,7 +216,6 @@ while dd<1:
                             bnk=numberschangenotexistq[p]
                             ghjd=0
                             ghjd=ghj*bnk
-                       
                         cvz=cvz+ghjd
                     szx=bin(cvz)[2:]
                     lenf=len(szx)
