@@ -26,7 +26,7 @@ asd=""
 b=0
 szx=""
 asf2="0b"
-while b<180224:
+while b<163840:
     m+=[-1]
     b=b+1
 k = []
@@ -103,13 +103,13 @@ while dd<1:
                         
                 av=bin(aqwq)
                    
-                if a<=180224 and aqwer==14:
+                if a<=163840 and aqwer==14:
                     aqwer=0
                     m[aqwq] = aqwq
                     numbers.append(aqwq)
                         
                         
-                if a == 180224:
+                if a == 163840:
                      
                     p=0
                     while p<16384:
@@ -129,7 +129,7 @@ while dd<1:
                     
 
                     if lenfg>0:
-                        wer=wer+"0"
+                        
                         notexist=k[0]
                         
                         szx=bin(notexist)[2:]
@@ -149,10 +149,10 @@ while dd<1:
                             
                            
                     if lenfg==0:
-                       wer=wer+"1" 
+                        raise SystemExit
                     b=-1
                     bb=0
-                    kl=180224
+                    kl=163840
                     bnk=0
                     cb=0
                         
@@ -165,7 +165,7 @@ while dd<1:
                     p=0
                     cvz=0
                     qwa=qwa+1
-                    for p in range(180223):
+                    for p in range(163839):
                         
                         if lenfg>0:
                             if 16383!=numbers[p]:
@@ -227,7 +227,7 @@ while dd<1:
                         
                        
                     if lenfg>0:
-                        xc=2523120-lenf
+                        xc=2293745-lenf
                         z=0
                         if xc!=0:
                             while z<xc:
@@ -240,7 +240,7 @@ while dd<1:
                             
                         szx=""
                     if lenfg==0:
-                        wer=wer+qwaw
+                        
                         
                             
                         szx=""
@@ -260,12 +260,12 @@ while dd<1:
                     b=0
                                
                                 
-                r=h%180224
+                r=h%163840
             if r!=0:
                     
                 r=r-1
                 p=-1
-                if r!=180223:
+                if r!=163839:
                     b=-1
                     bb=0
                     kl=r+1
