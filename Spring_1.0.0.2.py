@@ -93,13 +93,7 @@ while dd<1:
                 if aqwer<=14:
                     qwt=qwt+byte
                     
-                if aqwers==14:
-                    aqwq=int(qwt,2)
-                    if aqwq==0:
-                        s=""
-                        with open(namea, "w") as f4w:
-                            f4w.write(s)
-                        raise SystemExit
+                
                 if aqwer==14:
                     aqwq=int(qwt,2)
                     qwt=""
@@ -299,71 +293,12 @@ while dd<1:
                     ghj=0
                     ghjd=1
                     bnk=1
-                    while p<r:
-                        p=p+1
-                        byteb=numbers[p]
-                        numberschangenotexist.append(byteb)
-                            
-                                    #count 1789
-                          
-                           
-                                
-                                          
-                                            
-                                                
-                            
-                            
-                            
-                                            
-                        ghj=numberschangenotexist[b]
-                       
-                        
-                        bnk=1
-                        bb=-1
-                        kl=kl-1
-                        
-                        if kl>0:   
-                            bnk=16384**kl
-                        if kl==0:
-                            bnks=1
-                        ghjd=0
-                        ghjd=ghj*bnk
-                        cvz=cvz+ghjd
-                        if cvz==0:
-                            s=""
-                            with open(namea, "w") as f4ww:
-                                f4ww.write(s)
-                            raise SystemExit  
-                    szx=bin(cvz)[2:]
-                    lenf=len(szx)
+                 
                            
                     ert=0
                     r=r+1
                     ert=r*8
-                            
-                    xc=ert-lenf
-                    z=0
-                    if xc!=0:
-                        while z<xc:
-                            szx="0"+szx
-                            z=z+1
-                    
-                    lenf=len(szx)
-                          
-                    szx=""
-            lenf=len(qwt)
-            
-            szx=bin(lenf)[2:]
-            z=0
-            xc=4-lenf
-            if xc!=0:
-                if xc!=4:
-                    while z<xc:
-                        szx="0"+szx
-                        z=z+1
-            
-            lenf=len(szx)
-            szx=""
+
                                 
                                 
                          
