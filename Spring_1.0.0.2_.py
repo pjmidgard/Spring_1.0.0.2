@@ -2,8 +2,6 @@ import binascii
 import json
 a=0
 b=0
-ertf=0
-l=""
 j=0
 b=0
 aq=0
