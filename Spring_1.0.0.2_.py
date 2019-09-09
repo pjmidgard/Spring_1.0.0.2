@@ -41,7 +41,6 @@ ert=0
 ertfa=0 
 aqwer=0
 aqwq=0
-aqwq=0
 aqwers=0
 qwaw=""
 with open(namea, "w") as f4:
