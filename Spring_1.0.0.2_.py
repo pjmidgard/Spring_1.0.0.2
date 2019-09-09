@@ -2,7 +2,6 @@ import binascii
 import json
 a=0
 b=0
-dd=0
 ertf=0
 l=""
 j=0
@@ -170,8 +169,7 @@ with open(namea, "ab") as f2:
             while b<28672:
                 m+=[-1]
                 b=b+1
-            b=0
-            b=0                          
+            b=0                         
     a=0       
     wer=wer+qwaw
     qwaw=""
