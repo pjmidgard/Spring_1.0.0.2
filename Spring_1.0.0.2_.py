@@ -25,7 +25,7 @@ asd=""
 b=0
 szx=""
 asf2="0b"
-while b<163840:
+while b<16384:
     m+=[-1]
     b=b+1
 k = []
@@ -166,7 +166,7 @@ with open(namea, "ab") as f2:
             del numbers[:]
             m = []
             b=0
-            while b<28672:
+            while b<16384:
                 m+=[-1]
                 b=b+1
             b=0                         
