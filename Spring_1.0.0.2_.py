@@ -18,7 +18,6 @@ qwa=0
 z=0
 m = []
 p=0
-namea=""
 asd=""
 b=0
 szx=""
