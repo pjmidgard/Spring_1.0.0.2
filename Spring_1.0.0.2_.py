@@ -34,9 +34,9 @@ aqwq=0
 aqwers=0
 qwaw=""
 with open(namea, "w") as f4:
-        f4.write(s)
+    f4.write(s)
 with open(namea, "a") as f3:
-        f3.write(namem)
+    f3.write(namem)
 with open(name, "rb") as binary_file:
     data = binary_file.read()
     s=str(data)
