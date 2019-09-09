@@ -103,10 +103,8 @@ with open(namea, "ab") as f2:
             if lenfg==0:
                 raise SystemExit
             b=-1
-            bb=0
             kl=163840
             cb=0        
-            bb=-1
             er=-1
             ghj=0
             ghjd=1
