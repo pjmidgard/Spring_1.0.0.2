@@ -58,121 +58,120 @@ if xc!=0:
 sda=szx+sda     
 lenf=len(sda)
 szx=""
-with open(namea, "ab") as f2:
-    for byte in sda:
-        aqwer=aqwer+1
-        aqwers=aqwers+1
-        qwaw=qwaw+byte
-        if aqwer<=14:
-             qwt=qwt+byte
-        if aqwer==14:
-            aqwq=int(qwt,2)
-            qwt=""
-            a=a+1
-            h=h+1  
-        av=bin(aqwq)
-        if a<=163840 and aqwer==14:
-            aqwer=0
-            m[aqwq] = aqwq
-            numbers.append(aqwq)  
-        if a == 163840:
-            p=0
-            while p<16384:
-                if p!=m[p]:
-                    k.append(p)     
-                p=p+1
-            lenfg=len(k)
-            if lenfg>0:
-                notexist=k[0]
-                szx=bin(notexist)[2:]
-                lenf=len(szx)
-                xc=14-lenf
-                z=0
-                if xc!=0:
-                     while z<xc:
-                        szx="0"+szx
-                        z=z+1
-                wer=wer+szx
-                lenf=len(szx)  
-                szx=""  
-            if lenfg==0:
-                raise SystemExit
-            b=-1
-            kl=163840
-            cb=0        
-            er=-1
-            ghj=0
-            ghjd=1
-            bnk=1
-            p=0
-            cvz=0
-            qwa=qwa+1
-            for p in range(163839):
-                if lenfg>0:
-                    if 16383!=numbers[p]:
-                        byteb=numbers[p]
-                        numberschangenotexist.append(byteb)
-                    if 16383==numbers[p]:
-                        numberschangenotexist.append(notexist)    
-                ghj=numberschangenotexist[p]
-                qfl=qfl+1
-                ghjd=ghj
-                bnk=1
-                bnkd=1        
-                kl=kl-1
-                if qwa<=1:
-                    if kl>0:
-                        bnk=pow(16383,kl)
-                    if kl==0:
-                        bnk=1          
-                if qwa<=1:
-                    numberschangenotexistq.append(bnk)    
-                if lenfg>0:
-                    bnk=numberschangenotexistq[p]
-                    ghjd=0
-                    ghjd=ghj*bnk
-                cvz=cvz+ghjd
-            szx=bin(cvz)[2:]
+for byte in sda:
+    aqwer=aqwer+1
+    aqwers=aqwers+1
+    qwaw=qwaw+byte
+    if aqwer<=14:
+            qwt=qwt+byte
+    if aqwer==14:
+        aqwq=int(qwt,2)
+        qwt=""
+        a=a+1
+        h=h+1  
+    av=bin(aqwq)
+    if a<=163840 and aqwer==14:
+        aqwer=0
+        m[aqwq] = aqwq
+        numbers.append(aqwq)  
+    if a == 163840:
+        p=0
+        while p<16384:
+            if p!=m[p]:
+                k.append(p)     
+            p=p+1
+        lenfg=len(k)
+        if lenfg>0:
+            notexist=k[0]
+            szx=bin(notexist)[2:]
             lenf=len(szx)
+            xc=14-lenf
+            z=0
+            if xc!=0:
+                while z<xc:
+                    szx="0"+szx
+                    z=z+1
+            wer=wer+szx
+            lenf=len(szx)  
+            szx=""  
+        if lenfg==0:
+            raise SystemExit
+        b=-1
+        kl=163840
+        cb=0        
+        er=-1
+        ghj=0
+        ghjd=1
+        bnk=1
+        p=0
+        cvz=0
+        qwa=qwa+1
+        for p in range(163839):
             if lenfg>0:
-                xc=2293745-lenf
-                z=0
-                if xc!=0:
-                    while z<xc:
-                        szx="0"+szx
-                        z=z+1
-                wer=wer+szx
-                lenf=len(szx)  
-                szx=""   
-                qwaw=""
-            a=0
-            numberschangenotexist = []    
-            del k[:]     
-            del numbers[:]
-            m = []
-            b=0
-            while b<16384:
-                m+=[-1]
-                b=b+1
-            b=0                         
-    a=0       
-    wer=wer+qwaw
-    qwaw=""
-    wer="1"+wer+"1"
-    lenf=len(wer)
-    xc=8-lenf%8
-    z=0
-    if xc!=0:
-        if xc!=8:
-            while z<xc:
-                szx="0"+szx
-                z=z+1
-    wer=wer+szx
-    lenf=len(szx)                      
-    szx=""        
-    wer="0b"+wer
-    n = int(wer, 2)
-    jl=binascii.unhexlify('%x' % n)
+                if 16383!=numbers[p]:
+                    byteb=numbers[p]
+                    numberschangenotexist.append(byteb)
+                if 16383==numbers[p]:
+                    numberschangenotexist.append(notexist)    
+            ghj=numberschangenotexist[p]
+            qfl=qfl+1
+            ghjd=ghj
+            bnk=1
+            bnkd=1        
+            kl=kl-1
+            if qwa<=1:
+                if kl>0:
+                    bnk=pow(16383,kl)
+                if kl==0:
+                     bnk=1          
+            if qwa<=1:
+                numberschangenotexistq.append(bnk)    
+            if lenfg>0:
+                bnk=numberschangenotexistq[p]
+                ghjd=0
+                ghjd=ghj*bnk
+            cvz=cvz+ghjd
+        szx=bin(cvz)[2:]
+        lenf=len(szx)
+        if lenfg>0:
+            xc=2293745-lenf
+            z=0
+            if xc!=0:
+                while z<xc:
+                    szx="0"+szx
+                    z=z+1
+            wer=wer+szx
+            lenf=len(szx)  
+            szx=""   
+            qwaw=""
+        a=0
+        numberschangenotexist = []    
+        del k[:]     
+        del numbers[:]
+        m = []
+        b=0
+        while b<16384:
+            m+=[-1]
+            b=b+1
+        b=0                         
+a=0       
+wer=wer+qwaw
+qwaw=""
+wer="1"+wer+"1"
+lenf=len(wer)
+xc=8-lenf%8
+z=0
+if xc!=0:
+    if xc!=8:
+        while z<xc:
+            szx="0"+szx
+            z=z+1
+wer=wer+szx
+lenf=len(szx)                      
+szx=""        
+wer="0b"+wer
+n = int(wer, 2)
+jl=binascii.unhexlify('%x' % n)
 with open(namea, "ab") as f2ww:             
     f2ww.write(jl)        
         
