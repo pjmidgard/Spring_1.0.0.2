@@ -89,7 +89,6 @@ with open(namea, "ab") as f2:
                     k.append(p)     
                 p=p+1
             lenfg=len(k)
-            print(lenfg)
             if lenfg>0:
                 notexist=k[0]
                 szx=bin(notexist)[2:]
