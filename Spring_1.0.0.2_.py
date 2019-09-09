@@ -1,7 +1,6 @@
 import binascii
 import json
 a=0
-b=0
 aq=0
 qfl=0
 h=0
