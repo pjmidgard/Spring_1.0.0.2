@@ -105,7 +105,6 @@ with open(namea, "ab") as f2:
             b=-1
             bb=0
             kl=163840
-            bnk=0
             cb=0        
             bb=-1
             er=-1
