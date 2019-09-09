@@ -8,7 +8,6 @@ j=0
 b=0
 aq=0
 qfl=0
-t=0
 h=0
 byteb=""
 notexist=""
