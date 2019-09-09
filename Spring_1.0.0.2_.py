@@ -59,7 +59,7 @@ for byte in sda:
     aqwers=aqwers+1
     qwaw=qwaw+byte
     if aqwer<=14:
-            qwt=qwt+byte
+        qwt=qwt+byte
     if aqwer==14:
         aqwq=int(qwt,2)
         qwt=""
@@ -119,7 +119,7 @@ for byte in sda:
                 if kl>0:
                     bnk=pow(16383,kl)
                 if kl==0:
-                     bnk=1          
+                    bnk=1          
             if qwa<=1:
                 numberschangenotexistq.append(bnk)    
             if lenfg>0:
