@@ -42,6 +42,7 @@ with open(name, "rb") as binary_file:
     s=str(data)
     lenf=len(data)
 while dd<100:
+    qwaw=""
     wer=""
     a=0
     b=0
