@@ -71,6 +71,7 @@ for byte in sda:
         m[aqwq] = aqwq
         numbers.append(aqwq)  
     if a == 163840:
+        qwaw=""
         p=0
         while p<16384:
             if p!=m[p]:
@@ -128,6 +129,7 @@ for byte in sda:
                 ghjd=ghj*bnk
             cvz=cvz+ghjd
         szx=bin(cvz)[2:]
+        cvz=0
         lenf=len(szx)
         if lenfg>0:
             xc=2293745-lenf
@@ -139,7 +141,6 @@ for byte in sda:
             wer=wer+szx
             lenf=len(szx)  
             szx=""   
-            qwaw=""
         a=0
         numberschangenotexist = []    
         del k[:]     
@@ -149,7 +150,8 @@ for byte in sda:
         while b<16384:
             m+=[-1]
             b=b+1
-        b=0                         
+        b=0
+        
 a=0       
 wer=wer+qwaw
 qwaw=""
