@@ -1,5 +1,6 @@
 import binascii
 import json
+lenf1=0
 a=0
 qfl=0
 h=0
@@ -40,6 +41,10 @@ with open(namea, "a") as f3:
     f3.write(namem)
 with open(name, "rb") as binary_file:
     data = binary_file.read()
+    lenf1=len(data)
+    if lenf1<2500000:
+        print("This file is too small");
+        raise SystemExit
     s=str(data)
     lenf=len(data)
 while dd<100:
