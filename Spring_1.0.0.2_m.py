@@ -47,7 +47,7 @@ with open(namea, "a") as f3:
 with open(name, "rb") as binary_file:
     data = binary_file.read()
     lenf1=len(data)
-    if lenf1<2500000:
+    if lenf1<300000:
         print("This file is too small");
         raise SystemExit
     s=str(data)
@@ -79,14 +79,14 @@ while dd<100:
     numbers = []
     s=""
     qwt=""
-    sda=""
     ert=0
     aqwer=0
     aqwq=0
     aqwers=0
     qwaw=""
     dd=dd+1
-    sda=bin(int(binascii.hexlify(data),16))[2:]
+    if dd==1:
+        sda=bin(int(binascii.hexlify(data),16))[2:]
     szx=""
     lenf=len(sda)
     xc=8-lenf%8
@@ -129,7 +129,7 @@ while dd<100:
                 sw=0
                 mm=0
                 while lenfg<sw or mm==1:
-                notexist=k[sw]
+                    notexist=k[sw]
                 if notexist>1807 and notexist<=10000:
                     notexist=notexist-1808
                     mm=1
@@ -215,20 +215,21 @@ while dd<100:
     qwaw=""
     wer="1"+wer+"1"
     lenf=len(wer)
-    xc=8-lenf%8
-    z=0
-    if xc!=0:
-        if xc!=8:
-            while z<xc:
-                szx="0"+szx
-                z=z+1
-    wer=wer+szx
-    lenf=len(szx)                      
-    szx=""        
-    wer="0b"+wer
-    n = int(wer, 2)
-    jl=binascii.unhexlify('%x' % n)
-    data=jl
+    if dd==100:
+        xc=8-lenf%8
+        z=0
+        if xc!=0:
+            if xc!=8:
+                while z<xc:
+                    szx="0"+szx
+                    z=z+1
+        wer=wer+szx
+        lenf=len(szx)                      
+        szx=""        
+        wer="0b"+wer
+    sda=wer
+n = int(wer, 2)
+jl=binascii.unhexlify('%x' % n)
 with open(namea, "ab") as f2ww:             
     f2ww.write(jl)        
         
