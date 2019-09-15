@@ -91,13 +91,16 @@ for byte in sda:
         if lenfg>0:
             sw=0
             mm=0
-            while lenfg<sw or mm==1:
+            dds=lenfg-1
+            while sw<dds or mm==1:
                 notexist=k[sw]
                 if notexist>1807 and notexist<=10000:
                     notexist=notexist-1808
                     mm=1
                 sw=sw+1
                 
+            notexist=k[sw]
+            notexist=notexist-1808  
             szx=bin(notexist)[2:]
             lenf=len(szx)
             if lenf>13:
