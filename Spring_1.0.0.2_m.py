@@ -58,7 +58,7 @@ while dd<3000:
     qfl=0
     h=0
     byteb=""
-    notexist=""
+    notexist=0
     lenf=0
    
     numberschangenotexistq = []
