@@ -153,7 +153,7 @@ for byte in sda:
         cvz=0
         lenf=len(szx)
         if lenfg>0:
-            xc=2293745-lenf
+            xc=2064370-lenf
             z=0
             if xc!=0:
                 while z<xc:

@@ -190,7 +190,7 @@ while dd<100:
             cvz=0
             lenf=len(szx)
             if lenfg>0:
-                xc=2064369-lenf
+                xc=2064370-lenf
                 z=0
                 if xc!=0:
                     while z<xc:
