@@ -11,7 +11,6 @@ a=0
 qfl=0
 h=0
 byteb=""
-notexist=""
 lenf=0
 dd=0
 numberschangenotexistq = []
