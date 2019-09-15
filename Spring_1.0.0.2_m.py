@@ -6,6 +6,7 @@ blockw1=16384
 virationc=16383
 bitc=14
 lenf1=0
+notexist=0
 a=0
 qfl=0
 h=0
