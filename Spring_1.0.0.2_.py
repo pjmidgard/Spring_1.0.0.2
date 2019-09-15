@@ -103,7 +103,7 @@ for byte in sda:
             if lenf>13:
                 raise SystemExit
             notexist=notexist+1808
-            xc=bitc-lenf
+            xc=13-lenf
             z=0
             if xc!=0:
                 while z<xc:
