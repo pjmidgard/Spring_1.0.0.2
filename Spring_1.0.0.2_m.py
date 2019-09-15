@@ -52,7 +52,7 @@ with open(name, "rb") as binary_file:
         raise SystemExit
     s=str(data)
     lenf=len(data)
-while dd<1000:
+while dd<3000:
 
     a=0
     qfl=0
