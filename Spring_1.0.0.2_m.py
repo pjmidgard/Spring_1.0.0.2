@@ -47,7 +47,7 @@ with open(namea, "a") as f3:
 with open(name, "rb") as binary_file:
     data = binary_file.read()
     lenf1=len(data)
-    if lenf1<300000:
+    if lenf1<900000:
         print("This file is too small");
         raise SystemExit
     s=str(data)
