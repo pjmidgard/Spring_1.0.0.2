@@ -1,5 +1,10 @@
 import binascii
 import json
+block=163840
+blockw=163839
+blockw1=16384
+virationc=16383
+bitc=14
 a=0
 qfl=0
 h=0
@@ -16,7 +21,7 @@ asd=""
 b=0
 szx=""
 asf2="0b"
-while b<16384:
+while b<blockw1:
     m+=[-1]
     b=b+1
 k = []
@@ -63,22 +68,22 @@ for byte in sda:
     aqwer=aqwer+1
     aqwers=aqwers+1
     qwaw=qwaw+byte
-    if aqwer<=14:
+    if aqwer<=bitc:
         qwt=qwt+byte
-    if aqwer==14:
+    if aqwer==bitc:
         aqwq=int(qwt,2)
         qwt=""
         a=a+1
         h=h+1  
     av=bin(aqwq)
-    if a<=163840 and aqwer==14:
+    if a<=block and aqwer==bitc:
         aqwer=0
         m[aqwq] = aqwq
         numbers.append(aqwq)  
-    if a == 163840:
+    if a == block:
         qwaw=""
         p=0
-        while p<16384:
+        while p<blockw1:
             if p!=m[p]:
                 k.append(p)     
             p=p+1
@@ -87,7 +92,7 @@ for byte in sda:
             notexist=k[0]
             szx=bin(notexist)[2:]
             lenf=len(szx)
-            xc=14-lenf
+            xc=bitc-lenf
             z=0
             if xc!=0:
                 while z<xc:
@@ -99,7 +104,7 @@ for byte in sda:
         if lenfg==0:
             raise SystemExit
         b=-1
-        kl=163840
+        kl=block
         cb=0        
         er=-1
         ghj=0
@@ -108,12 +113,12 @@ for byte in sda:
         p=0
         cvz=0
         qwa=qwa+1
-        for p in range(163839):
+        for p in range(blockw):
             if lenfg>0:
-                if 16383!=numbers[p]:
+                if virationc!=numbers[p]:
                     byteb=numbers[p]
                     numberschangenotexist.append(byteb)
-                if 16383==numbers[p]:
+                if virationc==numbers[p]:
                     numberschangenotexist.append(notexist)    
             ghj=numberschangenotexist[p]
             qfl=qfl+1
@@ -123,7 +128,7 @@ for byte in sda:
             kl=kl-1
             if qwa<=1:
                 if kl>0:
-                    bnk=pow(16383,kl)
+                    bnk=pow(virationc,kl)
                 if kl==0:
                     bnk=1          
             if qwa<=1:
@@ -152,7 +157,7 @@ for byte in sda:
         del numbers[:]
         m = []
         b=0
-        while b<16384:
+        while b<blockw1:
             m+=[-1]
             b=b+1
         b=0
