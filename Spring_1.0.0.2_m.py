@@ -1,10 +1,10 @@
 import binascii
 import json
-block=71920
-blockw=71819
-blockw1=8192
-virationc=8191
-bitc=13
+block=147456
+blockw=147455
+blockw1=16384
+virationc=16383
+bitc=14
 lenf1=0
 a=0
 qfl=0
@@ -125,16 +125,17 @@ while dd<3000:
                     k.append(p)     
                 p=p+1
             lenfg=len(k)
+            
             if lenfg>0:
                 acvb=lenfg-1
                 notexist=k[acvb]
-                if notexist<4096:
+                if notexist<8192:
                     raise SystemExit
-                notexist=notexist-4096
+                notexist=notexist-8192
                 szx=bin(notexist)[2:]
                 lenf=len(szx)
-                xc=12-lenf
-                notexist=notexist+4096
+                xc=13-lenf
+                notexist=notexist+8192
                 z=0
                 if xc!=0:
                     while z<xc:
@@ -184,7 +185,7 @@ while dd<3000:
             cvz=0
             lenf=len(szx)
             if lenfg>0:
-                xc=819203-lenf
+                xc=2064370-lenf
                 z=0
                 if xc!=0:
                     while z<xc:
