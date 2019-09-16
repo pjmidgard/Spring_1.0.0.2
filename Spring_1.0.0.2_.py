@@ -1,7 +1,7 @@
 import binascii
 import json
-block=147456
-blockw=147455
+block=163840
+blockw=163839
 blockw1=16384
 virationc=16383
 bitc=14
@@ -10,7 +10,7 @@ qfl=0
 h=0
 lenf1=0
 byteb=""
-notexist=0
+notexist=""
 lenf=0
 numberschangenotexistq = []
 qwa=0
@@ -46,7 +46,7 @@ with open(namea, "a") as f3:
 with open(name, "rb") as binary_file:
     data = binary_file.read()
     lenf1=len(data)
-    if lenf1<2500000:
+    if lenf1<2:
         print("This file is too small");
         raise SystemExit
     s=str(data)
@@ -88,25 +88,12 @@ for byte in sda:
                 k.append(p)     
             p=p+1
         lenfg=len(k)
+        print(lenfg)
         if lenfg>0:
-            sw=0
-            mm=0
-            dds=lenfg-1
-            while sw<dds or mm==1:
-                notexist=k[sw]
-                if notexist>1807 and notexist<=10000:
-                    notexist=notexist-1808
-                    mm=1
-                sw=sw+1
-                
-            notexist=k[sw]
-            notexist=notexist-1808  
+            notexist=k[0]
             szx=bin(notexist)[2:]
             lenf=len(szx)
-            if lenf>13:
-                raise SystemExit
-            notexist=notexist+1808
-            xc=13-lenf
+            xc=bitc-lenf
             z=0
             if xc!=0:
                 while z<xc:
@@ -140,11 +127,8 @@ for byte in sda:
             bnk=1
             bnkd=1        
             kl=kl-1
-            if qwa<=1:
-                if kl>0:
-                    bnk=pow(virationc,kl)
-                if kl==0:
-                    bnk=1          
+            
+                         
             if qwa<=1:
                 numberschangenotexistq.append(bnk)    
             if lenfg>0:
@@ -155,16 +139,8 @@ for byte in sda:
         szx=bin(cvz)[2:]
         cvz=0
         lenf=len(szx)
-        if lenfg>0:
-            xc=2064370-lenf
-            z=0
-            if xc!=0:
-                while z<xc:
-                    szx="0"+szx
-                    z=z+1
-            wer=wer+szx
-            lenf=len(szx)  
-            szx=""   
+        
+           
         a=0
         numberschangenotexist = []    
         del k[:]     
