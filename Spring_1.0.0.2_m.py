@@ -1,7 +1,7 @@
 import binascii
 import json
-block=163840
-blockw=163839
+block=147456
+blockw=147455
 blockw1=16384
 virationc=16383
 bitc=14
@@ -47,12 +47,12 @@ with open(namea, "a") as f3:
 with open(name, "rb") as binary_file:
     data = binary_file.read()
     lenf1=len(data)
-    if lenf1<2500000:
+    if lenf1<900000:
         print("This file is too small");
         raise SystemExit
     s=str(data)
     lenf=len(data)
-while dd<100:
+while dd<3000:
 
     a=0
     qfl=0
@@ -79,14 +79,14 @@ while dd<100:
     numbers = []
     s=""
     qwt=""
-    sda=""
     ert=0
     aqwer=0
     aqwq=0
     aqwers=0
     qwaw=""
     dd=dd+1
-    sda=bin(int(binascii.hexlify(data),16))[2:]
+    if dd==1:
+        sda=bin(int(binascii.hexlify(data),16))[2:]
     szx=""
     lenf=len(sda)
     xc=8-lenf%8
@@ -126,10 +126,15 @@ while dd<100:
                 p=p+1
             lenfg=len(k)
             if lenfg>0:
-                notexist=k[0]
+                acvb=lenfg-1
+                notexist=k[acvb]
+                if notexist<8192:
+                    raise SystemExit
+                notexist=notexist-8192
                 szx=bin(notexist)[2:]
                 lenf=len(szx)
-                xc=bitc-lenf
+                xc=13-lenf
+                notexist=notexist+8192
                 z=0
                 if xc!=0:
                     while z<xc:
@@ -203,21 +208,22 @@ while dd<100:
     wer=wer+qwaw
     qwaw=""
     wer="1"+wer+"1"
-    lenf=len(wer)
-    xc=8-lenf%8
-    z=0
-    if xc!=0:
-        if xc!=8:
-            while z<xc:
-                szx="0"+szx
-                z=z+1
-    wer=wer+szx
-    lenf=len(szx)                      
-    szx=""        
-    wer="0b"+wer
-    n = int(wer, 2)
-    jl=binascii.unhexlify('%x' % n)
-    data=jl
+    if dd==3000:
+        lenf=len(wer)
+        xc=8-lenf%8
+        z=0
+        if xc!=0:
+            if xc!=8:
+                while z<xc:
+                    szx="0"+szx
+                    z=z+1
+        wer=wer+szx
+        lenf=len(szx)                      
+        szx=""        
+        wer="0b"+wer
+        n = int(wer, 2)
+        jl=binascii.unhexlify('%x' % n)
+    sda=wer
 with open(namea, "ab") as f2ww:             
     f2ww.write(jl)        
         
