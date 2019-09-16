@@ -1,16 +1,16 @@
 import binascii
 import json
-block=147456
-blockw=147455
+block=163840
+blockw=163839
 blockw1=16384
 virationc=16383
 bitc=14
 lenf1=0
-notexist=0
 a=0
 qfl=0
 h=0
 byteb=""
+notexist=""
 lenf=0
 dd=0
 numberschangenotexistq = []
@@ -47,18 +47,18 @@ with open(namea, "a") as f3:
 with open(name, "rb") as binary_file:
     data = binary_file.read()
     lenf1=len(data)
-    if lenf1<900000:
+    if lenf1<2500000:
         print("This file is too small");
         raise SystemExit
     s=str(data)
     lenf=len(data)
-while dd<3000:
+while dd<100:
 
     a=0
     qfl=0
     h=0
     byteb=""
-    notexist=0
+    notexist=""
     lenf=0
    
     numberschangenotexistq = []
@@ -79,14 +79,14 @@ while dd<3000:
     numbers = []
     s=""
     qwt=""
+    sda=""
     ert=0
     aqwer=0
     aqwq=0
     aqwers=0
     qwaw=""
     dd=dd+1
-    if dd==1:
-        sda=bin(int(binascii.hexlify(data),16))[2:]
+    sda=bin(int(binascii.hexlify(data),16))[2:]
     szx=""
     lenf=len(sda)
     xc=8-lenf%8
@@ -126,24 +126,10 @@ while dd<3000:
                 p=p+1
             lenfg=len(k)
             if lenfg>0:
-                sw=0
-                mm=0
-                dds=lenfg-1
-                while sw<dds or mm==1:
-                    notexist=k[sw]
-                if notexist>1807 and notexist<=10000:
-                    notexist=notexist-1808
-                    mm=1
-                    sw=sw+1
-                
-                notexist=k[sw]
-                notexist=notexist-1808  
+                notexist=k[0]
                 szx=bin(notexist)[2:]
                 lenf=len(szx)
-                if lenf>13:
-                    raise SystemExit
-                notexist=notexist+1808
-                xc=13-lenf
+                xc=bitc-lenf
                 z=0
                 if xc!=0:
                     while z<xc:
@@ -193,7 +179,7 @@ while dd<3000:
             cvz=0
             lenf=len(szx)
             if lenfg>0:
-                xc=2064370-lenf
+                xc=2293745-lenf
                 z=0
                 if xc!=0:
                     while z<xc:
@@ -218,21 +204,20 @@ while dd<3000:
     qwaw=""
     wer="1"+wer+"1"
     lenf=len(wer)
-    if dd==100:
-        xc=8-lenf%8
-        z=0
-        if xc!=0:
-            if xc!=8:
-                while z<xc:
-                    szx="0"+szx
-                    z=z+1
-        wer=wer+szx
-        lenf=len(szx)                      
-        szx=""        
-        wer="0b"+wer
-    sda=wer
-n = int(wer, 2)
-jl=binascii.unhexlify('%x' % n)
+    xc=8-lenf%8
+    z=0
+    if xc!=0:
+        if xc!=8:
+            while z<xc:
+                szx="0"+szx
+                z=z+1
+    wer=wer+szx
+    lenf=len(szx)                      
+    szx=""        
+    wer="0b"+wer
+    n = int(wer, 2)
+    jl=binascii.unhexlify('%x' % n)
+    data=jl
 with open(namea, "ab") as f2ww:             
     f2ww.write(jl)        
         
