@@ -121,7 +121,7 @@ if __name__ == '__main__':
             if lenfg==0:
                 raise SystemExit
             b=-1
-            kl=blockw
+            kl=block
             cb=0        
             er=-1
             ghj=0
