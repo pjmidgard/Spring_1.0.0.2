@@ -188,7 +188,7 @@ if __name__ == '__main__':
                     bnk=1
                     bnkd=1        
                     kl=kl-1
-                    qwa=qwa+1
+                    
                     if lenfg>0:
                         
                         result = pool.apply_async(f, [kl])     # evaluate "f(10)" asynchronously
