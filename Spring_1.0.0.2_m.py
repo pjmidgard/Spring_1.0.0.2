@@ -1,4 +1,4 @@
-
+import os
 from multiprocessing import Pool,Value
 
 def f(x):
@@ -144,7 +144,7 @@ if __name__ == '__main__':
                         k.append(p)     
                     p=p+1
                 lenfg=len(k)
-                
+                print(lenfg)
                 if lenfg>0:
                     acvb=lenfg-1
                     notexist=k[acvb]
@@ -193,6 +193,10 @@ if __name__ == '__main__':
                         
                         result = pool.apply_async(f, [kl])     # evaluate "f(10)" asynchronously
                         bnkw=result.get(timeout=0.05)
+                        with open("pause", "r") as text:
+                            datah = text.read()
+                            if datah=="*":
+                                os.system("pause")
                         ghjd=0
                         ghjd=ghj*bnkw
                         
