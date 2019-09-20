@@ -3,7 +3,7 @@ from multiprocessing import Pool,Value
 
 def f(x):
     
-    return (x+1)**16383
+    return 16383**(x+1)
 
 if __name__ == '__main__':
     pool = Pool(processes=4)               # start 4 worker processes
@@ -166,7 +166,7 @@ if __name__ == '__main__':
                 if lenfg==0:
                     raise SystemExit
                 b=-1
-                kl=block
+                kl=blockw
                 cb=0        
                 er=-1
                 ghj=0
@@ -186,13 +186,14 @@ if __name__ == '__main__':
                     qfl=qfl+1
                     ghjd=ghj
                     bnk=1
+                    bnkw=1
                     bnkd=1        
                     kl=kl-1
                     
                     if lenfg>0:
                         
                         result = pool.apply_async(f, [kl])     # evaluate "f(10)" asynchronously
-                        bnkw=result.get(timeout=0.05)
+                        bnkw=result.get(timeout=0.5)
                         with open("pause", "r") as text:
                             datah = text.read()
                             if datah=="*":

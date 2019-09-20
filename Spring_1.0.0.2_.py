@@ -1,8 +1,8 @@
 from multiprocessing import Pool,Value
-
+import os
 def f(x):
     
-    return (x+1)**16383
+    return 16383**(x+1)
 
 if __name__ == '__main__':
     pool = Pool(processes=4)               # start 4 worker processes
@@ -59,7 +59,7 @@ if __name__ == '__main__':
     with open(name, "rb") as binary_file:
         data = binary_file.read()
         lenf1=len(data)
-        if lenf1<2500000:
+        if lenf1<300000:
             print("This file is too small");
             raise SystemExit
         s=str(data)
@@ -81,6 +81,7 @@ if __name__ == '__main__':
         aqwer=aqwer+1
         aqwers=aqwers+1
         qwaw=qwaw+byte
+        
         if aqwer<=bitc:
             qwt=qwt+byte
         if aqwer==bitc:
@@ -109,7 +110,8 @@ if __name__ == '__main__':
                 notexist=notexist-8192
                 szx=bin(notexist)[2:]
                 lenf=len(szx)
-                xc=bitc-lenf
+                xc=13-lenf
+                notexist=notexist+8192
                 z=0
                 if xc!=0:
                     while z<xc:
@@ -121,7 +123,7 @@ if __name__ == '__main__':
             if lenfg==0:
                 raise SystemExit
             b=-1
-            kl=block
+            kl=blockw
             cb=0        
             er=-1
             ghj=0
@@ -136,29 +138,40 @@ if __name__ == '__main__':
                         byteb=numbers[p]
                         numberschangenotexist.append(byteb)
                     if virationc==numbers[p]:
-                        numberschangenotexist.append(notexist)    
+                        numberschangenotexist.append(notexist)
                 ghj=numberschangenotexist[p]
                 qfl=qfl+1
                 ghjd=ghj
                 bnk=1
+                bnkw=1
                 bnkd=1        
                 kl=kl-1
+                
+                
+                
                   
                 if lenfg>0:
                     
                     result = pool.apply_async(f, [kl])     # evaluate "f(10)" asynchronously
-                    bnkw=result.get(timeout=0.05)
+                    bnkw=result.get(timeout=0.5)
+                    
+                    
+                        
+                
                     with open("pause", "r") as text:
                             datah = text.read()
                             if datah=="*":
                                 os.system("pause")
                     ghjd=0
                     ghjd=ghj*bnkw
+                    
                 cvz=cvz+ghjd
+                
                 
             szx=bin(cvz)[2:]
             cvz=0
             lenf=len(szx)
+            print(lenf)
             if lenfg>0:
                 xc=2064370-lenf
                 z=0
