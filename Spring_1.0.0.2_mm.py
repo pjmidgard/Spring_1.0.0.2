@@ -17,8 +17,8 @@ if __name__ == '__main__':
     import binascii
     import json
 
-    block=14745
-    blockw=14744
+    block=1474
+    blockw=1473
     blockw1=16384
     virationc=16383
     bitc=14
@@ -174,7 +174,7 @@ if __name__ == '__main__':
                 lenf=len(szx)
                 szx=szx[1:]
                 
-                if lenf==206428:
+                if lenf==20634:
                     if lenfg>0:
                         
                         szx="0"+szx
@@ -182,14 +182,14 @@ if __name__ == '__main__':
                         lenf=len(szx)  
                         szx=""
                         
-                if lenf==206429:
+                if lenf==20635:
                     
                     szx="11"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
                     
-                if lenf<=206427:
+                if lenf<=20633:
                     if lenfg>0:
                         xc=206428-lenf
                         z=0
