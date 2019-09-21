@@ -155,7 +155,7 @@ if __name__ == '__main__':
                 cvz=0
                 aqwqs=0
                 qwa=qwa+1
-                aqwqs=int(qwaw,2)
+                
                 for p in range(blockw):
 
                     
