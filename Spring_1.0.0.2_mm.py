@@ -48,7 +48,7 @@ if __name__ == '__main__':
     numbers = []
     name = input("What is name of file? ")
     namea="file.Spring"
-    namem=name+"/"
+    namem=name+"\"
     s=""
     qwt=""
     sda=""
