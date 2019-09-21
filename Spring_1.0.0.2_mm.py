@@ -104,9 +104,10 @@ if __name__ == '__main__':
         aqwers=0
         qwaw=""
         dd=dd+1
+        szx=""
         if dd==1:
             sda=bin(int(binascii.hexlify(data),16))[2:]
-        szx=""
+        
         lenf=len(sda)
         xc=8-lenf%8
         z=0
