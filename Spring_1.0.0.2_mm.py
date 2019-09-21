@@ -167,12 +167,13 @@ if __name__ == '__main__':
                     kl=kl-1
                   
                 if qwa==1:
-                    aqwqs=aqwqs-(255**block)
+                    aqwqs=aqwqs-(16383**block)
                 szx=bin(aqwqs)[2:]
                 if qwa>=2:
-                    aqwqs=aqwqs-(255**block)
+                    aqwqs=aqwqs-(16383**block)
                 cvz=0
                 lenf=len(szx)
+                
                 szx=szx[1:]
                 
                 if lenf==20634:
