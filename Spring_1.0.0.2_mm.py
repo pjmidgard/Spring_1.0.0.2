@@ -19,8 +19,8 @@ if __name__ == '__main__':
 
     block=1474
     blockw=1473
-    blockw1=16384
-    virationc=16383
+    blockw1=2
+    virationc=2
     bitc=14
     lenf1=0
     a=0
@@ -71,7 +71,7 @@ if __name__ == '__main__':
             raise SystemExit
         s=str(data)
         lenf=len(data)
-    while dd<10:
+    while dd<3:
 
         a=0
         qfl=0
@@ -166,44 +166,44 @@ if __name__ == '__main__':
                     bnkd=1        
                     kl=kl-1
                   
-                if qwa==1:
-                    aqwqs=aqwqs-(16383**block)
+               
+                    
                 szx=bin(aqwqs)[2:]
-                if qwa>=2:
-                    aqwqs=aqwqs-(16383**block)
                 cvz=0
                 lenf=len(szx)
                 
-                szx=szx[1:]
-                
-                if lenf==20634:
-                    if lenfg>0:
+                szx=szx[0:1]
+                if szx=="1":
+                    szx=szx[1:]
+                    if lenf==20634:
+                        if lenfg>0:
+                            
+                            szx="11"+szx
+                            wer=wer+szx
+                            lenf=len(szx)  
+                            szx=""
+                            
+                    if lenf==20635:
                         
-                        szx="11"+szx
+                        szx="0"+szx
                         wer=wer+szx
                         lenf=len(szx)  
                         szx=""
                         
-                if lenf==20635:
-                    
-                    szx="0"+szx
-                    wer=wer+szx
-                    lenf=len(szx)  
-                    szx=""
-                    
-                if lenf<=20633:
-                    if lenfg>0:
-                        xc=20634-lenf
-                        z=0
-                        szx="1"+szx
-                        if xc!=0:
-                            while z<xc:
-                                szx="0"+szx
-                                z=z+1
-                        wer=wer+szx
-                        lenf=len(szx)  
-                        szx=""                 
-                
+                    if lenf<=20633:
+                        if lenfg>0:
+                            xc=20634-lenf
+                            z=0
+                            szx="1"+szx
+                            if xc!=0:
+                                while z<xc:
+                                    szx="0"+szx
+                                    z=z+1
+                            wer=wer+szx
+                            lenf=len(szx)  
+                            szx=""
+                else:   
+                    raise SystemExit
                 a=0
                 numberschangenotexist = []    
                 del k[:]     
@@ -232,7 +232,7 @@ if __name__ == '__main__':
         wer=wer+szx
         lenf=len(szx)                      
         szx=""
-        if dd==10:
+        if dd==3:
             wer="0b"+wer
             n = int(wer, 2)
             jl=binascii.unhexlify('%x' % n)
