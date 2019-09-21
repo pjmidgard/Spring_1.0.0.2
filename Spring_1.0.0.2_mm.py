@@ -168,7 +168,7 @@ if __name__ == '__main__':
                   
                
                     
-                szx=bin(aqwqs)[2:]
+                szx=qwaw
                 cvz=0
                 lenf=len(szx)
                 
