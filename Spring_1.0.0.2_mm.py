@@ -191,7 +191,7 @@ if __name__ == '__main__':
                     
                 if lenf<=20633:
                     if lenfg>0:
-                        xc=206428-lenf
+                        xc=20634-lenf
                         z=0
                         szx="1"+szx
                         if xc!=0:
