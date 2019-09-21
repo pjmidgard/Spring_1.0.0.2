@@ -177,14 +177,14 @@ if __name__ == '__main__':
                 if lenf==20634:
                     if lenfg>0:
                         
-                        szx="0"+szx
+                        szx="11"+szx
                         wer=wer+szx
                         lenf=len(szx)  
                         szx=""
                         
                 if lenf==20635:
                     
-                    szx="11"+szx
+                    szx="0"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
