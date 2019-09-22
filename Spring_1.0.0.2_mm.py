@@ -71,7 +71,7 @@ if __name__ == '__main__':
             raise SystemExit
         s=str(data)
         lenf=len(data)
-    while dd<3:
+    while dd<10:
 
         a=0
         qfl=0
@@ -219,7 +219,7 @@ if __name__ == '__main__':
         wer=wer+szx
         lenf=len(szx)                      
         szx=""
-        if dd==3:
+        if dd==10:
             wer="0b"+wer
             n = int(wer, 2)
             jl=binascii.unhexlify('%x' % n)
