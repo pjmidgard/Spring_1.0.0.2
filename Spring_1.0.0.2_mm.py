@@ -112,6 +112,7 @@ if __name__ == '__main__':
         qwaw=""
         dd=dd+1
         szx=""
+        asqw=0
         if dd==1:
             sda=bin(int(binascii.hexlify(data),16))[2:]
         
@@ -140,6 +141,9 @@ if __name__ == '__main__':
                 qwt=""
                 a=a+1
                 h=h+1
+            if asqw==4:
+                asqw=0
+                zxvbf=0 
             
                 
             av=bin(aqwq)
@@ -151,9 +155,7 @@ if __name__ == '__main__':
                 p=0
                 
                 
-                lenfg=1
-                if lenfg==0:
-                    raise SystemExit
+                 
                 b=-1
                 kl=blockw
                 cb=0        
@@ -178,7 +180,7 @@ if __name__ == '__main__':
                 
 
                                   
-            
+                
                 
                 if qwaw=="0000":
                         
@@ -201,27 +203,32 @@ if __name__ == '__main__':
                         szxz=""+szxv+szxz
                     lenfa=asqw  
                     szx=""
-
-                if zxvbf>1:
-                     raise SystemExit   
                 
-                if asqw==16 and lenfa!=0 and zxvbf==1:
+                if asqw==4 and zxvbf==1:
+                    zxvbf=0   
 
+                if asqw==4 and zxvbf==0:
+                    zxvbf=0   
+                if asqw==4 and lenfa!=0:
+ 
                     
                     wer=wer+szxz
                     szxz=""
                     asqw==0
                     lenfa=0
-                    zxvbf=0
+                    
 
-                if asqw==16 and lenfa==0:
+                if asqw==4 and lenfa==0:
 
                     wer=wer+"0000"
                     szxz=""
                     asqw==0
                     lenfa=0
-                    zxvbf=0
                     
+
+                if zxvbf>1:
+                    raise SystemExit
+                
                 if qwaw=="0010":
                         
                     szx="100"+szx
