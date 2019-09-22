@@ -357,11 +357,11 @@ if __name__ == '__main__':
         wer=wer+szx
         lenf=len(szx)                      
         szx=""
-        if dd==10:
-            wer="0b"+wer
-            n = int(wer, 2)
-            jl=binascii.unhexlify('%x' % n)
-        sda=wer
+    
+        wer="0b"+wer
+        n = int(wer, 2)
+        jl=binascii.unhexlify('%x' % n)
+        data=jl
     with open(namea, "ab") as f2ww:             
         f2ww.write(jl)        
             
