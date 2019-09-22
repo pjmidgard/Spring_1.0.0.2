@@ -60,6 +60,7 @@ if __name__ == '__main__':
     aqwq=0
     aqwers=0
     qwaw=""
+    zxvbf=0
 
     with open(namea, "w") as f4:
         f4.write(s)
@@ -76,6 +77,7 @@ if __name__ == '__main__':
         lenf=len(data)
     while dd<10:
 
+        zxvbf=0
         szxz=""
         lenfa=0
         a=0
@@ -188,6 +190,7 @@ if __name__ == '__main__':
 
                 if qwaw=="0001":
 
+                    zxvbf=zxvbf+1
                     if lenfqw==1:
                         szxz="000"+szxv+szxz
                     if lenfqw==2:
@@ -198,12 +201,18 @@ if __name__ == '__main__':
                         szxz=""+szxv+szxz
                     lenfa=asqw  
                     szx=""
-                if asqw==16 and lenfa!=0:
+
+                if zxvbf>1:
+                     raise SystemExit   
+                
+                if asqw==16 and lenfa!=0 and zxvbf==1:
+
                     
                     wer=wer+szxz
                     szxz=""
                     asqw==0
                     lenfa=0
+                    zxvbf=0
 
                 if asqw==16 and lenfa==0:
 
@@ -211,6 +220,7 @@ if __name__ == '__main__':
                     szxz=""
                     asqw==0
                     lenfa=0
+                    zxvbf=0
                     
                 if qwaw=="0010":
                         
