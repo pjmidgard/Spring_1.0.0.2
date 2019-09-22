@@ -143,7 +143,8 @@ if __name__ == '__main__':
                 h=h+1
             if asqw==4:
                 asqw=0
-                zxvbf=0 
+                zxvbf=0
+                szxz=""
             
                 
             av=bin(aqwq)
@@ -208,7 +209,10 @@ if __name__ == '__main__':
                     zxvbf=0   
 
                 if asqw==4 and zxvbf==0:
-                    zxvbf=0   
+                    zxvbf=0
+                    
+            
+                
                 if asqw==4 and lenfa!=0:
  
                     
