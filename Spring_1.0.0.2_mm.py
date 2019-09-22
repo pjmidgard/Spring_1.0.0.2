@@ -199,7 +199,7 @@ if __name__ == '__main__':
                     lenfa=asqw  
                     szx=""
                 if asqw==16 and lenfa!=0:
-                    szxz=""
+                    
                     wer=wer+szxz
                     szxz=""
                     asqw==0
