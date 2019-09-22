@@ -145,6 +145,7 @@ if __name__ == '__main__':
                 asqw=0
                 zxvbf=0
                 szxz=""
+                lenfa=0
             
                 
             av=bin(aqwq)
