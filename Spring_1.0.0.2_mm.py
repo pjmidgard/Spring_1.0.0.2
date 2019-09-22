@@ -17,6 +17,8 @@ if __name__ == '__main__':
     import binascii
     import json
 
+
+    lenfa=0
     block=1
     blockw=0
     blockw1=1
@@ -74,6 +76,8 @@ if __name__ == '__main__':
         lenf=len(data)
     while dd<10:
 
+
+        lenfa=0
         a=0
         qfl=0
         h=0
