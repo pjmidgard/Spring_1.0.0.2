@@ -21,6 +21,7 @@ if __name__ == '__main__':
     blockw=0
     blockw1=1
     virationc=1
+    asqw=0
     bitc=4
     lenf1=0
     a=0
@@ -125,13 +126,23 @@ if __name__ == '__main__':
             aqwer=aqwer+1
             aqwers=aqwers+1
             qwaw=qwaw+byte
+            asqw=asqw+1
             if aqwer<=bitc:
                 qwt=qwt+byte
             if aqwer==bitc:
                 aqwq=int(qwt,2)
                 qwt=""
                 a=a+1
-                h=h+1  
+                h=h+1
+            if asqw==16:
+                
+                        
+                szx="1111"+szx
+                wer=wer+szx
+                lenf=len(szx)  
+                szx=""
+                asqw==0
+                
             av=bin(aqwq)
             if a<=block and aqwer==bitc:
                 aqwer=0
@@ -164,8 +175,8 @@ if __name__ == '__main__':
                 lenfb=len(szxv)
                 
                 
-                    
-                if lenf==2 and szxv!="0":
+                
+                if lenf==2 and szxv!="0" and szxv!="1000" and szxv!="0001":
                     if lenfg>0:
                             
                         szx="11"+szx
@@ -173,14 +184,14 @@ if __name__ == '__main__':
                         lenf=len(szx)  
                         szx=""
                             
-                if lenf==3 or szxv=="0":
+                if lenf==3 and szxv!="1000" and szxv!="0001" or szxv=="0" and szxv!="1000" and szxv!="0001":
                         
                     szx="0"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
                         
-                if lenf<=1 and szxv!="0":
+                if lenf<=1 and szxv!="0" and szxv!="1000" and szxv!="0001":
                     if lenfg>0:
                         xc=2-lenf
                         z=0
@@ -192,6 +203,19 @@ if __name__ == '__main__':
                         wer=wer+szx
                         lenf=len(szx)  
                         szx=""
+                if szxv=="1000":
+                        
+                    szx="1000"+szx
+                    wer=wer+szx
+                    lenf=len(szx)  
+                    szx=""
+
+                if szxv=="0001":
+                        
+                    szx=""+szx
+                    wer=wer+szx
+                    lenf=len(szx)  
+                    szx=""
                 
                 a=0
                 numberschangenotexist = []    
