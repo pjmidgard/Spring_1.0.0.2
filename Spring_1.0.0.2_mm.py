@@ -155,55 +155,42 @@ if __name__ == '__main__':
                 cvz=0
                 aqwqs=0
                 qwa=qwa+1
+                aqwqs=int(qwaw,2)
                 
-                for p in range(blockw):
-
-                    
-                    qfl=qfl+1
-                    ghjd=ghj
-                    bnk=1
-                    bnkw=1
-                    bnkd=1        
-                    kl=kl-1
-                  
-               
-                    
-                szx=qwaw
+                szx=bin(aqwqs)[3:]
                 cvz=0
                 lenf=len(szx)
                 
-                szx=szx[0:1]
-                if szx=="1":
-                    szx=szx[1:]
-                    if lenf==20634:
-                        if lenfg>0:
+                
+                    
+                if lenf==20634:
+                    if lenfg>0:
                             
-                            szx="11"+szx
-                            wer=wer+szx
-                            lenf=len(szx)  
-                            szx=""
-                            
-                    if lenf==20635:
-                        
-                        szx="0"+szx
+                        szx="11"+szx
                         wer=wer+szx
                         lenf=len(szx)  
                         szx=""
+                            
+                if lenf==20635:
                         
-                    if lenf<=20633:
-                        if lenfg>0:
-                            xc=20634-lenf
-                            z=0
-                            szx="1"+szx
-                            if xc!=0:
-                                while z<xc:
-                                    szx="0"+szx
-                                    z=z+1
-                            wer=wer+szx
-                            lenf=len(szx)  
-                            szx=""
-                else:   
-                    raise SystemExit
+                    szx="0"+szx
+                    wer=wer+szx
+                    lenf=len(szx)  
+                    szx=""
+                        
+                if lenf<=20633:
+                    if lenfg>0:
+                        xc=20634-lenf
+                        z=0
+                        szx="1"+szx
+                        if xc!=0:
+                            while z<xc:
+                                szx="0"+szx
+                                z=z+1
+                        wer=wer+szx
+                        lenf=len(szx)  
+                        szx=""
+                
                 a=0
                 numberschangenotexist = []    
                 del k[:]     
