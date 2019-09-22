@@ -156,14 +156,16 @@ if __name__ == '__main__':
                 aqwqs=0
                 qwa=qwa+1
                 aqwqs=int(qwaw,2)
-                
+                szxv=""
+                szxv=bin(aqwqs)[2:]
                 szx=bin(aqwqs)[3:]
                 cvz=0
                 lenf=len(szx)
+                lenfb=len(szxv)
                 
                 
                     
-                if lenf==6:
+                if lenf==6 and lenfb!=0:
                     if lenfg>0:
                             
                         szx="11"+szx
@@ -171,14 +173,14 @@ if __name__ == '__main__':
                         lenf=len(szx)  
                         szx=""
                             
-                if lenf==7:
+                if lenf==7 or lenfb==0:
                         
                     szx="0"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
                         
-                if lenf<=5:
+                if lenf<=5 and lenfb!=0:
                     if lenfg>0:
                         xc=6-lenf
                         z=0
