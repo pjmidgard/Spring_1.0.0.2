@@ -66,7 +66,7 @@ if __name__ == '__main__':
         data = binary_file.read()
         lenf1=len(data)
         
-        if lenf1<900000:
+        if lenf1<100:
             print("This file is too small");
             raise SystemExit
         s=str(data)
