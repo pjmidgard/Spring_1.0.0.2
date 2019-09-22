@@ -134,14 +134,7 @@ if __name__ == '__main__':
                 qwt=""
                 a=a+1
                 h=h+1
-            if asqw==16:
-                
-                        
-                szx="1111"+szx
-                wer=wer+szx
-                lenf=len(szx)  
-                szx=""
-                asqw==0
+            
                 
             av=bin(aqwq)
             if a<=block and aqwer==bitc:
@@ -173,36 +166,75 @@ if __name__ == '__main__':
                 cvz=0
                 lenf=len(szx)
                 lenfb=len(szxv)
+                szx=""
                 
-                
-                
-                if lenf==2 and szxv!="0" and szxv!="1000" and szxv!="0001":
-                    if lenfg>0:
-                            
-                        szx="11"+szx
-                        wer=wer+szx
-                        lenf=len(szx)  
-                        szx=""
-                            
-                if lenf==3 and szxv!="1000" and szxv!="0001" or szxv=="0" and szxv!="1000" and szxv!="0001":
+                if szxv=="0000":
                         
-                    szx="0"+szx
+                    szx="0000"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
+
+
+                if szxv=="0001":
                         
-                if lenf<=1 and szxv!="0" and szxv!="1000" and szxv!="0001":
-                    if lenfg>0:
-                        xc=2-lenf
-                        z=0
-                        szx="1"+szx
-                        if xc!=0:
-                            while z<xc:
-                                szx="0"+szx
-                                z=z+1
-                        wer=wer+szx
-                        lenf=len(szx)  
-                        szx=""
+                    szxz=szxv+szxz
+                    lenfa=asqw  
+                    szx=""
+                if asqw==16 and lenfa!=0:
+
+                    wer=wer+szxz
+                    szxz=""
+                    asqw==0
+
+                if asqw==16 and lenfa==0:
+
+                    wer=wer+"0000"
+                    szxz=""
+                    asqw==0
+                    
+                if szxv=="0010":
+                        
+                    szx="100"+szx
+                    wer=wer+szx
+                    lenf=len(szx)  
+                    szx=""
+
+                if szxv=="0011":
+                        
+                    szx="101"+szx
+                    wer=wer+szx
+                    lenf=len(szx)  
+                    szx=""
+
+                if szxv=="0100":
+                        
+                    szx="1100"+szx
+                    wer=wer+szx
+                    lenf=len(szx)  
+                    szx=""
+                    
+                if szxv=="0101":
+                        
+                    szx="1101"+szx
+                    wer=wer+szx
+                    lenf=len(szx)  
+                    szx=""
+
+                if szxv=="0110":
+                        
+                    szx="1110"+szx
+                    wer=wer+szx
+                    lenf=len(szx)  
+                    szx=""
+                    
+                if szxv=="0111":
+                        
+                    szx="1111"+szx
+                    wer=wer+szx
+                    lenf=len(szx)  
+                    szx=""
+
                 if szxv=="1000":
                         
                     szx="1000"+szx
@@ -210,12 +242,56 @@ if __name__ == '__main__':
                     lenf=len(szx)  
                     szx=""
 
-                if szxv=="0001":
+                if szxv=="1001":
                         
-                    szx=""+szx
+                    szx="0001"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
+                    
+                if szxv=="1010":
+                        
+                    szx="0010"+szx
+                    wer=wer+szx
+                    lenf=len(szx)  
+                    szx=""
+
+                if szxv=="1011":
+                        
+                    szx="0011"+szx
+                    wer=wer+szx
+                    lenf=len(szx)  
+                    szx=""
+                    
+                if szxv=="1100":
+                        
+                    szx="0100"+szx
+                    wer=wer+szx
+                    lenf=len(szx)  
+                    szx=""
+
+                if szxv=="1101":
+                        
+                    szx="0101"+szx
+                    wer=wer+szx
+                    lenf=len(szx)  
+                    szx=""
+
+                if szxv=="1110":
+                        
+                    szx="0110"+szx
+                    wer=wer+szx
+                    lenf=len(szx)  
+                    szx=""
+
+                if szxv=="1111":
+                        
+                    szx="0111"+szx
+                    wer=wer+szx
+                    lenf=len(szx)  
+                    szx=""
+                
+                
                 
                 a=0
                 numberschangenotexist = []    
