@@ -165,7 +165,7 @@ if __name__ == '__main__':
                 
                 
                     
-                if lenf==2 and lenfb!=0:
+                if lenf==2 and szxv!="0":
                     if lenfg>0:
                             
                         szx="11"+szx
@@ -173,14 +173,14 @@ if __name__ == '__main__':
                         lenf=len(szx)  
                         szx=""
                             
-                if lenf==3 or lenfb==0:
+                if lenf==3 or szxv=="0":
                         
                     szx="0"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
                         
-                if lenf<=1 and lenfb!=0:
+                if lenf<=1 and szxv!="0":
                     if lenfg>0:
                         xc=2-lenf
                         z=0
