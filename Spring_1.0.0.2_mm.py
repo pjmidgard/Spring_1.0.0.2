@@ -170,7 +170,7 @@ if __name__ == '__main__':
                 qwa=qwa+1
                 aqwqs=int(qwaw,2)
                 szxv=""
-                szxv=bin(aqwqs)[2:]
+                szxv=bin(asqw)[2:]
                 lenfqw=len(szxv)
                 szx=bin(aqwqs)[3:]
                 cvz=0
