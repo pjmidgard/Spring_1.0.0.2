@@ -113,8 +113,8 @@ if __name__ == '__main__':
         dd=dd+1
         szx=""
         asqw=0
-        if dd==1:
-            sda=bin(int(binascii.hexlify(data),16))[2:]
+        
+        sda=bin(int(binascii.hexlify(data),16))[2:]
         
         lenf=len(sda)
         xc=8-lenf%8
