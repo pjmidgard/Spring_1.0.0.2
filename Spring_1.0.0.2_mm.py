@@ -17,7 +17,7 @@ if __name__ == '__main__':
     import binascii
     import json
 
-
+    szxz=""
     lenfa=0
     block=1
     blockw=0
@@ -76,7 +76,7 @@ if __name__ == '__main__':
         lenf=len(data)
     while dd<10:
 
-
+        szxz=""
         lenfa=0
         a=0
         qfl=0
@@ -166,13 +166,19 @@ if __name__ == '__main__':
                 aqwqs=int(qwaw,2)
                 szxv=""
                 szxv=bin(aqwqs)[2:]
+                lenfqw=len(szxv)
                 szx=bin(aqwqs)[3:]
                 cvz=0
                 lenf=len(szx)
                 lenfb=len(szxv)
                 szx=""
+
                 
-                if szxv=="0000":
+
+                                  
+            
+                
+                if qwaw=="0000":
                         
                     szx="0000"+szx
                     wer=wer+szx
@@ -180,115 +186,124 @@ if __name__ == '__main__':
                     szx=""
 
 
-                if szxv=="0001":
-                        
-                    szxz=szxv+szxz
+                if qwaw=="0001":
+
+                    if lenfqw==1:
+                        szxz="000"+szxv+szxz
+                    if lenfqw==2:
+                        szxz="00"+szxv+szxz
+                    if lenfqw==3:
+                        szxz="0"+szxv+szxz
+                    if lenfqw==4:
+                        szxz=""+szxv+szxz
                     lenfa=asqw  
                     szx=""
                 if asqw==16 and lenfa!=0:
-
+                    szxz=""
                     wer=wer+szxz
                     szxz=""
                     asqw==0
+                    lenfa=0
 
                 if asqw==16 and lenfa==0:
 
                     wer=wer+"0000"
                     szxz=""
                     asqw==0
+                    lenfa=0
                     
-                if szxv=="0010":
+                if qwaw=="0010":
                         
                     szx="100"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
 
-                if szxv=="0011":
+                if qwaw=="0011":
                         
                     szx="101"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
 
-                if szxv=="0100":
+                if qwaw=="0100":
                         
                     szx="1100"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
                     
-                if szxv=="0101":
+                if qwaw=="0101":
                         
                     szx="1101"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
 
-                if szxv=="0110":
+                if qwaw=="0110":
                         
                     szx="1110"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
                     
-                if szxv=="0111":
+                if qwaw=="0111":
                         
                     szx="1111"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
 
-                if szxv=="1000":
+                if qwaw=="1000":
                         
                     szx="1000"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
 
-                if szxv=="1001":
+                if qwaw=="1001":
                         
                     szx="0001"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
                     
-                if szxv=="1010":
+                if qwaw=="1010":
                         
                     szx="0010"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
 
-                if szxv=="1011":
+                if qwaw=="1011":
                         
                     szx="0011"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
                     
-                if szxv=="1100":
+                if qwaw=="1100":
                         
                     szx="0100"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
 
-                if szxv=="1101":
+                if qwaw=="1101":
                         
                     szx="0101"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
 
-                if szxv=="1110":
+                if qwaw=="1110":
                         
                     szx="0110"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
 
-                if szxv=="1111":
+                if qwaw=="1111":
                         
                     szx="0111"+szx
                     wer=wer+szx
