@@ -354,13 +354,13 @@ if __name__ == '__main__':
                 
                 
         if Lenfhjk==0:
-            wer+wer="00"
+            wer=wer+"00"
         if Lenfhjk==1:
-            wer+wer="01"
-        if Lenfhjk==2
-            wer+wer="10"
-        if Lenfhjk==4
-            wer+wer="11"
+            wer=wer+"01"
+        if Lenfhjk==2:
+            wer=wer+"10"
+        if Lenfhjk==4:
+            wer=wer+"11"
 
         wer="1"+wer+"1"
         lenf=len(wer)
