@@ -51,7 +51,7 @@ if __name__ == '__main__':
     numbers = []
     name = input("What is name of file? ")
     namea="file.Spring"
-    namem=name+"+"
+    namem=name+">"
     s=""
     qwt=""
     sda=""
@@ -75,7 +75,7 @@ if __name__ == '__main__':
             raise SystemExit
         s=str(data)
         lenf=len(data)
-    while dd<10:
+    while dd<300:
 
         zxvbf=0
         szxz=""
