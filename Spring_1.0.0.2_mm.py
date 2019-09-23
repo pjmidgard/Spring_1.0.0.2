@@ -236,7 +236,7 @@ if __name__ == '__main__':
                 
                 if qwaw=="0010":
                         
-                    szx="100"+szx
+                    szx="1001"+szx
                     wer=wer+szx
                     lenf=len(szx)  
                     szx=""
@@ -346,11 +346,12 @@ if __name__ == '__main__':
                 b=0
                 qwaw=""
                 
-        a=0 
-        Lenfhjk=len(qwaw)      
+        a=0
+        
+        Lenfhjk=len(qwaw)
         wer=wer+qwaw
-
         qwaw=""
+                
                 
         if Lenfhjk==0:
             wer+wer="00"
