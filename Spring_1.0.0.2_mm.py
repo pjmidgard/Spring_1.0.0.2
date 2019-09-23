@@ -346,9 +346,21 @@ if __name__ == '__main__':
                 b=0
                 qwaw=""
                 
-        a=0       
+        a=0 
+        Lenfhjk=len(qwaw)      
         wer=wer+qwaw
+
         qwaw=""
+                
+        if Lenfhjk==0:
+            wer+wer="00"
+        if Lenfhjk==1:
+            wer+wer="01"
+        if Lenfhjk==2
+            wer+wer="10"
+        if Lenfhjk==4
+            wer+wer="11"
+
         wer="1"+wer+"1"
         lenf=len(wer)
         xc=8-lenf%8
