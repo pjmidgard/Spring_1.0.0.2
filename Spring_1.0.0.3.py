@@ -185,9 +185,9 @@ if __name__ == '__main__':
                 if aqwqs==0:
                     raise SystemExit
                 
-                if lenf==30:
+                if lenf==31:
                         
-                    xc=30-lenf%8
+                    xc=31-lenf%8
                     z=0
                     
                     if xc!=0:
@@ -200,9 +200,9 @@ if __name__ == '__main__':
                     lenf=len(szx)                      
                     szx=""
 
-                if lenf==29:
+                if lenf==30:
                         
-                    xc=29-lenf%8
+                    xc=30-lenf%8
                     z=0
         
                     if xc!=0:
@@ -215,9 +215,9 @@ if __name__ == '__main__':
                     lenf=len(szx)                      
                     szx=""
 
-                if lenf<=28:
+                if lenf<=29:
                         
-                    xc=29-lenf%8
+                    xc=30-lenf%8
                     z=0
         
                     if xc!=0:
