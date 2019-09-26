@@ -217,7 +217,7 @@ if __name__ == '__main__':
 
                 if lenf<=29:
                         
-                    xc=30-lenf%8
+                    xc=29-lenf%8
                     z=0
         
                     if xc!=0:
