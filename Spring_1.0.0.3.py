@@ -215,7 +215,7 @@ if __name__ == '__main__':
                     lenf=len(szx)                      
                     szx=""
 
-                if lenf==28:
+                if lenf<=28:
                         
                     xc=29-lenf%8
                     z=0
