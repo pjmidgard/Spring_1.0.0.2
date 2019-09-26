@@ -142,10 +142,7 @@ if __name__ == '__main__':
                 a=a+1
                 h=h+1
                 asqw=asqw+1
-            if asqw==2:
-                asqw=0
-                zxvbf=0
-                szxz=""
+            
             
                 
             av=bin(aqwq)
@@ -180,24 +177,25 @@ if __name__ == '__main__':
                 
 
                 
-
-                                  
+                
+                                 
                 if aqwqs==0:
                     raise SystemExit
                 
                 if lenf==31:
-                        
+                       
                     xc=31-lenf%8
                     z=0
                     
                     if xc!=0:
-                        if xc!=23:
+                        if xc!=31:
                             while z<xc:
                                 szx="1"+szx
                                 z=z+1
                     szx="0"+szx
                     wer=wer+szx
-                    lenf=len(szx)                      
+                    
+                
                     szx=""
 
                 if lenf==30:
@@ -206,13 +204,14 @@ if __name__ == '__main__':
                     z=0
         
                     if xc!=0:
-                        if xc!=23:
+                        if xc!=30:
                             while z<xc:
                                 szx="1"+szx
                                 z=z+1
                     szx="10"+szx
                     wer=wer+szx
-                    lenf=len(szx)                      
+                    
+                    
                     szx=""
 
                 if lenf<=29:
@@ -221,13 +220,14 @@ if __name__ == '__main__':
                     z=0
         
                     if xc!=0:
-                        if xc!=23:
+                        if xc!=29:
                             while z<xc:
                                 szx="1"+szx
                                 z=z+1
                     szx="11"+szx
                     wer=wer+szx
-                    lenf=len(szx)                      
+                    
+                
                     szx=""
 
 
