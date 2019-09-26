@@ -184,7 +184,7 @@ if __name__ == '__main__':
                 
                 if lenf==31:
                        
-                    xc=31-lenf%8
+                    xc=31-lenf%31
                     z=0
                     
                     if xc!=0:
@@ -194,13 +194,12 @@ if __name__ == '__main__':
                                 z=z+1
                     szx="0"+szx
                     wer=wer+szx
-                    
-                
+                    lenfd=len(szx)
                     szx=""
 
                 if lenf==30:
                         
-                    xc=30-lenf%8
+                    xc=30-lenf%30
                     z=0
         
                     if xc!=0:
@@ -216,7 +215,7 @@ if __name__ == '__main__':
 
                 if lenf<=29:
                         
-                    xc=29-lenf%8
+                    xc=29-lenf%29
                     z=0
         
                     if xc!=0:
