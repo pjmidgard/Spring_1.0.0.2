@@ -183,47 +183,70 @@ if __name__ == '__main__':
                     raise SystemExit
                 
                 if lenf==31:
-                       
-                    xc=31-lenf%31
-                    z=0
-                    
-                    if xc!=0:
-                        if xc!=31:
-                            while z<xc:
-                                szx="1"+szx
-                                z=z+1
-                    szx="0"+szx
-                    wer=wer+szx
-                    lenfd=len(szx)
-                    szx=""
-
-                if lenf==30:
-                        
+                    szx=bin(aqwqs)[4:] 
+                    lenf=len(szx)
                     xc=30-lenf%30
                     z=0
         
+                    verty=0
                     if xc!=0:
                         if xc!=30:
                             while z<xc:
-                                szx="1"+szx
-                                z=z+1
+                                verty=verty+1
+                                if verty==1:
+                                    szx="0"+szx
+                                    z=z+1
+                                if verty>1:
+                                    szx="1"+szx
+                                    z=z+1
+                    szx="11"+szx
+                    wer=wer+szx
+                    
+                
+                    szx=""
+                         
+
+                if lenf==30:
+                        
+                    szx=bin(aqwqs)[5:] 
+                    lenf=len(szx)
+                    xc=29-lenf%29
+                    z=0
+        
+                    verty=0
+                    if xc!=0:
+                        if xc!=29:
+                            while z<xc:
+                                verty=verty+1
+                                if verty==1:
+                                    szx="0"+szx
+                                    z=z+1
+                                if verty>1:
+                                    szx="1"+szx
+                                    z=z+1
                     szx="10"+szx
                     wer=wer+szx
                     
-                    
+                
                     szx=""
 
                 if lenf<=29:
                         
-                    xc=29-lenf%29
+                    xc=30-lenf
                     z=0
-        
+                   
+                    verty=0
                     if xc!=0:
-                        if xc!=29:
+                        if xc!=30:
                             while z<xc:
-                                szx="1"+szx
-                                z=z+1
-                    szx="11"+szx
+                                verty=verty+1
+                                if verty==1:
+                                    szx="0"+szx
+                                    z=z+1
+                                if verty>1:
+                                    szx="1"+szx
+                                    z=z+1
+                    szx="0"+szx
                     wer=wer+szx
                     
                 
