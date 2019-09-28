@@ -170,7 +170,7 @@ while dd<10:
             if aqwqs==0:
                 szx="11111111111111111111111111111"+szx
                 wer=wer+szx
-                
+                szx=""
             if lenf==31:
                        
                 xc=31-lenf%31
