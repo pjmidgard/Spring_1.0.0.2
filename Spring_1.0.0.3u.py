@@ -39,7 +39,7 @@ numberschangenotexist = []
 numbers = []
 name = input("What is name of file? ")
 namea="file.Spring"
-namem=name+"/"
+namem=name+"+"
 s=""
 qwt=""
 sda=""
@@ -63,7 +63,7 @@ with open(name, "rb") as binary_file:
         raise SystemExit
     s=str(data)
     lenf=len(data)
-while dd<10:
+while dd<300:
 
     zxvbf=0
     szxz=""
@@ -246,7 +246,7 @@ while dd<10:
 
     qwaw=""
     wer="1"+wer+"1"
-    if dd==10:
+    if dd==300:
         lenf=len(wer)
         xc=8-lenf%8
         z=0
