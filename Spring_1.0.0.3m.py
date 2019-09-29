@@ -189,7 +189,7 @@ while dd<100:
                 z=0
                 verty=0
                 if xc!=0:
-                    if xc!=31:
+                    if xc!=30:
                          while z<xc:
                             verty=verty+1
                             if verty==1:
