@@ -182,8 +182,8 @@ while dd<10:
                     
                 szx=""
 
-            if lenf==30 or lenf==29:
-                
+            if lenf==30:
+                szx=qwaw[3:]
                    
                 xc=31-lenf%31
                 z=0
@@ -204,9 +204,9 @@ while dd<10:
                     
                 szx=""
 
-            if lenf<=28:
+            if lenf<=29:
                         
-                xc=29-lenf%29
+                xc=30-lenf%30
                 z=0
                 verty=0
                 if xc!=0:
