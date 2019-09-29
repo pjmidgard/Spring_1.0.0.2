@@ -185,7 +185,7 @@ while dd<10:
             if lenf==30:
                 szx=qwaw[3:]
                    
-                xc=31-lenf%31
+                xc=30-lenf%30
                 z=0
                 verty=0
                 if xc!=0:
