@@ -183,7 +183,7 @@ while dd<300:
                 szx=""
 
             if lenf==30 or lenf==29:
-                szx=qwaw[3:]
+                
                    
                 xc=31-lenf%31
                 z=0
