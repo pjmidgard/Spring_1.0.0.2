@@ -168,12 +168,12 @@ while dd<300:
                 
                                  
             if aqwqs==0:
-                szx="11111111"+szx
+                szx="1111"+szx
                 wer=wer+szx
                 szx=""
             if lenf==3:
                        
-                xc=7-lenf%7
+                xc=3-lenf%3
                 z=0
                     
                     
