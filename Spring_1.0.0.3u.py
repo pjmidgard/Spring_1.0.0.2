@@ -12,7 +12,7 @@ blockw=0
 blockw1=1
 virationc=1
 asqw=0
-bitc=32
+bitc=4
 lenf1=0
 a=0
 qfl=0
@@ -168,12 +168,12 @@ while dd<300:
                 
                                  
             if aqwqs==0:
-                szx="11111111111111111111111111111111"+szx
+                szx="11111111"+szx
                 wer=wer+szx
                 szx=""
-            if lenf==31:
+            if lenf==3:
                        
-                xc=31-lenf%31
+                xc=7-lenf%7
                 z=0
                     
                     
@@ -182,14 +182,14 @@ while dd<300:
                     
                 szx=""
 
-            if lenf==30:
+            if lenf==2:
                 szx=qwaw[3:]
                    
-                xc=30-lenf%30
+                xc=1-lenf%1
                 z=0
                 verty=0
                 if xc!=0:
-                    if xc!=30:
+                    if xc!=1:
                          while z<xc:
                             verty=verty+1
                             if verty==1:
@@ -204,9 +204,9 @@ while dd<300:
                     
                 szx=""
 
-            if lenf<=29:
+            if lenf<=1:
                         
-                xc=30-lenf%30
+                xc=2-lenf%2
                 z=0
                 verty=0
                 if xc!=0:
@@ -224,7 +224,6 @@ while dd<300:
                     
                 
                 szx=""
-                   
 
                     
                 
