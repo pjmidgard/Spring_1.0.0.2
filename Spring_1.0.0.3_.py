@@ -31,17 +31,14 @@ numberschangenotexist = []
 numbers = []
 name = input("What is name of file? ")
 namea="file.Spring"
-namem=name+"/"
+namems=name+"/"
 s=""
-with open(namea, "w") as f4:
-        f4.write(s)
-with open(namea, "a") as f3:
-        f3.write(namem)
+
 with open(name, "rb") as binary_file:
     # Read the whole file at once
     data = binary_file.read()
     s=str(data)
-    with open(namea, "ab") as f2:
+    with open(namea, "wb") as f2:
         for byte in data:
             av=bin(byte)
             a=a+1
@@ -310,7 +307,7 @@ with open(name, "rb") as binary_file:
     numbers = []
     name="file.Spring"
     namea="fileqs.Spring"
-    namem="?"
+    namem=""
     s=""
     qwt=""
     sda=""
@@ -322,7 +319,7 @@ with open(name, "rb") as binary_file:
     with open(namea, "w") as f4:
         f4.write(s)
     with open(namea, "a") as f3:
-        f3.write(namem)
+        f3.write(namems)
     with open(name, "rb") as binary_file:
         data = binary_file.read()
         lenf1=len(data)
@@ -539,7 +536,7 @@ with open(name, "rb") as binary_file:
     numbers = []
     name="fileqs.Spring"
     namea="filew.Spring"
-    namem=">"
+    namem=""
     s=""
     qwt=""
     sda=""
