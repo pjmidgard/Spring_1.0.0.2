@@ -544,7 +544,7 @@ if __name__ == '__main__':
     wer=""
     numberschangenotexist = []
     numbers = []
-    name="fileq.Spring"
+    name="file.Spring"
     namea="fileqs.Spring"
     namem=">"
     s=""
