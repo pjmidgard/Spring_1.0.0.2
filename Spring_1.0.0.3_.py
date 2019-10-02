@@ -276,19 +276,8 @@ with open(name, "rb") as binary_file:
         
   
 
-from multiprocessing import Pool,Value
-import os
-def f(x):
-    
-    return 255**(x+1)
 
-if __name__ == '__main__':
-    pool = Pool(processes=24)               # start 4 worker processes
-    #result = pool.apply_async(f, [147456])     # evaluate "f(10)" asynchronously
-    #print(result.get(timeout=1))           # prints "100" unless your computer is *very* slow
-    #print(pool.map(f, range(147456)))          # prints "[0, 1, 4,..., 81]"
-    
-
+        
     import binascii
     import json
     block=1972
@@ -319,8 +308,9 @@ if __name__ == '__main__':
     wer=""
     numberschangenotexist = []
     numbers = []
-    namea="fileq.Spring"
-    namem=name+"?"
+    name="file.Spring"
+    namea="fileqs.Spring"
+    namem="?"
     s=""
     qwt=""
     sda=""
@@ -514,6 +504,9 @@ if __name__ == '__main__':
     with open(namea, "ab") as f2ww:             
         f2ww.write(jl)        
         
+                
+                     
+                    
     import binascii
     import json
     block=1972
@@ -544,8 +537,8 @@ if __name__ == '__main__':
     wer=""
     numberschangenotexist = []
     numbers = []
-    name="file.Spring"
-    namea="fileqs.Spring"
+    name="fileqs.Spring"
+    namea="filew.Spring"
     namem=">"
     s=""
     qwt=""
@@ -744,6 +737,15 @@ if __name__ == '__main__':
                      
                     
                 
+          
+                   
+                
+                     
+                    
+                
+          
+                   
+
           
                    
                 
