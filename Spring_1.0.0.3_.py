@@ -315,7 +315,9 @@ with open(name, "rb") as binary_file:
     aqwer=0
     aqwq=0
     aqwers=0
+    qwea=0
     qwaw=""
+    ka=[]
     with open(namea, "w") as f4:
         f4.write(s)
     with open(namea, "a") as f3:
@@ -352,16 +354,22 @@ with open(name, "rb") as binary_file:
             aqwq=int(qwt,2)
             qwt=""
             h=h+1
-            a=a+1
+            
         av=bin(aqwq)
         if a<=block and aqwer==bitc:
             aqwer=0
             
             m[aqwq] = aqwq
+            qwea=qwea+1
             
+            if aqwq==0:
+                ka.append(qwea)    
                 
-            numbers.append(aqwq)  
+            if aqwq!=0:
+                numbers.append(aqwq)
+                a=a+1 
         if a == block:
+            qwea=0
             qwaw=""
             p=0
             while p<blockw1:
@@ -372,8 +380,6 @@ with open(name, "rb") as binary_file:
             lenfg=1
             if lenfg>0:
                 notexist=0
-            if lenfg==0:
-                raise SystemExit
             b=-1
             kl=blockw
             cb=0        
@@ -404,10 +410,8 @@ with open(name, "rb") as binary_file:
                   
                 if lenfg>0:
                     
-                    if ghj==0:
-                        bnkw=pow(257,kl)
-                    else: 
-                        bnkw=pow(255,kl)
+                    
+                    bnkw=pow(255,kl)
                     
                     
                     
@@ -419,19 +423,17 @@ with open(name, "rb") as binary_file:
                             if datah=="*":
                                 os.system("pause")
                     ghjd=0
-                    if ghj==0:
-                        ghjd=256*bnkw
-                    else:
-                        ghjs=ghj-1
-                        ghjd=ghjs*bnkw
+                   
+                    ghjd=ghj*bnkw
                     
                 cvz=cvz+ghjd
                 
                 
             szx=bin(cvz)[2:]
             cvz=0
+            ssa=-1
             lenf=len(szx)
-            
+            lenfss=len(ka) 
             if lenfg>0:
                 xc=15757-lenf
                 z=0
@@ -447,16 +449,26 @@ with open(name, "rb") as binary_file:
             szxs=""
             del k[:]
             p=0
+            
             while p<15757:
                 while lenfsg<=8 or p<15757:
-                    
-                        k.append(p)     
+                      
+                        k.append(p)
+                       
+                        
                         p=p+1
                         zx=p+1
                         
                         szxs=szx[p:zx]
                                                
                         lenfsg=len(k)
+                        
+                            
+                            
+                        if p==ka[ssa]:
+                            ssa=ssa+1
+                            wer=wer+"100000000";
+                            
                         if szxs=="0":
                             wer=wer+"0";
                             
@@ -487,7 +499,7 @@ with open(name, "rb") as binary_file:
                 m+=[-1]
                 b=b+1
             b=0
-            
+            ka=[]
     a=0       
     wer=wer+qwaw
     qwaw=""
@@ -508,6 +520,7 @@ with open(name, "rb") as binary_file:
     jl=binascii.unhexlify('%x' % n)
     with open(namea, "ab") as f2ww:             
         f2ww.write(jl)        
+           
         
                 
                      
@@ -552,7 +565,9 @@ with open(name, "rb") as binary_file:
     aqwer=0
     aqwq=0
     aqwers=0
+    qwea=0
     qwaw=""
+    ka=[]
     with open(namea, "w") as f4:
         f4.write(s)
     with open(namea, "a") as f3:
@@ -589,16 +604,22 @@ with open(name, "rb") as binary_file:
             aqwq=int(qwt,2)
             qwt=""
             h=h+1
-            a=a+1
+            
         av=bin(aqwq)
         if a<=block and aqwer==bitc:
             aqwer=0
             
             m[aqwq] = aqwq
+            qwea=qwea+1
             
+            if aqwq==0:
+                ka.append(qwea)    
                 
-            numbers.append(aqwq)  
+            if aqwq!=0:
+                numbers.append(aqwq)
+                a=a+1 
         if a == block:
+            qwea=0
             qwaw=""
             p=0
             while p<blockw1:
@@ -639,10 +660,8 @@ with open(name, "rb") as binary_file:
                   
                 if lenfg>0:
                     
-                    if ghj==0:
-                        bnkw=pow(257,kl)
-                    else:
-                        bnkw=pow(255,kl)
+                    
+                    bnkw=pow(255,kl)
                     
                     
                     
@@ -654,19 +673,17 @@ with open(name, "rb") as binary_file:
                             if datah=="*":
                                 os.system("pause")
                     ghjd=0
-                    if ghj==0:
-                        ghjd=256*bnkw
-                    else:
-                        ghjs=ghj-1
-                        ghjd=ghjs*bnkw
+                   
+                    ghjd=ghj*bnkw
                     
                 cvz=cvz+ghjd
                 
                 
             szx=bin(cvz)[2:]
             cvz=0
+            ssa=-1
             lenf=len(szx)
-            
+            lenfss=len(ka) 
             if lenfg>0:
                 xc=15757-lenf
                 z=0
@@ -685,13 +702,21 @@ with open(name, "rb") as binary_file:
             while p<15757:
                 while lenfsg<=8 or p<15757:
                     
-                        k.append(p)     
+                        k.append(p)
+                       
+                        
                         p=p+1
                         zx=p+1
                         
                         szxs=szx[p:zx]
                                                
                         lenfsg=len(k)
+                        
+                            
+                            
+                        if p==ka[ssa]:
+                            ssa=ssa+1
+                            wer=wer+"100000000";
                         if szxs=="0":
                             wer=wer+"0";
                             
@@ -722,7 +747,7 @@ with open(name, "rb") as binary_file:
                 m+=[-1]
                 b=b+1
             b=0
-            
+            ka=[]
     a=0       
     wer=wer+qwaw
     qwaw=""
