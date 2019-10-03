@@ -464,16 +464,16 @@ with open(name, "rb") as binary_file:
                         lenfsg=len(k)
                         
                             
-                            
-                        if p==ka[ssa]:
-                            ssa=ssa+1
-                            wer=wer+"100000000";
-                            
                         if szxs=="0":
                             wer=wer+"0";
                             
                         if szxs=="1":
-                            wer=wer+"1";
+                            wer=wer+"1";   
+                        if p==ka[ssa]:
+                            ssa=ssa+1
+                            wer=wer+"100000000";
+                            
+                       
                             
                 
                 
@@ -713,15 +713,15 @@ with open(name, "rb") as binary_file:
                         lenfsg=len(k)
                         
                             
-                            
-                        if p==ka[ssa]:
-                            ssa=ssa+1
-                            wer=wer+"100000000";
                         if szxs=="0":
                             wer=wer+"0";
                             
                         if szxs=="1":
-                            wer=wer+"1";
+                            wer=wer+"1";    
+                        if p==ka[ssa]:
+                            ssa=ssa+1
+                            wer=wer+"100000000";
+                        
                             
                 
                 
