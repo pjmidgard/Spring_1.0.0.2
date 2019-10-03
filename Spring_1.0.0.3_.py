@@ -327,6 +327,7 @@ with open(name, "rb") as binary_file:
     qwea=0
     qwaw=""
     ka=[]
+    qqq=0
     with open(namea, "w") as f4:
         f4.write(s)
     with open(namea, "a") as f3:
@@ -373,11 +374,14 @@ with open(name, "rb") as binary_file:
             
             if aqwq==0:
                 ka.append(qwea)    
-                
+                qqq=qqq+1
+                if qqq>1000:
+                    raise SystemExit
             if aqwq!=0:
                 numbers.append(aqwq)
                 a=a+1 
         if a == block:
+            qqq=0
             qwea=0
             qwaw=""
             p=0
@@ -583,6 +587,7 @@ with open(name, "rb") as binary_file:
     qwea=0
     qwaw=""
     ka=[]
+    q=0
     with open(namea, "w") as f4:
         f4.write(s)
     with open(namea, "a") as f3:
@@ -629,11 +634,14 @@ with open(name, "rb") as binary_file:
             
             if aqwq==0:
                 ka.append(qwea)    
-                
+                qqq=qqq+1
+                if qqq>1000:
+                    raise SystemExit
             if aqwq!=0:
                 numbers.append(aqwq)
                 a=a+1 
         if a == block:
+            qqq=0
             qwea=0
             qwaw=""
             p=0
