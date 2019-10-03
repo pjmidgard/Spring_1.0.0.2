@@ -431,9 +431,10 @@ with open(name, "rb") as binary_file:
                 
             szx=bin(cvz)[2:]
             cvz=0
-            ssa=-1
+            ssa=0
             lenf=len(szx)
-            lenfss=len(ka) 
+            lenfss=len(ka)
+            lenfss=lenfss-1
             if lenfg>0:
                 xc=15757-lenf
                 z=0
@@ -470,7 +471,8 @@ with open(name, "rb") as binary_file:
                         if szxs=="1":
                             wer=wer+"1";   
                         if p==ka[ssa]:
-                            ssa=ssa+1
+                            if  ssa!=lenfss:
+                                ssa=ssa+1
                             wer=wer+"100000000";
                             
                        
@@ -681,9 +683,10 @@ with open(name, "rb") as binary_file:
                 
             szx=bin(cvz)[2:]
             cvz=0
-            ssa=-1
+            ssa=0
             lenf=len(szx)
-            lenfss=len(ka) 
+            lenfss=len(ka)
+            lenfss=lenfss-1
             if lenfg>0:
                 xc=15757-lenf
                 z=0
@@ -719,7 +722,8 @@ with open(name, "rb") as binary_file:
                         if szxs=="1":
                             wer=wer+"1";    
                         if p==ka[ssa]:
-                            ssa=ssa+1
+                            if  ssa!=lenfss:
+                                ssa=ssa+1
                             wer=wer+"100000000";
                         
                             
