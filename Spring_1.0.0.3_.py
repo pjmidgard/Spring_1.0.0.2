@@ -422,7 +422,8 @@ with open(name, "rb") as binary_file:
                     if ghj==0:
                         ghjd=256*bnkw
                     else:
-                        ghjd=ghj*bnkw
+                        ghjs=ghj-1
+                        ghjd=ghjs*bnkw
                     
                 cvz=cvz+ghjd
                 
@@ -656,7 +657,8 @@ with open(name, "rb") as binary_file:
                     if ghj==0:
                         ghjd=256*bnkw
                     else:
-                        ghjd=ghj*bnkw
+                        ghjs=ghj-1
+                        ghjd=ghjs*bnkw
                     
                 cvz=cvz+ghjd
                 
