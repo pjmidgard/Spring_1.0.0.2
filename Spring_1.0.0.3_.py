@@ -375,7 +375,7 @@ with open(name, "rb") as binary_file:
             if aqwq==0:
                 ka.append(qwea)    
                 qqq=qqq+1
-                if qqq>1000:
+                if qwea>15750:
                     raise SystemExit
             if aqwq!=0:
                 numbers.append(aqwq)
@@ -409,7 +409,7 @@ with open(name, "rb") as binary_file:
                         byteb=numbers[p]
                         numberschangenotexist.append(byteb)
                     if virationc==numbers[p]:
-                        numberschangenotexist.append(byteb)
+                        numberschangenotexist.append(notexist)
                 ghj=numberschangenotexist[p]
                 qfl=qfl+1
                 ghjd=ghj
@@ -436,7 +436,7 @@ with open(name, "rb") as binary_file:
                             if datah=="*":
                                 os.system("pause")
                     ghjd=0
-                   
+            
                     ghjd=ghj*bnkw
                     
                 cvz=cvz+ghjd
@@ -595,7 +595,7 @@ with open(name, "rb") as binary_file:
     with open(name, "rb") as binary_file:
         data = binary_file.read()
         lenf1=len(data)
-        if lenf1<2000:
+        if qwea>15750:
             print("This file is too small");
             raise SystemExit
         s=str(data)
@@ -669,7 +669,7 @@ with open(name, "rb") as binary_file:
                         byteb=numbers[p]
                         numberschangenotexist.append(byteb)
                     if virationc==numbers[p]:
-                        numberschangenotexist.append(byteb)
+                        numberschangenotexist.append(notexist)
                 ghj=numberschangenotexist[p]
                 qfl=qfl+1
                 ghjd=ghj
@@ -696,7 +696,6 @@ with open(name, "rb") as binary_file:
                             if datah=="*":
                                 os.system("pause")
                     ghjd=0
-                   
                     ghjd=ghj*bnkw
                     
                 cvz=cvz+ghjd
