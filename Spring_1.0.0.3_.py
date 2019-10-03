@@ -241,7 +241,7 @@ with open(name, "rb") as binary_file:
                 ert=0
                 s=s+1
                 ert=s*8
-                lenf=len(wer)
+                lenf=len(szx)
                 xc=8-lenf%8
                 z=0
                 if xc!=0:
