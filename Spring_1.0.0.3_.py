@@ -351,17 +351,16 @@ with open(name, "rb") as binary_file:
         if aqwer==bitc:
             aqwq=int(qwt,2)
             qwt=""
-            h=h+1  
+            h=h+1
+            a=a+1
         av=bin(aqwq)
         if a<=block and aqwer==bitc:
             aqwer=0
-            if aqwq!=0:
-                m[aqwq] = aqwq
-            if aqwq==0:
-                wer=wer+"1"+"0000"+"0000";
-            else:
-                a=a+1
-                numbers.append(aqwq)  
+            
+            m[aqwq] = aqwq
+            
+                
+            numbers.append(aqwq)  
         if a == block:
             qwaw=""
             p=0
@@ -370,6 +369,7 @@ with open(name, "rb") as binary_file:
                     k.append(p)     
                 p=p+1
             lenfg=len(k)
+            lenfg=1
             if lenfg>0:
                 notexist=0
             if lenfg==0:
@@ -390,7 +390,7 @@ with open(name, "rb") as binary_file:
                         byteb=numbers[p]
                         numberschangenotexist.append(byteb)
                     if virationc==numbers[p]:
-                        numberschangenotexist.append(notexist)
+                        numberschangenotexist.append(byteb)
                 ghj=numberschangenotexist[p]
                 qfl=qfl+1
                 ghjd=ghj
@@ -404,10 +404,14 @@ with open(name, "rb") as binary_file:
                   
                 if lenfg>0:
                     
-                   
-                    bnkw=pow(255,kl)
+                    if ghj==0:
+                        bnkw=pow(256,kl)
+                    else: 
+                        bnkw=pow(255,kl)
                     
                     
+                    
+            
                         
                 
                     with open("pause", "r") as text:
@@ -415,7 +419,10 @@ with open(name, "rb") as binary_file:
                             if datah=="*":
                                 os.system("pause")
                     ghjd=0
-                    ghjd=ghj*bnkw
+                    if ghj==0:
+                        ghjd=512*bnkw
+                    else:
+                        ghjd=ghj*bnkw
                     
                 cvz=cvz+ghjd
                 
@@ -425,7 +432,7 @@ with open(name, "rb") as binary_file:
             lenf=len(szx)
             
             if lenfg>0:
-                xc=15765-lenf
+                xc=15757-lenf
                 z=0
                 if xc!=0:
                     while z<xc:
@@ -439,7 +446,7 @@ with open(name, "rb") as binary_file:
             szxs=""
             del k[:]
             p=0
-            while p<15765:
+            while p<15757:
                 while lenfsg<=8 or p<15765:
                     
                         k.append(p)     
@@ -580,17 +587,16 @@ with open(name, "rb") as binary_file:
         if aqwer==bitc:
             aqwq=int(qwt,2)
             qwt=""
-            h=h+1  
+            h=h+1
+            a=a+1
         av=bin(aqwq)
         if a<=block and aqwer==bitc:
             aqwer=0
-            if aqwq!=0:
-                m[aqwq] = aqwq
-            if aqwq==0:
-                wer=wer+"1"+"0000"+"0000";
-            else:
-                a=a+1
-                numbers.append(aqwq)  
+            
+            m[aqwq] = aqwq
+            
+                
+            numbers.append(aqwq)  
         if a == block:
             qwaw=""
             p=0
@@ -599,10 +605,9 @@ with open(name, "rb") as binary_file:
                     k.append(p)     
                 p=p+1
             lenfg=len(k)
+            lenfg=1
             if lenfg>0:
                 notexist=0
-            if lenfg==0:
-                raise SystemExit
             b=-1
             kl=blockw
             cb=0        
@@ -619,7 +624,7 @@ with open(name, "rb") as binary_file:
                         byteb=numbers[p]
                         numberschangenotexist.append(byteb)
                     if virationc==numbers[p]:
-                        numberschangenotexist.append(notexist)
+                        numberschangenotexist.append(byteb)
                 ghj=numberschangenotexist[p]
                 qfl=qfl+1
                 ghjd=ghj
@@ -633,10 +638,14 @@ with open(name, "rb") as binary_file:
                   
                 if lenfg>0:
                     
-                   
-                    bnkw=pow(255,kl)
+                    if ghj==0:
+                        bnkw=pow(256,kl)
+                    else:
+                        bnkw=pow(255,kl)
                     
                     
+                    
+            
                         
                 
                     with open("pause", "r") as text:
@@ -644,7 +653,10 @@ with open(name, "rb") as binary_file:
                             if datah=="*":
                                 os.system("pause")
                     ghjd=0
-                    ghjd=ghj*bnkw
+                    if ghj==0:
+                        ghjd=512*bnkw
+                    else:
+                        ghjd=ghj*bnkw
                     
                 cvz=cvz+ghjd
                 
@@ -654,7 +666,7 @@ with open(name, "rb") as binary_file:
             lenf=len(szx)
             
             if lenfg>0:
-                xc=15765-lenf
+                xc=15757-lenf
                 z=0
                 if xc!=0:
                     while z<xc:
@@ -668,7 +680,7 @@ with open(name, "rb") as binary_file:
             szxs=""
             del k[:]
             p=0
-            while p<15765:
+            while p<15757:
                 while lenfsg<=8 or p<15765:
                     
                         k.append(p)     
