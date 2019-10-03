@@ -264,7 +264,7 @@ with open(name, "rb") as binary_file:
         
                 
         n = int(wer, 2)
-        jl=binascii.unhexlify('0%x' % n)
+        jl=binascii.unhexlify('%x' % n)
             
         f2.write(jl)
         
