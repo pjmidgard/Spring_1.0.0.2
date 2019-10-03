@@ -405,7 +405,7 @@ with open(name, "rb") as binary_file:
                 if lenfg>0:
                     
                     if ghj==0:
-                        bnkw=pow(512,kl)
+                        bnkw=pow(257,kl)
                     else: 
                         bnkw=pow(255,kl)
                     
@@ -420,7 +420,7 @@ with open(name, "rb") as binary_file:
                                 os.system("pause")
                     ghjd=0
                     if ghj==0:
-                        ghjd=512*bnkw
+                        ghjd=256*bnkw
                     else:
                         ghjd=ghj*bnkw
                     
@@ -639,7 +639,7 @@ with open(name, "rb") as binary_file:
                 if lenfg>0:
                     
                     if ghj==0:
-                        bnkw=pow(512,kl)
+                        bnkw=pow(257,kl)
                     else:
                         bnkw=pow(255,kl)
                     
@@ -654,7 +654,7 @@ with open(name, "rb") as binary_file:
                                 os.system("pause")
                     ghjd=0
                     if ghj==0:
-                        ghjd=512*bnkw
+                        ghjd=256*bnkw
                     else:
                         ghjd=ghj*bnkw
                     
