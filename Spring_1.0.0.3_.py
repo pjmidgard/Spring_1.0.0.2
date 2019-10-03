@@ -473,7 +473,11 @@ with open(name, "rb") as binary_file:
                         if p==ka[ssa]:
                             if  ssa!=lenfss:
                                 ssa=ssa+1
-                            wer=wer+"100000000";
+                                wer=wer+"100000000";
+                                aqqu=0
+                            if  ssa==lenfss and aqqu!=0:
+                                wer=wer+"100000000";
+                                aqqu=1
                             
                        
                             
@@ -724,7 +728,12 @@ with open(name, "rb") as binary_file:
                         if p==ka[ssa]:
                             if  ssa!=lenfss:
                                 ssa=ssa+1
-                            wer=wer+"100000000";
+                                wer=wer+"100000000";
+                                aqqu=0
+                            if  ssa==lenfss and aqqu!=0:
+                                wer=wer+"100000000";
+                                aqqu=1
+                            
                         
                             
                 
