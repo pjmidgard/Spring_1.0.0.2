@@ -405,7 +405,7 @@ with open(name, "rb") as binary_file:
                 if lenfg>0:
                     
                     if ghj==0:
-                        bnkw=pow(256,kl)
+                        bnkw=pow(512,kl)
                     else: 
                         bnkw=pow(255,kl)
                     
@@ -447,7 +447,7 @@ with open(name, "rb") as binary_file:
             del k[:]
             p=0
             while p<15757:
-                while lenfsg<=8 or p<15765:
+                while lenfsg<=8 or p<15757:
                     
                         k.append(p)     
                         p=p+1
@@ -639,7 +639,7 @@ with open(name, "rb") as binary_file:
                 if lenfg>0:
                     
                     if ghj==0:
-                        bnkw=pow(256,kl)
+                        bnkw=pow(512,kl)
                     else:
                         bnkw=pow(255,kl)
                     
@@ -681,7 +681,7 @@ with open(name, "rb") as binary_file:
             del k[:]
             p=0
             while p<15757:
-                while lenfsg<=8 or p<15765:
+                while lenfsg<=8 or p<15757:
                     
                         k.append(p)     
                         p=p+1
