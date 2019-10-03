@@ -250,7 +250,7 @@ with open(name, "rb") as binary_file:
                             szx="0"+szx
                             z=z+1
                 wer=wer+szx     
-                
+                szx=""
                     
                
                         
@@ -261,7 +261,16 @@ with open(name, "rb") as binary_file:
             
             
         wer="0b1"+wer+"1"
-        
+        lenf=len(wer)
+        xc=8-lenf%8
+        z=0
+        if xc!=0:
+            if xc!=8:
+                while z<xc:
+                    szx="0"+szx
+                    z=z+1
+        wer=wer+szx     
+        szx=""
                 
         n = int(wer, 2)
         jl=binascii.unhexlify('%x' % n)
