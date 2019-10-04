@@ -375,7 +375,7 @@ with open(name, "rb") as binary_file:
             if aqwq==0:
                 ka.append(qwea)    
                 qqq=qqq+1
-                if qwea>15750:
+                if qwea>15750 and qqq>1000:
                     raise SystemExit
             if aqwq!=0:
                 numbers.append(aqwq)
@@ -595,7 +595,7 @@ with open(name, "rb") as binary_file:
     with open(name, "rb") as binary_file:
         data = binary_file.read()
         lenf1=len(data)
-        if qwea>15750:
+        if data<2000:
             print("This file is too small");
             raise SystemExit
         s=str(data)
@@ -635,7 +635,7 @@ with open(name, "rb") as binary_file:
             if aqwq==0:
                 ka.append(qwea)    
                 qqq=qqq+1
-                if qqq>1000:
+                if qqq>1000 and qwea>15750:
                     raise SystemExit
             if aqwq!=0:
                 numbers.append(aqwq)
