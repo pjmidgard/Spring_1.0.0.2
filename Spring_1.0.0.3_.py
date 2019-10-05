@@ -479,8 +479,6 @@ with open(name, "rb") as binary_file:
                     lenf=len(szx)
                     lenfss=len(ka)
                     lenfss=lenfss-1
-                    gg=0
-                    gg=ka[lenfss]
                     if lenfg>0:
                         xc=15757-lenf
                         z=0
@@ -496,6 +494,9 @@ with open(name, "rb") as binary_file:
                     szxs=""
                     ssas=""
                     ddd=""
+                    lenfzx=len(ka)
+                    lenfzxs=lenfzx-1
+                    lenfzxaa=ka[lenfzxs]
                     del k[:]
                     p=-1
                     while p<15757:
@@ -525,11 +526,11 @@ with open(name, "rb") as binary_file:
                                 ddd=ddd+"1"
                                 
                                 lenfsg=len(ddd)
-                            if lenfsg==8 and p!=gg:
+                            if lenfsg==8 and p!=lenfzxaa: 
                                    
-                                if ddd=="00000000 ":
-                                    print(ddd)
-                                    ssas=ssas+"0000000000";
+                                if ddd=="00000000":
+                                    ssas=ssas+"000000000";
+                                    
                                    
                                 else:
                                     ssas=ssas+ddd;
@@ -574,11 +575,11 @@ with open(name, "rb") as binary_file:
                                 if  ssa!=lenfss:
                                     ssa=ssa+1
                                         
-                                    wer=wer+"1000000001";
+                                    wer=wer+"1000000000";
                                         
                                     aqqu=0
                                 if  ssa==lenfss and aqqu!=0:
-                                    wer=wer+"1000000001";
+                                    wer=wer+"11000000001";
                                         
                                     aqqu=1
                                       
