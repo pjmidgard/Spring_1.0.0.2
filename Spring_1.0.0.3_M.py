@@ -290,8 +290,8 @@ with open(name, "rb") as binary_file:
         
     import binascii
     import json
-    block=1972
-    blockw=1971
+    block=33792 
+    blockw=33791
     blockw1=256
     virationc=255
     bitc=8
@@ -388,7 +388,8 @@ with open(name, "rb") as binary_file:
                         szx="0"+szx
                         z=z+1
             sda=szx+sda     
-            lenf=len(sda)
+            
+            
             szx=""
             for byte in sda:
                 aqwer=aqwer+1
@@ -403,7 +404,7 @@ with open(name, "rb") as binary_file:
                     h=h+1
                     
                 av=bin(aqwq)
-                if a<=block and aqwer==bitc:
+                if a<=lenf1 and aqwer==bitc:
                     aqwer=0
                     
                     
@@ -412,12 +413,13 @@ with open(name, "rb") as binary_file:
                     if aqwq==0:
                         ka.append(qwea)    
                         qqq=qqq+1
-                        if qwea>15750 and qqq>1000:
+                        if qwea>157560 and qqq>10000:
                             raise SystemExit
                     if aqwq!=0:
                         numbers.append(aqwq)
                         a=a+1 
-                if a == block:
+                if qwea == lenf1:
+                    
                     qqq=0
                     qwea=0
                     qwaw=""
@@ -425,7 +427,8 @@ with open(name, "rb") as binary_file:
                     if lenfg>0:
                         notexist=0
                     b=-1
-                    kl=blockw
+                    kl=a-1
+                    sszq=a-1
                     cb=0        
                     er=-1
                     ghj=0
@@ -434,7 +437,7 @@ with open(name, "rb") as binary_file:
                     p=0
                     cvz=0
                     
-                    for p in range(blockw):
+                    for p in range(sszq):
                         if lenfg>0:
                             if virationc!=numbers[p]:
                                 byteb=numbers[p]
@@ -477,10 +480,11 @@ with open(name, "rb") as binary_file:
                     cvz=0
                     ssa=0
                     lenf=len(szx)
+                    
                     lenfss=len(ka)
                     lenfss=lenfss-1
                     if lenfg>0:
-                        xc=15757-lenf
+                        xc=lenf-lenf
                         z=0
                         if xc!=0:
                             while z<xc:
@@ -488,32 +492,38 @@ with open(name, "rb") as binary_file:
                                 z=z+1
                                 p=0
                     
-                    lenf=len(szx)  
+                    lenf=len(szx)
+                    
                     lenfsg=0
                     zx=0
                     szxs=""
                     ssas=""
                     del k[:]
                     p=-1
-                    while p<15757:
-                        while lenfsg<=8 or p<15757:
+                    while p<lenf:
+                        
                               
-                                k.append(p)
+                                
                                
                                 
-                                p=p+1
-                                zx=p+1
+                            p=p+1
+                            zx=p+1
                                 
-                                szxs=szx[p:zx]
+                            szxs=szx[p:zx]
                                                        
-                                lenfsg=len(k)
+                                
                                 
                                     
-                                if szxs=="0":
+                            if szxs=="0":
+                                ssas=ssas+"0";
+                                k.append(ssas)
+                                lenfsg=len(k)
+                                if lenfsg==8:
+                                    del k[:]
                                     ssas=ssas+"0";
-                                    
-                                if szxs=="1":
-                                    ssas=ssas+"1";   
+                            if szxs=="1":
+                                del k[:]
+                                ssas=ssas+"1";   
                                 
                                       
                                
@@ -522,9 +532,8 @@ with open(name, "rb") as binary_file:
                         
                         
                        
-                        if lenfsg==8:
-                            del k[:]
-                            ssas=ssas+"00";
+                        
+                            
                             
                         
                                             
@@ -533,6 +542,7 @@ with open(name, "rb") as binary_file:
                     szxs=""
                     p=-1
                     lenfzx=len(ssas)
+                    
                     while p<lenfzx:
                               
                             k.append(p)
@@ -556,11 +566,11 @@ with open(name, "rb") as binary_file:
                                 if  ssa!=lenfss:
                                     ssa=ssa+1
                                         
-                                    wer=wer+"1000000001";
+                                    wer=wer+"100000000";
                                         
                                     aqqu=0
                                 if  ssa==lenfss and aqqu!=0:
-                                    wer=wer+"1000000001";
+                                    wer=wer+"100000000";
                                         
                                     aqqu=1
                                       
