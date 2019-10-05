@@ -492,9 +492,9 @@ with open(name, "rb") as binary_file:
                     lenfsg=0
                     zx=0
                     szxs=""
+                    ssas=""
                     del k[:]
-                    p=0
-                    
+                    p=-1
                     while p<15757:
                         while lenfsg<=8 or p<15757:
                               
@@ -510,22 +510,11 @@ with open(name, "rb") as binary_file:
                                 
                                     
                                 if szxs=="0":
-                                    wer=wer+"0";
+                                    ssas=ssas+"0";
                                     
                                 if szxs=="1":
-                                    wer=wer+"1";   
-                                if p==ka[ssa]:
-                                    
-                                    if  ssa!=lenfss:
-                                        ssa=ssa+1
-                                        
-                                        wer=wer+"100000000";
-                                        
-                                        aqqu=0
-                                    if  ssa==lenfss and aqqu!=0:
-                                        wer=wer+"100000000";
-                                        
-                                        aqqu=1
+                                    ssas=ssas+"1";   
+                                
                                       
                                
                                     
@@ -535,9 +524,47 @@ with open(name, "rb") as binary_file:
                        
                         if lenfsg==8:
                             del k[:]
-                            wer=wer+"0";
+                            ssas=ssas+"00";
                             
                         
+                                            
+                    szx=""  
+                    del k[:]
+                    szxs=""
+                    p=-1
+                    lenfzx=len(ssas)
+                    while p<lenfzx:
+                              
+                            k.append(p)
+                               
+                                
+                            p=p+1
+                            zx=p+1
+                                
+                            szxs=ssas[p:zx]
+                                                       
+                            lenfsg=len(k)
+                                
+                                    
+                            if szxs=="0":
+                                wer=wer+"0";
+                                    
+                            if szxs=="1":
+                                wer=wer+"1";   
+                            if p==ka[ssa]:
+                                    
+                                if  ssa!=lenfss:
+                                    ssa=ssa+1
+                                        
+                                    wer=wer+"1000000001";
+                                        
+                                    aqqu=0
+                                if  ssa==lenfss and aqqu!=0:
+                                    wer=wer+"1000000001";
+                                        
+                                    aqqu=1
+                                      
+        
                                             
                     szx=""                            
                                 
