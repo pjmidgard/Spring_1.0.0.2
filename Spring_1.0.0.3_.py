@@ -572,7 +572,7 @@ with open(name, "rb") as binary_file:
                                     
                             if szxs=="1":
                                 wer=wer+"1";   
-                            if p==ka[ssa]:
+                            if p==ka[ssa] and lenfzxs!=-1:
                                     
                                 if  ssa!=lenfss:
                                     ssa=ssa+1
