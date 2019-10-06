@@ -32,7 +32,7 @@ numberschangenotexist = []
 numbers = []
 name = input("What is name of file? ")
 namea="file.Spring"
-namems=name+"/"
+namems=name+">"
 s=""
 with open(name, "rb") as binary_file:
     # Read the whole file at once
@@ -346,7 +346,7 @@ with open(name, "rb") as binary_file:
         s=str(data)
         lenf=len(data)
 
-        while dd<1:
+        while dd<10:
             dd=dd+1
             a=0
             b=0
