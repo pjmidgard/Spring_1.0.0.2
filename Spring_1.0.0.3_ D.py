@@ -35,7 +35,8 @@ while ee<100:
     numbers = []
     if ee==1:
         name = input("What is name of file? ")
-    
+        namezz=name
+        namemsss=namezz+"?"
     namea="file.Spring"
     if ee>1:
         name="fileqs.Spring"
@@ -344,7 +345,7 @@ while ee<100:
             with open(namea, "w") as f4:
                 f4.write(s)
             with open(namea, "a") as f3:
-                f3.write(namems)
+                f3.write(namemsss)
         with open(name, "rb") as binary_file:
             data = binary_file.read()
             lenf1=len(data)
