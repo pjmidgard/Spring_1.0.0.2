@@ -554,6 +554,13 @@ with open(name, "rb") as binary_file:
                     p=-1
                     ssas=ssas+ddd;
                     lenfzx=len(ssas)
+                    lenfzxs=lenfzx-1
+                    lenfzxsss=len(ka)
+                    lenfzxs=lenfzxsss-1
+                    if lenfzxsss!=0:
+                         wer=wer+"1";
+                    if lenfzxsss==0:
+                         wer=wer+"0";
                     while p<lenfzx:
                               
                             k.append(p)
@@ -571,20 +578,22 @@ with open(name, "rb") as binary_file:
                                 wer=wer+"0";
                                     
                             if szxs=="1":
-                                wer=wer+"1";   
-                            if p==ka[ssa] and lenfzxs!=-1:
-                                    
-                                if  ssa!=lenfss:
-                                    ssa=ssa+1
+                                wer=wer+"1";
+                            if lenfzxsss!=0:   
+                                if p==ka[ssa]:
                                         
-                                    wer=wer+"0000000000";
-                                        
-                                    aqqu=0
-                                if  ssa==lenfss and aqqu!=0:
-                                    wer=wer+"11000000001";
-                                        
-                                    aqqu=1
-                                      
+                                    if  ssa!=lenfss:
+                                        ssa=ssa+1
+                                            
+                                        wer=wer+"0000000000";
+                                            
+                                        aqqu=0
+                                    if  ssa==lenfss and aqqu!=0:
+                                        wer=wer+"11000000001";
+                                            
+                                        aqqu=1
+                            
+                                          
         
                                             
                     szx=""                            

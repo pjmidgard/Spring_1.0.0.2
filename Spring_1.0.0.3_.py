@@ -557,6 +557,10 @@ with open(name, "rb") as binary_file:
                     lenfzxs=lenfzx-1
                     lenfzxsss=len(ka)
                     lenfzxs=lenfzxsss-1
+                    if lenfzxsss!=0:
+                         wer=wer+"1";
+                    if lenfzxsss==0:
+                         wer=wer+"0";
                     while p<lenfzx:
                               
                             k.append(p)
@@ -588,6 +592,7 @@ with open(name, "rb") as binary_file:
                                         wer=wer+"11000000001";
                                             
                                         aqqu=1
+                            
                                           
         
                                             
