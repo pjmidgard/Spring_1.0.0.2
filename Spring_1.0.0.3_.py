@@ -412,7 +412,7 @@ with open(name, "rb") as binary_file:
                     if aqwq==0:
                         ka.append(qwea)    
                         qqq=qqq+1
-                        if qwea>6130 and qqq>1000:
+                        if qwea>6130 and qqq>10:
                             raise SystemExit
                     if aqwq!=0:
                         numbers.append(aqwq)
