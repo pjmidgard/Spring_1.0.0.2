@@ -497,7 +497,8 @@ with open(name, "rb") as binary_file:
                     ddd=""
                     lenfzx=len(ka)
                     lenfzxs=lenfzx-1
-                    lenfzxaa=ka[lenfzxs]
+                    if lenfzxs!=-1:
+                        lenfzxaa=ka[lenfzxs]
                     del k[:]
                     p=-1
                     while p<6132:
