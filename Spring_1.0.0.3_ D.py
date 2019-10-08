@@ -1,4 +1,4 @@
-import os
+2import os
 import binascii
 ee=0
 while ee<100:
@@ -529,7 +529,7 @@ while ee<100:
                                     ddd="0"
                                     ssas=ssas+ddd;
                                     zzza=zzza+ddd
-                                    lenfsg=len(ddd)
+                                    
                                        
                                                 
                                         
@@ -538,7 +538,7 @@ while ee<100:
                                     ddd="1"
                                     ssas=ssas+ddd;
                                     zzza=zzza+ddd
-                                    lenfsg=len(ddd)
+                                lenfsg=len(zzza)
                                 if lenfsg==8 and p!=lenfzxaa: 
                                        
                                     if ddd=="00000000":

@@ -520,7 +520,7 @@ with open(name, "rb") as binary_file:
                                 ddd="0"
                                 ssas=ssas+ddd;
                                 zzza=zzza+ddd
-                                lenfsg=len(zzza)
+                                
                                    
                                             
                                     
@@ -529,7 +529,7 @@ with open(name, "rb") as binary_file:
                                 ddd="1"
                                 zzza=zzza+ddd
                                 ssas=ssas+ddd;
-                                lenfsg=len(ddd)
+                            lenfsg=len(zzza)
                             if lenfsg==8 and p!=lenfzxaa: 
                                    
                                 if ddd=="00000000":
