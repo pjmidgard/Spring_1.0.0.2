@@ -526,26 +526,25 @@ while ee<100:
                                         
                                 if szxs=="0":
                                     
-                                    ddd=ddd+"0"
-                                    
+                                    ddd="0"
+                                    ssas=ssas+ddd;
                                     lenfsg=len(ddd)
                                        
                                                 
                                         
                                 if szxs=="1":
                                    
-                                    ddd=ddd+"1"
-                                    
+                                    ddd="1"
+                                    ssas=ssas+ddd;
                                     lenfsg=len(ddd)
-                                if lenfsg==10 and p!=lenfzxaa: 
+                                if lenfsg==8 and p!=lenfzxaa: 
                                        
-                                    if ddd=="1000000001":
+                                    if ddd=="00000000":
                                         ssas=ssas+"10000000001";
                                         
                                        
-                                    else:
-                                        ssas=ssas+ddd;
-                                    ddd=""
+                                    
+                                        
                                           
                                    
                                         
