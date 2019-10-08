@@ -1,4 +1,4 @@
-2import os
+import os
 import binascii
 ee=0
 while ee<100:
