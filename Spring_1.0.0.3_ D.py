@@ -359,7 +359,7 @@ while ee<100:
                 dd=dd+1
                 a=0
                 b=0
-
+                zzza=""
                 l=""
                 j=0
                 b=0
@@ -528,6 +528,7 @@ while ee<100:
                                     
                                     ddd="0"
                                     ssas=ssas+ddd;
+                                    zzza=zzza+ddd
                                     lenfsg=len(ddd)
                                        
                                                 
@@ -536,12 +537,13 @@ while ee<100:
                                    
                                     ddd="1"
                                     ssas=ssas+ddd;
+                                    zzza=zzza+ddd
                                     lenfsg=len(ddd)
                                 if lenfsg==8 and p!=lenfzxaa: 
                                        
                                     if ddd=="00000000":
                                         ssas=ssas+"10000000001";
-                                        
+                                    zzza=""
                                        
                                     
                                         
