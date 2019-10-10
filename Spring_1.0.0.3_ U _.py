@@ -1,8 +1,11 @@
 import os
 import binascii
-ee=0
+ee=1
+sss1=0
+sss2=0
+qqqw=0
 while ee<100:
-    ee=ee+1
+    aqqu=0
     a=0
     b=0
     aqqu=0
@@ -36,20 +39,23 @@ while ee<100:
     if ee==1:
         name = input("What is name of file? ")
         namezz=name
-        namemsss=namezz+"|"
+        namemsss=namezz+"?"
+       
     namea="file.Spring"
     if ee>1:
         name="fileqs.Spring"
-    namems=name+"?"
+    namems=name+"|"
     s=""
     with open(name, "rb") as binary_file:
         # Read the whole file at once
         data = binary_file.read()
         s=str(data)
         lenf1=len(data)
-        if lenf1<2000:
-            print("This file is too small");
-            raise SystemExit
+        ssss1=len(data)
+        if ee==1:
+            if lenf1<=90000:
+                print("This file is too small");
+                raise SystemExit
         with open(namea, "wb") as f2:
             for byte in data:
                 av=bin(byte)
@@ -341,20 +347,25 @@ while ee<100:
         ka=[]
         qqq=0
         dd=0
-        if ee==100:
-            with open(namea, "w") as f4:
-                f4.write(s)
-            with open(namea, "a") as f3:
-                f3.write(namemsss)
+        if ssss1<=75000:
+                ee=100
+                if ee==100:
+                    with open(namea, "w") as f4:
+                        f4.write(s)
+                    with open(namea, "a") as f3:
+                        f3.write(namemsss)
         with open(name, "rb") as binary_file:
             data = binary_file.read()
             lenf1=len(data)
-            if lenf1<2000:
-                print("This file is too small");
-                raise SystemExit
+            if ee==1:
+                if lenf1<90000:
+                    print("This file is too small");
+                    raise SystemExit
+            if ee==1:
+                ee=2
             s=str(data)
             lenf=len(data)
-
+            
             while dd<1:
                 dd=dd+1
                 a=0
@@ -421,7 +432,7 @@ while ee<100:
                         if aqwq==0:
                             ka.append(qwea)    
                             qqq=qqq+1
-                            if qwea>6130 and qqq>768:
+                            if qwea>6132 and qqq>6132:
                                 raise SystemExit
                         if aqwq!=0:
                             numbers.append(aqwq)
@@ -541,7 +552,7 @@ while ee<100:
                                 lenfsg=len(zzza)
                                 if lenfzxs!=-1:
                                     if lenfsg==8 and p!=lenfzxaa: 
-                                           
+                                       
                                         if ddd=="00000000":
                                             ssas=ssas+"1000000000";
                                         zzza=""
@@ -641,9 +652,37 @@ while ee<100:
                 n = int(wer, 2)
                 jl=binascii.unhexlify('%x' % n)
                 data=jl
+                ssss2=len(jl)
+                
+                qqqw=qqqw+1
+                if ee!= 100:
+                    if ssss2<=ssss1:
+                        ee=2
+                    if ssss2>ssss1:
+                        ee=2
+                    
+                
+                    szx=""
+                    werd=""
+                    szx=bin(qqqw)[2:]
+                    lenf=len(szx)
+                    xc=32-lenf%32
+                    z=0
+                    if xc!=0:
+                        if xc!=48:
+                            while z<xc:
+                                szx=szx+"0"
+                                z=z+1
+                    werd=werd+szx
+                    szx=""
+                    werd="0b"+werd
+                    n = int(werd, 2)
+                    
+                    jlsw=binascii.unhexlify('%x' % n)
             if ee==100:
                 with open(namea, "ab") as f2ww:             
                     f2ww.write(jl)
+                    f2ww.write(jlsw)
             if ee<100:
                 with open(namea, "wb") as f2ww:             
                     f2ww.write(jl)      

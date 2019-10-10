@@ -2,7 +2,7 @@ import os
 import binascii
 a=0
 b=0
-
+aqqu=0
 l=""
 j=0
 b=0
@@ -349,6 +349,7 @@ with open(name, "rb") as binary_file:
         while dd<1:
             dd=dd+1
             a=0
+            aqqu=0
             b=0
             zzza=""
             l=""
@@ -447,7 +448,7 @@ with open(name, "rb") as binary_file:
                         bnk=1
                         bnkw=1
                         bnkd=1        
-                        kl=kl-1
+                        kl-=1
                         
                         
                         
@@ -532,11 +533,12 @@ with open(name, "rb") as binary_file:
                                 ssas=ssas+ddd;
                                 
                             lenfsg=len(zzza)
-                            if lenfsg==8 and p!=lenfzxaa: 
+                            if lenfzxs!=-1:
+                                if lenfsg==8 and p!=lenfzxaa: 
                                    
-                                if ddd=="00000000":
-                                    ssas=ssas+"10000000001";
-                                zzza=""
+                                    if ddd=="00000000":
+                                        ssas=ssas+"1000000000";
+                                    zzza=""
                                     
                                    
                                 
@@ -589,11 +591,11 @@ with open(name, "rb") as binary_file:
                                     if  ssa!=lenfss:
                                         ssa=ssa+1
                                             
-                                        wer=wer+"0000000000";
+                                        wer=wer+"0000000001";
                                             
                                         aqqu=0
-                                    if  ssa==lenfss and aqqu!=0:
-                                        wer=wer+"11000000001";
+                                    if  ssa==lenfss and aqqu==0:
+                                        wer=wer+"0000000000";
                                             
                                         aqqu=1
                             

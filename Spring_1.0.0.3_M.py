@@ -2,7 +2,7 @@ import os
 import binascii
 a=0
 b=0
-
+aqqu=0
 l=""
 j=0
 b=0
@@ -348,6 +348,7 @@ with open(name, "rb") as binary_file:
 
         while dd<10:
             dd=dd+1
+            aqqu=0
             a=0
             b=0
             zzza=""
@@ -530,12 +531,13 @@ with open(name, "rb") as binary_file:
                                 zzza=zzza+ddd
                                 ssas=ssas+ddd;
                             lenfsg=len(zzza)
-                            if lenfsg==8 and p!=lenfzxaa: 
-                                   
-                                if ddd=="00000000":
-                                    ssas=ssas+"10000000001";
-                                    
-                                zzza=""   
+                            if lenfzxs!=-1:
+                                if lenfsg==8 and p!=lenfzxaa: 
+                                       
+                                    if ddd=="00000000":
+                                        ssas=ssas+"1000000000";
+                                        
+                                    zzza=""   
                                 
                                       
                                
@@ -585,11 +587,11 @@ with open(name, "rb") as binary_file:
                                     if  ssa!=lenfss:
                                         ssa=ssa+1
                                             
-                                        wer=wer+"0000000000";
+                                        wer=wer+"0000000001";
                                             
                                         aqqu=0
-                                    if  ssa==lenfss and aqqu!=0:
-                                        wer=wer+"11000000001";
+                                    if  ssa==lenfss and aqqu==0:
+                                        wer=wer+"0000000000";
                                             
                                         aqqu=1
                             
