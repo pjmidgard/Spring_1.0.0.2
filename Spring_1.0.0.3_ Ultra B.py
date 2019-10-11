@@ -10,6 +10,7 @@ while ee<100:
     a=0
     b=0
     aqqu=0
+    zzzaz=""
     l=""
     j=0
     b=0
@@ -45,7 +46,7 @@ while ee<100:
     namea="file.Spring"
     if ee>1:
         name="fileqs.Spring"
-    namems=name+"|"
+    namems=namezz+"|"
     s=""
     with open(name, "rb") as binary_file:
         # Read the whole file at once
@@ -522,6 +523,7 @@ while ee<100:
                         lenfsg=0
                         zx=0
                         szxs=""
+                        zzzaz=""
                         ssas=""
                         ddd=""
                         lenfzx=len(ka)
@@ -549,7 +551,7 @@ while ee<100:
                                     ddd="0"
                                     ssas=ssas+ddd;
                                     zzza=zzza+ddd
-                                    
+                                    zzzaz=zzzaz+ddd
                                        
                                                 
                                         
@@ -558,31 +560,34 @@ while ee<100:
                                     ddd="1"
                                     ssas=ssas+ddd;
                                     zzza=zzza+ddd
+                                    zzzaz=zzzaz+ddd
                                 lenfsg=len(zzza)
+                                lenfsgx=len(zzzaz)
                                 if lenfzxs!=-1:
                                     if lenfsg==8 and p!=lenfzxaa: 
                                        
-                                        if ddd=="00000000":
+                                        if zzza=="00000000":
                                             ssas=ssas+"1000000000";
                                         zzza=""
-                                       
-                                    if lenfsg==10 and p!=lenfzxaa: 
+                                    
+                                    if lenfsgx==10 and p!=lenfzxaa: 
                                    
-                                        if ddd=="1000000000":
+                                        if zzzaz=="1000000000":
                                             ssas=ssas+"00000000";
                                             zaaa=1
-                                        zzza=""  
+                                         
                                 
-                                        if ddd=="0000000001":
+                                        if zzzaz=="0000000001":
                                             ssas=ssas+"00000000";
                                             zaaa=1
-                                        zzza=""  
+                                              
 
-                                        if ddd=="0000000000":
+                                        if zzzaz=="0000000000":
                                             ssas=ssas+"00000000";
                                             zaaa=1
-                                        zzza="" 
                                             
+                                    
+                                        zzzaz=""        
                                           
                                    
                                         
@@ -710,8 +715,12 @@ while ee<100:
             if ee<100 and zaaa==0:
                 with open(namea, "wb") as f2ww:             
                     f2ww.write(jl)
-            if ee==100 and zaaa==1:
+            if ee!=100 and zaaa==1:
                 with open(namea, "wb") as f2ww:             
+                    f2ww.write(zxca)      
+                    
+            if ee==100 and zaaa==1:
+                with open(namea, "ab") as f2ww:             
                     f2ww.write(zxca)      
                     f2ww.write(jlsw)   
                     
