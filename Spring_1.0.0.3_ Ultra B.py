@@ -440,7 +440,7 @@ while ee<100:
                             qqq=qqq+1
                             if qqq>1:
                                 zaaa=1
-                            if qwea>6132:
+                            if qwea>2039:
                                 raise SystemExit
                         if aqwq!=0 or qqq>1:
                             numbers.append(aqwq)
