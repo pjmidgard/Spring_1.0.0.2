@@ -112,6 +112,7 @@ while ee<100:
     with open(name, "rb") as binary_file:
         data = binary_file.read()
         lenf1=len(data)
+        ssss1=lenf1
         if lenf1<5:
             ee=100
         if ee==1:
