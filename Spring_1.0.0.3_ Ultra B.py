@@ -44,11 +44,9 @@ while ee<100:
         name = input("What is name of file? ")
         namezz=name
         namemsss=namezz+"?"
-       
-    namea="file.Spring"
+    if ee>1:   
+        namea="file.Spring"
     if ee>1:
-        name="fileqs.Spring"
-    namems=namezz+"|"
     s=""
 
             
