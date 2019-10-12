@@ -46,7 +46,7 @@ while ee<100:
         namemsss=namezz+"?"
     if ee>1:   
         namea="file.Spring"
-    if ee>1:
+   
     s=""
 
             
