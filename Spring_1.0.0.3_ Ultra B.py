@@ -1,6 +1,8 @@
 import os
 import binascii
 ee=1
+asssq=0
+zxxx=0
 zaaa=0
 sss1=0
 sss2=0
@@ -307,8 +309,8 @@ while ee<100:
             
         import binascii
         import json
-        block=768
-        blockw=767
+        block=256
+        blockw=255
         blockw1=256
         virationc=255
         bitc=8
@@ -350,33 +352,27 @@ while ee<100:
         ka=[]
         qqq=0
         dd=0
-        if zaaa==1:
-                ee=100
-                if ee==100:
-                    with open(namea, "w") as f4:
-                        f4.write(s)
-                    with open(namea, "a") as f3:
-                        f3.write(namems)
-        if ee==99 and zaaa==0:
-                ee=100
-                if ee==100:
-                    with open(namea, "w") as f4:
-                        f4.write(s)
-                    with open(namea, "a") as f3:
-                        f3.write(namemsss)
+
+        
+                
+                
+        with open(namea, "w") as f4:
+            f4.write(s)
+        with open(namea, "a") as f3:
+            f3.write(namemsss)
         with open(name, "rb") as binary_file:
             data = binary_file.read()
             lenf1=len(data)
             if ee==1:
                 if lenf1<2000:
-                    print("This file is too small");
-                    raise SystemExit
+                    ee=100
             if ee==1:
                 ee=2
             s=str(data)
             lenf=len(data)
             
             while dd<1:
+                qqqws=0
                 dd=dd+1
                 a=0
                 b=0
@@ -442,7 +438,9 @@ while ee<100:
                         if aqwq==0:
                             ka.append(qwea)    
                             qqq=qqq+1
-                            if qwea>6132 and qqq>6132:
+                            if qqq>1:
+                                zaaa=1
+                            if qwea>6132:
                                 raise SystemExit
                         if aqwq!=0:
                             numbers.append(aqwq)
@@ -450,7 +448,7 @@ while ee<100:
                     if a == block:
                         qqq=0
                         qwea=0
-                        qwaw=""
+                        
                         lenfg=1
                         if lenfg>0:
                             notexist=0
@@ -511,7 +509,7 @@ while ee<100:
                         lenfss=len(ka)
                         lenfss=lenfss-1
                         if lenfg>0:
-                            xc=6132-lenf
+                            xc=2039-lenf
                             z=0
                             if xc!=0:
                                 while z<xc:
@@ -532,70 +530,7 @@ while ee<100:
                             lenfzxaa=ka[lenfzxs]
                         del k[:]
                         p=-1
-                        while p<6132:
-                            
-                                  
-                                    
-                                   
-                                    
-                                p=p+1
-                                zx=p+1
-                                    
-                                szxs=szx[p:zx]
-                                                           
-                                lenfsg=len(k)
-                                    
-                                        
-                                if szxs=="0":
-                                    
-                                    ddd="0"
-                                    ssas=ssas+ddd;
-                                    zzza=zzza+ddd
-                                    zzzaz=zzzaz+ddd
-                                       
-                                                
-                                        
-                                if szxs=="1":
-                                   
-                                    ddd="1"
-                                    ssas=ssas+ddd;
-                                    zzza=zzza+ddd
-                                    zzzaz=zzzaz+ddd
-                                lenfsg=len(zzza)
-                                lenfsgx=len(zzzaz)
-                                if lenfzxs!=-1:
-                                    if lenfsg==8 and p!=lenfzxaa: 
-                                       
-                                        if zzza=="00000000":
-                                            ssas=ssas+"1000000000";
-                                        zzza=""
-                                    
-                                    if lenfsgx==10 and p!=lenfzxaa: 
-                                   
-                                        if zzzaz=="1000000000":
-                                            ssas=ssas+"00000000";
-                                            zaaa=1
-                                         
-                                
-                                        if zzzaz=="0000000001":
-                                            ssas=ssas+"00000000";
-                                            zaaa=1
-                                              
 
-                                        if zzzaz=="0000000000":
-                                            ssas=ssas+"00000000";
-                                            zaaa=1
-                                            
-                                    
-                                        zzzaz=""        
-                                          
-                                   
-                                        
-                            
-                            
-                            
-                           
-                            
                                 
                             
                                                 
@@ -608,49 +543,34 @@ while ee<100:
                         lenfzxs=lenfzx-1
                         lenfzxsss=len(ka)
                         lenfzxs=lenfzxsss-1
-                        if lenfzxsss!=0:
+                        if lenfzxsss!=0 and zaaa==0:
                              wer=wer+"1";
-                        if lenfzxsss==0:
+                        if lenfzxsss==0 and zaaa==0:
                              wer=wer+"0";
-                        while p<lenfzx:
-                                  
-                                k.append(p)
-                                   
-                                    
-                                p=p+1
-                                zx=p+1
-                                    
-                                szxs=ssas[p:zx]
-                                                           
-                                lenfsg=len(k)
-                                    
-                                        
-                                if szxs=="0":
-                                    wer=wer+"0";
-                                        
-                                if szxs=="1":
-                                    wer=wer+"1";
-                                if lenfzxsss!=0:   
-                                    if p==ka[ssa]:
-                                            
-                                        if  ssa!=lenfss:
-                                            ssa=ssa+1
-                                                
-                                            wer=wer+"0000000001";
-                                                
-                                            aqqu=0
-                                        if  ssa==lenfss and aqqu==0:
-                                            wer=wer+"0000000000";
-                                                
-                                            aqqu=1
-                                
-                                              
-            
-                                                
+                             zxxx=1
+                       
+                        zxcc=""                        
                         szx=""                            
-                                    
-                                    
-                              
+                        if zaaa==1 and zxxx==0:
+                            wer=wer+"0";
+                            wer=wer+qwaw
+                        if zaaa==0 and zxxx==0:
+                            wer=wer+"1";
+                            zxcc=ka[0]
+                            szx=bin(zxcc)[2:]
+                            lenf=len(szx)
+                            xc=8-lenf%8
+                            z=0
+                            if xc!=0:
+                                if xc!=8:
+                                    while z<xc:
+                                        szx="0"+szx
+                                        z=z+1
+                            wer=wer+szx
+                            szx=""
+                        qwaw=""    
+                        zaaa=0
+                        zxxx=0
                         a=0
                         numberschangenotexist = []    
                         del k[:]     
@@ -688,7 +608,7 @@ while ee<100:
                     if ssss2<=ssss1:
                         ee=2
                     if ssss2>ssss1:
-                        ee=99
+                        ee=100
                     
                 
                     szx=""
@@ -708,22 +628,14 @@ while ee<100:
                     n = int(werd, 2)
                     
                     jlsw=binascii.unhexlify('%x' % n)
-            if ee==100 and zaaa==0:
+            if ee==100:
                 with open(namea, "ab") as f2ww:             
                     f2ww.write(jl)
                     f2ww.write(jlsw)
-            if ee<100 and zaaa==0:
+            if ee<100:
                 with open(namea, "wb") as f2ww:             
                     f2ww.write(jl)
-            if ee!=100 and zaaa==1:
-                with open(namea, "wb") as f2ww:             
-                    f2ww.write(zxca)      
-                    
-            if ee==100 and zaaa==1:
-                with open(namea, "ab") as f2ww:             
-                    f2ww.write(zxca)      
-                    f2ww.write(jlsw)   
-                    
+         
                             
                          
                         
