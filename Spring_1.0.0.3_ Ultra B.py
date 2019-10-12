@@ -435,14 +435,14 @@ while ee<100:
                         
                         qwea=qwea+1
                         
-                        if aqwq==0:
+                        if aqwq==0 and qqq<=1:
                             ka.append(qwea)    
                             qqq=qqq+1
                             if qqq>1:
                                 zaaa=1
                             if qwea>6132:
                                 raise SystemExit
-                        if aqwq!=0:
+                        if aqwq!=0 or qqq>1:
                             numbers.append(aqwq)
                             a=a+1 
                     if a == block:
@@ -501,10 +501,10 @@ while ee<100:
                             cvz=cvz+ghjd
                             
                             
-                        szx=bin(cvz)[2:]
+                        szxx=bin(cvz)[2:]
                         cvz=0
                         ssa=0
-                        lenf=len(szx)
+                        lenf=len(szxx)
                         
                         lenfss=len(ka)
                         lenfss=lenfss-1
@@ -513,10 +513,11 @@ while ee<100:
                             z=0
                             if xc!=0:
                                 while z<xc:
-                                    szx="0"+szx
+                                    szxx="0"+szxx
                                     z=z+1
                                     p=0
                         
+                         
                         lenf=len(szx)  
                         lenfsg=0
                         zx=0
@@ -548,7 +549,7 @@ while ee<100:
                         if lenfzxsss==0 and zaaa==0:
                              wer=wer+"0";
                              zxxx=1
-                       
+                             wer=wer+szxx;
                         zxcc=""                        
                         szx=""                            
                         if zaaa==1 and zxxx==0:
@@ -556,6 +557,8 @@ while ee<100:
                             wer=wer+qwaw
                         if zaaa==0 and zxxx==0:
                             wer=wer+"1";
+                            wer=wer+szxx;
+                            
                             zxcc=ka[0]
                             szx=bin(zxcc)[2:]
                             lenf=len(szx)
@@ -566,9 +569,11 @@ while ee<100:
                                     while z<xc:
                                         szx="0"+szx
                                         z=z+1
+                            
                             wer=wer+szx
                             szx=""
-                        qwaw=""    
+                        qwaw=""
+                        szxx=""
                         zaaa=0
                         zxxx=0
                         a=0
