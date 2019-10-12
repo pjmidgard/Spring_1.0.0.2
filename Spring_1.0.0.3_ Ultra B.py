@@ -363,9 +363,9 @@ while ee<100:
         with open(name, "rb") as binary_file:
             data = binary_file.read()
             lenf1=len(data)
-            if ee==1:
-                if lenf1<2000:
-                    ee=100
+            
+            if lenf1<2000:
+                ee=100
             if ee==1:
                 ee=2
             s=str(data)
