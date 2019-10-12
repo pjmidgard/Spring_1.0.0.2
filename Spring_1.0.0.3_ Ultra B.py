@@ -545,18 +545,18 @@ while ee<100:
                         lenfzxsss=len(ka)
                         lenfzxs=lenfzxsss-1
                         if lenfzxsss!=0 and zaaa==0:
-                             wer=wer+"1";
+                             wer=wer+"00";
                         if lenfzxsss==0 and zaaa==0:
-                             wer=wer+"0";
+                             wer=wer+"01";
                              zxxx=1
                              wer=wer+szxx;
                         zxcc=""                        
                         szx=""                            
                         if zaaa==1 and zxxx==0:
-                            wer=wer+"0";
+                            wer=wer+"10";
                             wer=wer+qwaw
                         if zaaa==0 and zxxx==0:
-                            wer=wer+"1";
+                            wer=wer+"11";
                             wer=wer+szxx;
                             
                             zxcc=ka[0]
