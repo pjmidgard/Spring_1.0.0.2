@@ -309,8 +309,8 @@ while ee<100:
             
         import binascii
         import json
-        block=256
-        blockw=255
+        block=5
+        blockw=4
         blockw1=256
         virationc=255
         bitc=8
@@ -363,9 +363,8 @@ while ee<100:
         with open(name, "rb") as binary_file:
             data = binary_file.read()
             lenf1=len(data)
-            if ee==1:
-                if lenf1<2000:
-                    ee=100
+            if lenf1<2000:
+                ee=100
             if ee==1:
                 ee=2
             s=str(data)
@@ -440,7 +439,7 @@ while ee<100:
                             qqq=qqq+1
                             if qqq>1:
                                 zaaa=1
-                            if qwea>2039:
+                            if qwea>32:
                                 raise SystemExit
                         if aqwq!=0 or qqq>1:
                             numbers.append(aqwq)
@@ -505,11 +504,10 @@ while ee<100:
                         cvz=0
                         ssa=0
                         lenf=len(szxx)
-                        
                         lenfss=len(ka)
                         lenfss=lenfss-1
                         if lenfg>0:
-                            xc=2039-lenf
+                            xc=32-lenf
                             z=0
                             if xc!=0:
                                 while z<xc:
