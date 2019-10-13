@@ -55,7 +55,7 @@ while ee<100:
         data = binary_file.read()
         s=str(data)
         lenf1=len(data)
-        ssss1=len(data)
+        
         if ee==1:
             if lenf1<=2000:
                 print("This file is too small");
@@ -371,9 +371,9 @@ while ee<100:
             s=str(data)
             lenf=len(data)
             
-            while dd<1:
+            while dd<30:
+                ssss1=len(data)
                 qqqws=0
-                dd=dd+1
                 a=0
                 b=0
                 zzza=""
@@ -606,14 +606,20 @@ while ee<100:
                 n = int(wer, 2)
                 jl=binascii.unhexlify('%x' % n)
                 data=jl
-                ssss2=len(jl)
                 
+                ssss2=len(jl)
+                lenf2=len(data)
+                
+                if lenf2<5:
+                    ee=100
+                    dd=30
                 qqqw=qqqw+1
                 if ee!= 100:
-                    if ssss2<=ssss1:
+                    if ssss2<ssss1:
                         ee=2
-                    if ssss2>ssss1:
+                    if ssss2>=ssss1:
                         ee=100
+                        dd=30
                     
                 
                     szx=""
