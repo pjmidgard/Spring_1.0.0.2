@@ -638,7 +638,7 @@ while ee<100:
                     f2ww.write(jl)
                     f2ww.write(jlsw)
             if ee<100:
-                with open(namea, "ab") as f2ww:             
+                with open(namea, "wb") as f2ww:             
                     f2ww.write(jl)
          
                             
