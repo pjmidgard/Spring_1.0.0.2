@@ -505,7 +505,9 @@ while ee<100:
                         cvz=0
                         ssa=0
                         lenf=len(szxx)
-                        
+                        qqqqs=0
+                        if lenf>32:
+                            qqqqs=1
                         lenfss=len(ka)
                         lenfss=lenfss-1
                         if lenfg>0:
@@ -544,18 +546,18 @@ while ee<100:
                         lenfzxs=lenfzx-1
                         lenfzxsss=len(ka)
                         lenfzxs=lenfzxsss-1
-                        if lenfzxsss!=0 and zaaa==0:
+                        if lenfzxsss!=0 and zaaa==0 and qqqqs==0:
                              wer=wer+"00";
-                        if lenfzxsss==0 and zaaa==0:
+                        if lenfzxsss==0 and zaaa==0 and qqqqs==0:
                              wer=wer+"01";
                              zxxx=1
                              wer=wer+szxx;
                         zxcc=""                        
                         szx=""                            
-                        if zaaa==1 and zxxx==0:
+                        if zaaa==1 and zxxx==0 or qqqqs==1:
                             wer=wer+"10";
                             wer=wer+qwaw
-                        if zaaa==0 and zxxx==0:
+                        if zaaa==0 and zxxx==0 and qqqqs==0:
                             wer=wer+"11";
                             wer=wer+szxx;
                             
