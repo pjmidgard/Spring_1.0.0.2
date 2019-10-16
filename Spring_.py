@@ -322,12 +322,14 @@ with open(name, "rb") as binary_file:
                         
                  
                 
-        a=0 
-        szx=aaqws
-        dd=len(aaqws)
+        a=0
+        szx=""
         
-        dd=len(szx)
-        xc=8-(dd%8)
+        
+        
+        dd=len(aaqws)
+       
+        xc=8-dd%8
         
         z=0
         while z<xc:
@@ -335,8 +337,9 @@ with open(name, "rb") as binary_file:
             z=z+1
         
         dd=len(szx)
+        
         szxz=""
-        xc=8-(dd/8)
+        xc=8-dd/8
         szxz=bin(dd)[2:]
         z=0
         while z<xc:
