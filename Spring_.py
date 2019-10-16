@@ -50,6 +50,9 @@ with open(name, "rb") as binary_file:
     if lenf1<2000:
         print("This file is too small");
         raise SystemExit
+    if lenf1>2**30:
+        print("This file is too big");
+        raise SystemExit
     with open(namea, "ab") as f2:
         for byte in data:
             av=bin(byte)
@@ -320,20 +323,29 @@ with open(name, "rb") as binary_file:
                  
                 
         a=0 
-        szx=bin(lenf1)[2:]
-        print(szx)
+        szx=aaqws
+        dd=len(aaqws)
+        
         dd=len(szx)
-        xc=32-dd
+        xc=8-(dd%8)
         
         z=0
         while z<xc:
             szx="0"+szx
             z=z+1
         
-       
+        dd=len(szx)
+        szxz=""
+        xc=8-(dd/8)
+        szxz=bin(dd)[2:]
+        z=0
+        while z<xc:
+            szxz="0"+szxz
+            z=z+1
         
-        wer="0b1"+wer+aaqws+"1"+szx
-        szx="" 
+        wer="0b1"+wer+aaqws+"1"+szx+szxz
+        szx=""
+        szxz=""
         lenf=len(wer)
         xc=8-lenf%8
         z=0
