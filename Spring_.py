@@ -432,11 +432,11 @@ with open(name, "rb") as binary_file:
             qqqwz=qqqwz+1
             
             
-            if lenf1<=sssssw or sssssw<=2000 or qqqwz==100:
+            if lenf1<=sssssw or sssssw<=2000 or qqqwz==10:
                 
                 szx=bin(qqqwz)[2:]
                 lenf=len(szx)
-                xc=32-lenf%32
+                xc=8-lenf%8
                 z=0
                 if xc!=32:
                     while z<xc:
