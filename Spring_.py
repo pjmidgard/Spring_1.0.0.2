@@ -1,5 +1,6 @@
 import binascii
 a=0
+cvb=0
 zsaqq=""
 qqqwz=0
 assx=0
