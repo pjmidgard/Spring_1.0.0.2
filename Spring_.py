@@ -216,7 +216,8 @@ with open(name, "rb") as binary_file:
                         cvb=0
                     else:
                         jl=data
-                        f2.write(jl) 
+                        if cvb==0
+                            f2.write(jl)
                         cvb=1    
                             
                     if lenfa>14305:
