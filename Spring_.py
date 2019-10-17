@@ -440,7 +440,7 @@ with open(name, "rb") as binary_file:
                 z=0
                 if xc!=32:
                     while z<xc:
-                        szx=szx+"0"
+                        szx="0"+szx
                         z=z+1
                 zsaqq="0b"+zsaqq+szx
                 
