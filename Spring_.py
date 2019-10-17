@@ -118,7 +118,7 @@ with open(name, "rb") as binary_file:
                     
                     #lenf count
                     lenfg=len(k)
-                    
+                   
                     
 
                     if lenfg>0:
@@ -280,7 +280,7 @@ with open(name, "rb") as binary_file:
                         wer=wer+szx
                         lenf=len(szx)
                         szx=""
-                        notexist=k[0]
+                        
                         szx=bin(notexist)[2:]
                         lenf=len(szx)
                                     
