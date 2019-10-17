@@ -157,94 +157,95 @@ with open(name, "rb") as binary_file:
                 
                 
                
-                if lenfg>0 or lenfg==0:
+                
 
                     
-                    if lenfa>14305:
+                    
                         
                        
                         
                            
                         
-                        lenf=len(szx)
+                    
                         
                         
                         
-                        if lenfa>14305:
-                            wqwe=""
-                            p=0
-                            aaqq=""
-                            d=1
-                            a=0
+                if lenfa>14305:
+                    wqwe=""
+                    p=0
+                    aaqq=""
+                    d=1
+                    a=0
                              
-                            while p<2:
+                    while p<2:
                                 
-                                aaqq=szx[a:d]
-                                
-                                if aaqq=="1":
-                                    a=a+1
-                                    d=d+1
-                                    aaqq=str(aaqq)
-                                    aaqw=aaqw+aaqq
-                                if aaqq=="0":
-                                    p=2
+                        aaqq=szx[a:d]
+                                    
+                        if aaqq=="1":
+                            a=a+1
+                            d=d+1
+                            aaqq=str(aaqq)
+                            aaqw=aaqw+aaqq
+                        if aaqq=="0":
+                            p=2
                             
-                            aaqwss=len(aaqw)
-                            aasqq=""
-                            ass=0
-                            asss=0
+                    aaqwss=len(aaqw)
+                    aasqq=""
+                    ass=0
+                    asss=0
                             
-                            ass=aaqwss
+                    ass=aaqwss
 
-                            asss=aaqwss-1
+                    asss=aaqwss-1
                                 
                                 
-                            aaad="0"
-                            aasqq=szx[0:asss]
-                            aasqq=str(aasqq)
-                            szx=szx[d:]
+                    aaad="0"
+                    aasqq=szx[0:asss]
+                    aasqq=str(aasqq)
+                    szx=szx[d:]
                             
-                            aaqws=aaqws+aasqq+"0"
+                           
                           
-                            aaqw=""
-                            xc=14320-lenfa
-                            z=0
-                            if xc!=14320:
-                                while z<xc:
-                                        szx="0"+szx
-                                        z=z+1
-                            wer=wer+szx
-                       
-                            szx=""    
-                            
-                            lenf=len(szx)
-                            wqwe=""
-                            wqwe=szx[0:5]
-                            if wqwe=="11111":
-                                raise SystemExit   
+                    aaqw=""
+                    zzaax=""
+                    xc=14320-lenfa
+                    z=0
+                    if xc!=14320:
+                        while z<xc:
+                            zzaax="0"+zzaax
+                            z=z+1
+                    wer=wer+szx
+                    aaqws=aaqws+zzaax+aasqq+"0"
+                    szx=""    
+                    zzaax=""
+                    lenf=len(szx)
+                    wqwe=""
+                    wqwe=szx[0:1]
+                    if wqwe=="1":
+                        raise SystemExit   
                         
-                        if lenfa<=14305:
-                                szx="0"+szx
-                                xc=14310-lenfa
-                                z=0
-                                if xc!=14310:
-                                    while z<xc:
-                                        szx="1"+szx
-                                        z=z+1
-                                wer=wer+szx
-                                lenf=len(szx)
-                                szx=""
-                                notexist=k[0]
-                                szx=bin(notexist)[2:]
-                                lenf=len(szx)
+                if lenfa<=14305:
+                    szx="0"+szx
+                    xc=14306-lenfa
+                    z=0
+                    if xc!=14306:
+                        while z<xc:
+                            szx="1"+szx
+                            z=z+1
+                    wer=wer+szx
+                    lenf=len(szx)
+                    szx=""
+                    notexist=k[0]
+                    szx=bin(notexist)[2:]
+                    lenf=len(szx)
                                 
-                                xc=8-lenf
-                                z=0
-                                while z<xc:
-                                    szx="0"+szx
-                                    z=z+1
-                                wer=wer+szx
-                                szx=""
+                    xc=8-lenf
+                    z=0
+                    while z<xc:
+                        szx="0"+szx
+                        z=z+1
+                    wer=wer+szx
+                    szx=""
                         
                 
                 
