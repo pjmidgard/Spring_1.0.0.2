@@ -346,8 +346,16 @@ with open(name, "rb") as binary_file:
         while z<xc:
             szxz="0"+szxz
             z=z+1
+        dd=len(szxz)
+        szxzz=""
+        xc=8-dd/8
+        szxzz=bin(dd)[2:]
+        z=0
+        while z<xc:
+            szxzz="0"+szxzz
+            z=z+1
         
-        wer="0b1"+wer+aaqws+"1"+szx+szxz
+        wer="0b1"+wer+aaqws+"1"+szx+szxz+szxzz
         szx=""
         szxz=""
         lenf=len(wer)
