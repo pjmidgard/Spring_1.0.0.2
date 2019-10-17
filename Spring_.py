@@ -435,7 +435,7 @@ with open(name, "rb") as binary_file:
             qqqwz=qqqwz+1
             
             
-            if lenf1<=sssssw or sssssw<=2000 or qqqwz==4 or cvb==1:
+            if lenf1<=sssssw or sssssw<=2000 or qqqwz==255 or cvb==1:
                 if cvb==1:
                     qqqwz=qqqwz-1    
                 szx=bin(qqqwz)[2:]
