@@ -369,7 +369,7 @@ with open(name, "rb") as binary_file:
             while z<xc:
                 szx="0"+szx
                 z=z+1
-        print(szxzz)
+        
         wer=wer+szx+szxzz+szxz+szxzz
         szx=""        
         n = int(wer, 2)
