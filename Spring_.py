@@ -52,7 +52,8 @@ with open(name, "rb") as binary_file:
     lenf1=len(data)
 
     while assx<10:
-        
+        if qqqwz>1:
+            lenf1=sssssw
         a=0
         ass=0
         asss=0
@@ -430,8 +431,7 @@ with open(name, "rb") as binary_file:
             sssssw=len(jl)
             qqqwz=qqqwz+1
             
-            if qqqwz>2:
-                lenf1=sssssw
+            
             if lenf1<=sssssw or sssssw<=2000:
                 
                 szx=bin(qqqwz)[2:]
