@@ -335,10 +335,10 @@ with open(name, "rb") as binary_file:
         z=0
         if xc!=8:
             while z<xc:
-                szxzz="0"+szxzz
+                aaqws="0"+aaqws
                 z=z+1
         
-        dd=len(szx)
+        dd=len(aaqws)
         
         
         xc=8-dd%8
