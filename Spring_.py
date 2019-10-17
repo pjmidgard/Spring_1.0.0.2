@@ -211,7 +211,7 @@ with open(name, "rb") as binary_file:
                             
                                
                             
-                    if lenfa>14310 and lenfg==0 and cvb=0 or lenfa<=14310 and lenfg>0 and cvb=0:
+                    if lenfa>14310 and lenfg==0 and cvb==0 or lenfa<=14310 and lenfg>0 and cvb==0:
                         cvb=0
                     else:
                         jl=data
