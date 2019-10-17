@@ -329,30 +329,37 @@ with open(name, "rb") as binary_file:
         
         
         dd=len(aaqws)
-       
+        
+        
+        szxzzz=""
+        szxzzz=bin(dd)[2:]
+        dd=len(szxzzz)
         xc=8-dd%8
-        szxzz=""
         z=0
         if xc!=8:
             while z<xc:
-                aaqws="0"+aaqws
+                szxzzz="0"+szxzzz
                 z=z+1
         
-        dd=len(aaqws)
+        dd=len(szxzzz)
         
         
-        xc=8-dd%8
+        
         szxz=bin(dd)[2:]
+        dd=len(szxz)
+        xc=8-dd%8
         z=0
         if xc!=8:
             while z<xc:
                 szxz="0"+szxz
                 z=z+1
-            
+                
         dd=len(szxz)
         szxzz=""
-        xc=8-dd%8
+        
         szxzz=bin(dd)[2:]
+        dd=len(szxzz)
+        xc=8-dd%8
         z=0
         if xc!=8:
             while z<xc:
@@ -369,8 +376,8 @@ with open(name, "rb") as binary_file:
             while z<xc:
                 szx="0"+szx
                 z=z+1
-        
-        wer=wer+szx+szxzz+szxz+szxzz
+       
+        wer=wer+szx+szxzzz+szxz+szxzz
         szx=""        
         n = int(wer, 2)
         jl=binascii.unhexlify('%x' % n)
