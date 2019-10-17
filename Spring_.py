@@ -216,7 +216,7 @@ with open(name, "rb") as binary_file:
                         cvb=0
                     else:
                         jl=data
-                        if cvb==0
+                        if cvb==0:
                             f2.write(jl)
                         cvb=1    
                             
