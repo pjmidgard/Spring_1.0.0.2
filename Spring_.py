@@ -211,9 +211,12 @@ with open(name, "rb") as binary_file:
                             
                                
                             
-                        
-                            
-                            
+                    if lenfa>14310 and lenfg==0 or lenfa<=14310 and lenfg>0:
+                        cvb=0
+                    else:
+                        jl=data
+                        f2.write(jl) 
+                        cvb=1    
                             
                     if lenfa>14305:
                         wqwe=""
@@ -432,8 +435,9 @@ with open(name, "rb") as binary_file:
             qqqwz=qqqwz+1
             
             
-            if lenf1<=sssssw or sssssw<=2000 or qqqwz==10:
-                
+            if lenf1<=sssssw or sssssw<=2000 or qqqwz==4 or cvb==1:
+                if cvb==1:
+                    qqqwz=qqqwz-1    
                 szx=bin(qqqwz)[2:]
                 lenf=len(szx)
                 xc=8-lenf%8
@@ -449,8 +453,10 @@ with open(name, "rb") as binary_file:
                 n = int(zsaqq, 2)
                 jlz=binascii.unhexlify('0%x' % n)
                 assx=10
-                if assx==10:
+                if assx==10 and cvb==0:
                     f2.write(jl)
+                    f2.write(jlz)
+                if assx==10 and cvb==1:
                     f2.write(jlz) 
             
             
