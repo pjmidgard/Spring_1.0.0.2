@@ -215,7 +215,7 @@ with open(name, "rb") as binary_file:
                             
                             
                             
-                    if lenfa>14305 or lenfg==0:
+                    if lenfa>14305:
                         wqwe=""
                         p=0
                         aaqq=""
@@ -269,7 +269,7 @@ with open(name, "rb") as binary_file:
                         if wqwe=="1":
                             raise SystemExit   
                             
-                    if lenfa<=14305 and lenfg>0:
+                    if lenfa<=14305:
                         szx="0"+szx
                         xc=14306-lenfa
                         z=0
@@ -280,7 +280,7 @@ with open(name, "rb") as binary_file:
                         wer=wer+szx
                         lenf=len(szx)
                         szx=""
-                        
+                        notexist=k[0]   
                         szx=bin(notexist)[2:]
                         lenf=len(szx)
                                     
@@ -432,7 +432,7 @@ with open(name, "rb") as binary_file:
             qqqwz=qqqwz+1
             
             
-            if lenf1<=sssssw or sssssw<=2000:
+            if lenf1<=sssssw or sssssw<=2000 or qqqwz==100:
                 
                 szx=bin(qqqwz)[2:]
                 lenf=len(szx)
