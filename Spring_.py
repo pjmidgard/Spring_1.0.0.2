@@ -438,7 +438,7 @@ with open(name, "rb") as binary_file:
                 lenf=len(szx)
                 xc=8-lenf%8
                 z=0
-                if xc!=32:
+                if xc!=8:
                     while z<xc:
                         szx="0"+szx
                         z=z+1
@@ -447,7 +447,7 @@ with open(name, "rb") as binary_file:
                 szx=""
             
                 n = int(zsaqq, 2)
-                jlz=binascii.unhexlify('%x' % n)
+                jlz=binascii.unhexlify('0%x' % n)
                 assx=10
                 if assx==10:
                     f2.write(jl)
