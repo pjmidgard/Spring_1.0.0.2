@@ -215,7 +215,7 @@ with open(name, "rb") as binary_file:
                             
                             
                             
-                    if lenfa>14305:
+                    if lenfa>14305 or lenfg==0:
                         wqwe=""
                         p=0
                         aaqq=""
@@ -269,7 +269,7 @@ with open(name, "rb") as binary_file:
                         if wqwe=="1":
                             raise SystemExit   
                             
-                    if lenfa<=14305:
+                    if lenfa<=14305 and lenfg>0:
                         szx="0"+szx
                         xc=14306-lenfa
                         z=0
