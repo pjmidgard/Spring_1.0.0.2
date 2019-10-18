@@ -130,21 +130,23 @@ with open(name, "rb") as binary_file:
                        
                    
                         
-                    qqq=0
-                    qwea=0
-                    qwaw=""
-                    enfg=1
-                    
                     b=-1
-                    kl=1790
-                    cb=0        
+                    bb=0
+                    kl=1789
+                    bnk=0
+                    cb=0
+                    
+                           
+                    bb=-1
                     er=-1
                     ghj=0
                     ghjd=1
                     bnk=1
-                    p=0
+                    p=-1
                     cvz=0
-                    for p in range(1790):
+                    qwa=qwa+1
+                    while p<1789:
+                        p=p+1
                         if lenfg>0:
                            if 255!=numbers[p]:
                                 byteb=numbers[p]
@@ -154,45 +156,48 @@ with open(name, "rb") as binary_file:
                         if lenfg==0:
                             byteb=numbers[p]
                             numberschangenotexist.append(byteb)
+                        
+                        #count 1789
+                     
+                      
+                        
+                        
+                            
                         ghj=numberschangenotexist[p]
                         qfl=qfl+1
                         ghjd=ghj
                         bnk=1
-                        bnkw=1
-                        bnkd=1        
+                        bnks=1
+                        bb=-1
+                        bnkd=1
+                           
+                                
                         kl=kl-1
-                            
-                            
-                            
-                              
-
-
-                    
+                        if qwa<=1:
+                            while bb<kl:
+                                if qwa<=1:
+                                    bb=bb+1
                                 
-                                
-                        bnk=pow(255,kl)
-                        bnkw=pow(256,kl)
-                                
-                                
-                        
                                     
-                            
-                            
-                        
-                        
-                        if lenfg>0:
-                            
-                            ghjd=0
-                        
-                            ghjd=ghj*bnk
-                        if lenfg==0:
-                            
-                            ghjd=0
-                        
-                            ghjd=ghj*bnkw
+                                if qwa<=1:
+                                    bnk=bnk*255
                                 
+                                   
+                                if qwa<=1:
+                                    bnks=bnks*256
+                          
+                            
+                                    
+                        if qwa<=1:
+                            numberschangenotexistq.append(bnk)
+                            numberschangenotexistqz.append(bnks)
+                        if lenfg>0:
+                            bnk=numberschangenotexistq[p]
+                            ghjd=ghjd*bnk
+                        if lenfg==0:
+                            bnks=numberschangenotexistqz[p]
+                            ghjd=ghjd*bnks
                         cvz=cvz+ghjd
-                   
                     szx=bin(cvz)[2:]
                     lenfa=len(szx)
                     
@@ -312,9 +317,9 @@ with open(name, "rb") as binary_file:
                 s=h%1790
             if s!=0:
                 
-                
-                p=0
-                if s!=1790:
+                s=s-1
+                p=-1
+                if s!=1789:
                     b=-1
                     bb=0
                     kl=s
@@ -327,40 +332,32 @@ with open(name, "rb") as binary_file:
                     ghj=0
                     ghjd=1
                     bnk=1
-                    p=0
-                    for p in range(s):
-                            
-                            numberschangenotexist.append(byteb)
-                                
-                            ghj=numberschangenotexist[p]
-                            qfl=qfl+1
-                            ghjd=ghj
-                            bnk=1
-                            bnkw=1
-                            bnkd=1        
-                            kl=kl-1
-                            
-                            
-                            
-                              
-                            
-                                
-                                
-                                
-                            bnkw=pow(256,kl)
-                                
-                                
+                    while p<s:
+                        p=p+1
+                        byteb=numbers[p]
+                        numberschangenotexist.append(byteb)
                         
-                                    
+                                #count 1789
+                      
+                       
                             
-                                
-                            ghjd=0
+                                      
+                                        
+                                            
                         
-                            
-                            
-                            ghjd=ghj*bnkw
-                                
-                            cvz=cvz+ghjd
+                        
+                        
+                                        
+                        ghj=numberschangenotexist[b]         
+                        ghjd=ghj
+                        bnk=1
+                        bb=-1
+                        kl=kl-1
+                        while bb<kl:
+                            bb=bb+1
+                            bnk=bnk*256
+                        ghjd=ghjd*bnk
+                        cvz=cvz+ghjd
                     szx=bin(cvz)[2:]
                     lenf=len(szx)
                     
