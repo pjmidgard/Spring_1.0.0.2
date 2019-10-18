@@ -285,17 +285,18 @@ with open(name, "rb") as binary_file:
                         wer=wer+szx
                         lenf=len(szx)
                         szx=""
-                        notexist=k[0]   
-                        szx=bin(notexist)[2:]
-                        lenf=len(szx)
-                                    
-                        xc=8-lenf
-                        z=0
-                        while z<xc:
-                            szx="0"+szx
-                            z=z+1
-                        wer=wer+szx
-                        szx=""
+                        if lenfg>0
+                            notexist=k[0]         
+                            szx=bin(notexist)[2:]
+                            lenf=len(szx)
+                                        
+                            xc=8-lenf
+                            z=0
+                            while z<xc:
+                                szx="0"+szx
+                                z=z+1
+                            wer=wer+szx
+                            szx=""
                             
                     
                     
