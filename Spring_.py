@@ -193,10 +193,13 @@ with open(name, "rb") as binary_file:
                             numberschangenotexistqz.append(bnks)
                         if lenfg>0:
                             bnk=numberschangenotexistq[p]
-                            ghjd=ghjd*bnk
+                            ghjd=0
+                            ghjd=ghj*bnk
+                            
                         if lenfg==0:
                             bnks=numberschangenotexistqz[p]
-                            ghjd=ghjd*bnks
+                            ghjd=0
+                            ghjd=ghj*bnks
                         cvz=cvz+ghjd
                     szx=bin(cvz)[2:]
                     lenfa=len(szx)
@@ -356,7 +359,8 @@ with open(name, "rb") as binary_file:
                         while bb<kl:
                             bb=bb+1
                             bnk=bnk*256
-                        ghjd=ghjd*bnk
+                        ghjd=0
+                        ghjd=ghj*bnk
                         cvz=cvz+ghjd
                     szx=bin(cvz)[2:]
                     lenf=len(szx)
