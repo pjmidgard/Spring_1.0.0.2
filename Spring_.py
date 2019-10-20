@@ -386,7 +386,7 @@ with open(name, "rb") as binary_file:
             dd=len(szxzzz)
             xc=8-dd%8
             z=0
-            if xc!=8:
+            if xc!=0:
                 while z<xc:
                     szxzzz="0"+szxzzz
                     z=z+1
