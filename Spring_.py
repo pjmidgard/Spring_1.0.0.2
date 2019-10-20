@@ -272,10 +272,11 @@ with open(name, "rb") as binary_file:
                             raise SystemExit   
                             
                     if lenfg==0:
+                        szx=szx[1:]
                         szx="0"+szx
-                        xc=14310-lenfa
+                        xc=14311-lenfa
                         z=0
-                        if xc!=14310:
+                        if xc!=14311:
                             while z<xc:
                                 szx="1"+szx
                                 z=z+1
