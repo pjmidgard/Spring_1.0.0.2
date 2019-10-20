@@ -452,7 +452,10 @@ with open(name, "rb") as binary_file:
                 szx=""
             
                 n = int(zsaqq, 2)
-                jlz=binascii.unhexlify('0%x' % n)
+                if qqqwz<=127:
+                    jlz=binascii.unhexlify('0%x' % n)
+                if qqqwz>127:
+                    jlz=binascii.unhexlify('%x' % n)
                 assx=10
                 if assx==10:
                     f2.write(jl)
