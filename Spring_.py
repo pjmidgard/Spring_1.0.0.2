@@ -399,7 +399,7 @@ with open(name, "rb") as binary_file:
             dd=len(szxz)
             xc=8-dd%8
             z=0
-            if xc!=8:
+            if xc!=0:
                 while z<xc:
                     szxz="0"+szxz
                     z=z+1
@@ -411,7 +411,7 @@ with open(name, "rb") as binary_file:
             dd=len(szxzz)
             xc=8-dd%8
             z=0
-            if xc!=8:
+            if xc!=0:
                 while z<xc:
                     szxzz="0"+szxzz
                     z=z+1
@@ -422,7 +422,7 @@ with open(name, "rb") as binary_file:
             lenf=len(wer)
             xc=8-lenf%8
             z=0
-            if xc!=8:
+            if xc!=0:
                 while z<xc:
                     szx="0"+szx
                     z=z+1
@@ -443,7 +443,7 @@ with open(name, "rb") as binary_file:
                 lenf=len(szx)
                 xc=8-lenf%8
                 z=0
-                if xc!=8:
+                if xc!=0:
                     while z<xc:
                         szx="0"+szx
                         z=z+1
