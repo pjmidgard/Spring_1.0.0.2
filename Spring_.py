@@ -217,7 +217,7 @@ with open(name, "rb") as binary_file:
                             
                      
                             
-                    if lenfg>0:
+                    if lenfg==0:
                         wqwe=""
                         p=0
                         aaqq=""
@@ -271,7 +271,7 @@ with open(name, "rb") as binary_file:
                         if wqwe=="1":
                             raise SystemExit   
                             
-                    if lenfg==0:
+                    if lenfg>0:
                         szx=szx[1:]
                         szx="0"+szx
                         xc=14311-lenfa
