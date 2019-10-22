@@ -218,6 +218,7 @@ with open(name, "rb") as binary_file:
                      
                             
                     if lenfg==0:
+                        szx=szx[1:]
                         wqwe=""
                         p=0
                         aaqq=""
@@ -263,11 +264,11 @@ with open(name, "rb") as binary_file:
                             while z<xc:
                                 szzs=szzs+1
                                 if szzs==1:
-                                    zzaax="1"+zzaax
+                                    zzaax="0"+zzaax
                                 if szzs!=1:
                                     zzaax="0"+zzaax 
                                 z=z+1
-                        szx="0"+zzaax+szx
+                        szx="1"+zzaax+"1"+szx
                         wer=wer+szx
                         fffgj=""
                         fffgj=""
@@ -285,18 +286,18 @@ with open(name, "rb") as binary_file:
                         lenf=len(szx)
                         wqwe=""
                         wqwe=szx[0:1]
-                        if wqwe=="1":
+                        if wqwe=="0":
                             raise SystemExit
                         szx=""  
                             
                     if lenfg>0:
                         szx=szx[1:]
-                        szx="0"+szx
+                        szx="1"+szx
                         xc=14311-lenfa
                         z=0
                         if xc!=14311:
                             while z<xc:
-                                szx="1"+szx
+                                szx="0"+szx
                                 z=z+1
                         wer=wer+szx
                         lenf=len(szx)
