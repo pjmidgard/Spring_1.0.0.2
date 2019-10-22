@@ -245,7 +245,7 @@ with open(name, "rb") as binary_file:
 
                         asss=aaqwss-1
                                     
-                        d=d-1            
+                        d=d-1          
                         aaad="0"
                         aasqq=szx[0:asss]
                         
@@ -253,20 +253,26 @@ with open(name, "rb") as binary_file:
                         szx=szx[d:]
                           
                                
-                              
+                        szzs=0
                         aaqw=""
                         zzaax=""
+                        
                         xc=14320-lenfa
                         z=0
                         if xc!=14320:
                             while z<xc:
-                                zzaax="0"+zzaax
+                                szzs=szzs+1
+                                if szzs==1:
+                                    zzaax="1"+zzaax
+                                if szzs!=1:
+                                    zzaax="0"+zzaax 
                                 z=z+1
+                        szx=szx+zzaax
                         wer=wer+szx
                         fffgj=""
                         fffgj=""
-                        fffgj=zzaax+aasqq+"0"
-                        fffgjv=zzaax+aasqq+"1"
+                        fffgj=aasqq+"0"
+                        fffgjv=aasqq+"1"
                         vvvb=len(fffgj)
                         if vvvb==1:   
                             aaqws=aaqws+fffgj
