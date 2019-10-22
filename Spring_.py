@@ -264,11 +264,11 @@ with open(name, "rb") as binary_file:
                             while z<xc:
                                 szzs=szzs+1
                                 if szzs==1:
-                                    zzaax="0"+zzaax
+                                    zzaax="1"+zzaax
                                 if szzs!=1:
-                                    zzaax="0"+zzaax 
+                                    zzaax="1"+zzaax 
                                 z=z+1
-                        szx="1"+zzaax+"1"+szx
+                        szx="1"+zzaax+szx
                         wer=wer+szx
                         fffgj=""
                         fffgj=""
