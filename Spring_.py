@@ -222,8 +222,8 @@ with open(name, "rb") as binary_file:
                         wqwe=""
                         p=0
                         aaqq=""
-                        d=1
-                        a=0
+                        d=0
+                        a=1
                                  
                         while p<2:
                                     
@@ -262,11 +262,7 @@ with open(name, "rb") as binary_file:
                         z=0
                         if xc!=14320:
                             while z<xc:
-                                szzs=szzs+1
-                                if szzs==1:
-                                    zzaax="1"+zzaax
-                                if szzs!=1:
-                                    zzaax="1"+zzaax 
+                                zzaax="1"+zzaax 
                                 z=z+1
                         szx="1"+zzaax+szx
                         wer=wer+szx
@@ -275,7 +271,9 @@ with open(name, "rb") as binary_file:
                         fffgj=aasqq+"0"
                         fffgjv=aasqq+"1"
                         vvvb=len(fffgj)
-                        if vvvb==1:   
+                        if vvvb==0:
+                            wwq=0
+                        elif vvvb==1:   
                             aaqws=aaqws+fffgj
                         else:
                             aaqws=aaqws+fffgjv
