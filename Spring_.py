@@ -267,7 +267,7 @@ with open(name, "rb") as binary_file:
                                 if szzs!=1:
                                     zzaax="0"+zzaax 
                                 z=z+1
-                        szx=+"0"+zzaax+szx
+                        szx="0"+zzaax+szx
                         wer=wer+szx
                         fffgj=""
                         fffgj=""
