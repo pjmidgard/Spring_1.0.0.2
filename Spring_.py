@@ -270,6 +270,7 @@ with open(name, "rb") as binary_file:
                         wer=wer+szxza
                         fffgj=""
                         fffgj=""
+                        vvvb=len(asqq)
                         if vvvb==0:
                              wwq=0
                         else:
