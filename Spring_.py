@@ -248,6 +248,7 @@ with open(name, "rb") as binary_file:
                         d=d-1            
                         aaad="0"
                         aasqq=szx[0:asss]
+                        
                         aasqq=str(aasqq)
                         szx=szx[d:]
                           
@@ -448,28 +449,27 @@ with open(name, "rb") as binary_file:
             qqqwz=qqqwz+1
             
             
-            if lenf1<=sssssw or sssssw<=2000 or qqqwz==255:
+            if lenf1<=sssssw or sssssw<=2000 or qqqwz==2**30:
                 
                 szx=bin(qqqwz)[2:]
                 lenf=len(szx)
-                xc=8-lenf%8
+                xc=32-lenf%32
                 z=0
                 if xc!=0:
                     while z<xc:
                         szx="0"+szx
                         z=z+1
-                zsaqq="0b"+zsaqq+szx
+                zsaqq=zsaqq+szx
                 
                 szx=""
+                wer=wer+zsaqq
             
-                n = int(zsaqq, 2)
-                if qqqwz>15:
-                    jlz=binascii.unhexlify('%x' % n)
-                if qqqwz<=15:
-                    jlz=binascii.unhexlify('0%x' % n)
+                n = int(wer, 2)
+                
+                jlz=binascii.unhexlify('%x' % n)
+                
                 assx=10
                 if assx==10:
-                    f2.write(jl)
                     f2.write(jlz)
                
             
