@@ -245,7 +245,7 @@ with open(name, "rb") as binary_file:
 
                         asss=aaqwss-1
                                     
-                        d=d-1          
+                                 
                         aaad="0"
                         aasqq=szx[0:asss]
                         
@@ -267,7 +267,7 @@ with open(name, "rb") as binary_file:
                                 if szzs!=1:
                                     zzaax="0"+zzaax 
                                 z=z+1
-                        szx=szx+zzaax
+                        szx=+"0"+zzaax+szx
                         wer=wer+szx
                         fffgj=""
                         fffgj=""
