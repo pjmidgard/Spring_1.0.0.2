@@ -245,12 +245,12 @@ with open(name, "rb") as binary_file:
 
                         asss=aaqwss-1
                                     
-                                    
+                        d=d-1            
                         aaad="0"
                         aasqq=szx[0:asss]
                         aasqq=str(aasqq)
                         szx=szx[d:]
-                                
+                          
                                
                               
                         aaqw=""
@@ -273,13 +273,14 @@ with open(name, "rb") as binary_file:
                             aaqws=aaqws+fffgjv
                         fffgj=""
                         fffgj=""
-                        szx=""    
+                          
                         zzaax=""
                         lenf=len(szx)
                         wqwe=""
                         wqwe=szx[0:1]
                         if wqwe=="1":
-                            raise SystemExit   
+                            raise SystemExit
+                        szx=""  
                             
                     if lenfg>0:
                         szx=szx[1:]
