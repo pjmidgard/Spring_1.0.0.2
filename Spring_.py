@@ -222,13 +222,13 @@ with open(name, "rb") as binary_file:
                         wqwe=""
                         p=0
                         aaqq=""
-                        d=0
-                        a=1
+                        d=1
+                        a=0
                                  
                         while p<2:
                                     
                             aaqq=szx[a:d]
-                                        
+                            print(aaqq)       
                             if aaqq=="1":
                                 a=a+1
                                 d=d+1
