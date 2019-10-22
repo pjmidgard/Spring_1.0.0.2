@@ -218,7 +218,6 @@ with open(name, "rb") as binary_file:
                      
                             
                     if lenfg==0:
-                        szx=szx[1:]
                         wqwe=""
                         p=0
                         aaqq=""
