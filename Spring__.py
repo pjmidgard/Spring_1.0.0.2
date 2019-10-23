@@ -237,6 +237,7 @@ with open(name, "rb") as binary_file:
                             if aaqq=="0":
                                 p=p+1
                                 if p==1:
+                                    aaqq=szx[a:d]
                                     a=a+1
                                     d=d+1
                                     aaqq=str(aaqq)
