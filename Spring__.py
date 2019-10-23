@@ -242,7 +242,7 @@ with open(name, "rb") as binary_file:
                                     d=d+1
                                     aaqq=szx[a:d]
                                     aaqq=str(aaqq)
-                                    aaqw=aaqq+aaqw    
+                                    aaqw=aaqw+aaqq    
                                 
                         aaqwss=len(aaqw)
                         aasqq=""
@@ -284,7 +284,7 @@ with open(name, "rb") as binary_file:
                         if vvvb>=1:
                             fffgj=aasqq+"0"
                             fffgjv=aasqq+"0"
-                        print(fffgjv)
+                        
                         if vvvb==0:
                             wwq=0
                         elif vvvb==1:   
