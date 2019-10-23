@@ -275,22 +275,23 @@ with open(name, "rb") as binary_file:
                         aaqwssa=len(szxza)
                         
                         wer=wer+szxza
-                        fffgj=""
+                        
                         fffgjv=""
                         vvvb=len(aasqq)
                         
+                         
                         if vvvb==0:
-                            vvs=0
-                        else:    
-                            fffgj="0"+aasqq
+                            sss=0
+                        else:
                             fffgjv="0"+aasqq
                            
                       
-                        if vvvb==0:   
-                            vvs=0
+                        
+                        if vvvb==0:
+                            sss=0
                         else:
                             aaqws=aaqws+fffgjv
-                        fffgj=""
+                        
                         fffgjv=""
                           
                         zzaax=""
@@ -299,17 +300,17 @@ with open(name, "rb") as binary_file:
                         wqwe=szxza[0:1]
                         if wqwe=="0":
                             raise SystemExit
-                        
+                       
                         szx=""  
                             
                     if lenfg>0:
                         szx=szx[1:]
-                        szx="1"+szx
+                        szx="0"+szx
                         xc=14311-lenfa
                         z=0
                         if xc!=14311:
                             while z<xc:
-                                szx="0"+szx
+                                szx="1"+szx
                                 z=z+1
                         wer=wer+szx
                         lenf=len(szx)
@@ -325,8 +326,10 @@ with open(name, "rb") as binary_file:
                                 szx="0"+szx
                                 z=z+1
                             wer=wer+szx
+                            
                             szx=""
-                    
+                        
+                        
                     
                     
                     a=0
