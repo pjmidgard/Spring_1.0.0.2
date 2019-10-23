@@ -284,7 +284,7 @@ with open(name, "rb") as binary_file:
                         else:    
                             fffgj="0"+aasqq
                             fffgjv="0"+aasqq
-                        print(fffgjv)    
+                           
                       
                         if vvvb==0:   
                             vvs=0
