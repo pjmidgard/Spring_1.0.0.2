@@ -254,10 +254,10 @@ with open(name, "rb") as binary_file:
 
                         asss=aaqwss-1
                                     
-                        d=d-1         
+                        d=d-1       
                         aaad="0"
                         if aaqwss>=1:
-                            aasqq=szx[0:asss]
+                            aasqq=szx[0:aaqwss]
                         
                         aasqq=str(aasqq)
                         szx=szx[d:]
