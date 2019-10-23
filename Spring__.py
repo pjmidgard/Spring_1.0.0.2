@@ -237,11 +237,6 @@ with open(name, "rb") as binary_file:
                             if aaqq=="0":
                                 p=p+1
                                 if p==1:
-                                    
-                                    a=a+1
-                                    d=d+1
-                                    aaqq=szx[a:d]
-                                    aaqq=str(aaqq)
                                     aaqw=aaqw+aaqq    
                                 
                         aaqwss=len(aaqw)
@@ -253,7 +248,7 @@ with open(name, "rb") as binary_file:
 
                         asss=aaqwss-1
                                     
-                        d=d-1         
+                                
                         aaad="0"
                         if aaqwss>=1:
                             aasqq=szx[0:asss]
@@ -282,8 +277,8 @@ with open(name, "rb") as binary_file:
                         if vvvb==0:
                              wwq=0
                         if vvvb>=1:
-                            fffgj=aasqq+"0"
-                            fffgjv=aasqq+"0"
+                            fffgj="0"+aasqq
+                            fffgjv="0"+aasqq
                         
                         if vvvb==0:
                             wwq=0
@@ -296,6 +291,7 @@ with open(name, "rb") as binary_file:
                           
                         zzaax=""
                         lenf=len(szx)
+                        
                         wqwe=""
                         wqwe=szxza[0:1]
                         if wqwe=="0":
