@@ -235,7 +235,12 @@ with open(name, "rb") as binary_file:
                                 aaqq=str(aaqq)
                                 aaqw=aaqw+aaqq
                             if aaqq=="0":
-                                p=2
+                                p=p+1
+                                if p==1:
+                                    a=a+1
+                                    d=d+1
+                                    aaqq=str(aaqq)
+                                    aaqw=aaqw+aaqq    
                                 
                         aaqwss=len(aaqw)
                         aasqq=""
