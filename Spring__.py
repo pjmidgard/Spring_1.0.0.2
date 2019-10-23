@@ -1,3 +1,4 @@
+import os
 import binascii
 a=0
 cvb=0
@@ -218,6 +219,7 @@ with open(name, "rb") as binary_file:
                      
                            
                     if lenfg==0:
+                        
                         szx=szx[1:]
                         wqwe=""
                         p=0
@@ -278,15 +280,13 @@ with open(name, "rb") as binary_file:
                         fffgj=""
                         fffgjv=""
                         vvvb=len(aasqq)
-                        if vvvb==0:
-                             wwq=0
-                        if vvvb>=1:
-                            fffgj="0"+aasqq
-                            fffgjv="0"+aasqq
                         
-                        if vvvb==0:
-                            wwq=0
-                        elif vvvb==1:   
+                        
+                        fffgj="0"+aasqq
+                        fffgjv="0"+aasqq
+                        
+                      
+                        if vvvb==0:   
                             aaqws=aaqws+fffgj
                         else:
                             aaqws=aaqws+fffgjv
@@ -299,6 +299,7 @@ with open(name, "rb") as binary_file:
                         wqwe=szxza[0:1]
                         if wqwe=="0":
                             raise SystemExit
+                        
                         szx=""  
                             
                     if lenfg>0:
@@ -326,7 +327,7 @@ with open(name, "rb") as binary_file:
                             wer=wer+szx
                             szx=""
                         
-                    
+                    os.system("pause")
                     
                     a=0
                     numberschangenotexist = []    
