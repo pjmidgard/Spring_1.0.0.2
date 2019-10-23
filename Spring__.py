@@ -1,4 +1,4 @@
-import os
+
 import binascii
 a=0
 cvb=0
@@ -327,7 +327,7 @@ with open(name, "rb") as binary_file:
                             wer=wer+szx
                             szx=""
                         
-                    os.system("pause")
+                    
                     
                     a=0
                     numberschangenotexist = []    
