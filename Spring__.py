@@ -248,7 +248,7 @@ with open(name, "rb") as binary_file:
 
                         asss=aaqwss-1
                                     
-                                
+                        d=d-1         
                         aaad="0"
                         if aaqwss>=1:
                             aasqq=szx[0:asss]
@@ -291,7 +291,7 @@ with open(name, "rb") as binary_file:
                           
                         zzaax=""
                         lenf=len(szx)
-                        
+                        print(szx)
                         wqwe=""
                         wqwe=szxza[0:1]
                         if wqwe=="0":
