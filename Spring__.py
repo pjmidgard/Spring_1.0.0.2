@@ -291,7 +291,7 @@ with open(name, "rb") as binary_file:
                           
                         zzaax=""
                         lenf=len(szx)
-                        print(szx)
+                        
                         wqwe=""
                         wqwe=szxza[0:1]
                         if wqwe=="0":
