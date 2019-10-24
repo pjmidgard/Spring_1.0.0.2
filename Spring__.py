@@ -293,17 +293,15 @@ with open(name, "rb") as binary_file:
                         vvvb=len(aasqq)
                         
                          
-                        if vvvb==0:
-                            sss=0
-                        else:
-                            fffgjv="0"+aasqq
+                       
+                        
+                        fffgjv="0"+aasqq
                            
                       
                         
-                        if vvvb==0:
-                            sss=0
-                        else:
-                            aaqws=aaqws+fffgjv
+                        
+                        
+                        aaqws=aaqws+fffgjv
                         
                         fffgjv=""
                           
