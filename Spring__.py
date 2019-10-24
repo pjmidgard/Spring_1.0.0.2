@@ -322,9 +322,9 @@ with open(name, "rb") as binary_file:
                     if lenfa<=14318:
                         szx=szx[1:]
                         szx="1"+szx
-                        xc=14318-lenfa
+                        xc=14319-lenfa
                         z=0
-                        if xc!=14318:
+                        if xc!=14319:
                             while z<xc:
                                 szx="0"+szx
                                 z=z+1
