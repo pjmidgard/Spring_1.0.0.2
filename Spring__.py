@@ -43,8 +43,14 @@ name = input("What is name of file? ")
 namea="file.Spring"
 namem=name+"/"
 namema="?"
+namema="<"
 s=""
 if name=="file.Angel":
+    with open(namea, "w") as f4:
+            f4.write(s)
+    with open(namea, "a") as f3:
+            f3.write(namema)
+elif name=="filea.Spring":
     with open(namea, "w") as f4:
             f4.write(s)
     with open(namea, "a") as f3:
