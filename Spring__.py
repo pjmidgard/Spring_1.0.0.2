@@ -133,7 +133,7 @@ with open(name, "rb") as binary_file:
                     
                     #lenf count
                     lenfg=len(k)
-                   
+                    lenfg=0
                     
 
                     if lenfg>0:
@@ -231,7 +231,7 @@ with open(name, "rb") as binary_file:
                             
                      
                            
-                    if lenfg==0:
+                    if lenfa>=14319:
                         
                         szx=szx[1:]
                         wqwe=""
@@ -319,31 +319,19 @@ with open(name, "rb") as binary_file:
                        
                         szx=""  
                             
-                    if lenfg>0:
+                    if lenfa<=14318:
                         szx=szx[1:]
                         szx="1"+szx
-                        xc=14311-lenfa
+                        xc=14318-lenfa
                         z=0
-                        if xc!=14311:
+                        if xc!=14318:
                             while z<xc:
                                 szx="0"+szx
                                 z=z+1
                         wer=wer+szx
                         lenf=len(szx)
                         szx=""
-                        if lenfg>0:
-                            notexist=k[0]         
-                            szx=bin(notexist)[2:]
-                            lenf=len(szx)
-                                        
-                            xc=8-lenf
-                            z=0
-                            while z<xc:
-                                szx="0"+szx
-                                z=z+1
-                            wer=wer+szx
-                            
-                            szx=""
+                      
                         
                         
                     
