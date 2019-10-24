@@ -453,7 +453,7 @@ with open(name, "rb") as binary_file:
             szxzz=""
             
             
-            
+            wer="1"+wer+aaqws+"1"
             lenf=len(wer)
             xc=8-lenf%8
             z=0
