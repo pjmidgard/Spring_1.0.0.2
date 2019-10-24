@@ -42,11 +42,18 @@ numbers = []
 name = input("What is name of file? ")
 namea="file.Spring"
 namem=name+"/"
+namema="?"
 s=""
-with open(namea, "w") as f4:
-        f4.write(s)
-with open(namea, "a") as f3:
-        f3.write(namem)
+if namea=="file.Angel":
+    with open(namea, "w") as f4:
+            f4.write(s)
+    with open(namea, "a") as f3:
+            f3.write(namema)
+else:    
+    with open(namea, "w") as f4:
+            f4.write(s)
+    with open(namea, "a") as f3:
+            f3.write(namem)
 with open(name, "rb") as binary_file:
     # Read the whole file at once
     data = binary_file.read()
@@ -471,11 +478,11 @@ with open(name, "rb") as binary_file:
             qqqwz=qqqwz+1
             
             
-            if lenf1<=sssssw or sssssw<=2000 or qqqwz==2**30:
+            if lenf1<=sssssw or sssssw<=2000 or qqqwz==255:
                 
                 szx=bin(qqqwz)[2:]
                 lenf=len(szx)
-                xc=32-lenf%32
+                xc=8-lenf%8
                 z=0
                 if xc!=0:
                     while z<xc:
