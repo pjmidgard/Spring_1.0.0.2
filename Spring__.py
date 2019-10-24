@@ -44,7 +44,7 @@ namea="file.Spring"
 namem=name+"/"
 namema="?"
 s=""
-if namea=="file.Angel":
+if name=="file.Angel":
     with open(namea, "w") as f4:
             f4.write(s)
     with open(namea, "a") as f3:
