@@ -454,17 +454,7 @@ with open(name, "rb") as binary_file:
             dd=len(szxz)
             szxzz=""
             
-            szxzz=bin(dd)[2:]
-            dd=len(szxzz)
-            xc=8-dd%8
-            z=0
-            if xc!=0:
-                while z<xc:
-                    szxzz="0"+szxzz
-                    z=z+1
             
-            wer="0b1"+wer+aaqws+"1"
-            szx=""
             
             lenf=len(wer)
             xc=8-lenf%8
@@ -474,7 +464,7 @@ with open(name, "rb") as binary_file:
                     szx="0"+szx
                     z=z+1
            
-            wer=wer+szx+szxzzz+szxz+szxzz
+            wer=wer+szx+szxzzz+szxz
             szx=""
             
             n = int(wer, 2)
