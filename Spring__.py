@@ -300,7 +300,7 @@ with open(name, "rb") as binary_file:
                          
                        
                         
-                        fffgjv=fffgjv+aasqq
+                        fffgjv=aasqq
                            
                       
                         
