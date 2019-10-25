@@ -313,13 +313,13 @@ with open(name, "rb") as binary_file:
                         
                         fffgjv=""
                           
-                        zzaax=""
+                        
                         lenf=len(szx)
                         wqwe=""
                         wqwe=szxza[0:1]
                         if wqwe=="0":
                             raise SystemExit
-                       
+                        zzaax=""
                         szx=""  
                             
                     if lenfa<=14318:
