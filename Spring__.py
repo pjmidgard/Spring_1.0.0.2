@@ -249,7 +249,7 @@ with open(name, "rb") as binary_file:
                                 if da==1:
                                     a=a+1
                                     d=d+1
-                                   
+                                    aaqq=str(aaqq)
                                     aaqw=aaqw+"1"
                                 else:
                                     a=a+1
