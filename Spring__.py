@@ -325,8 +325,8 @@ with open(name, "rb") as binary_file:
                         
                         lenf=len(szx)
                         wqwe=""
-                        wqwe=szxza[0:1]
-                        if wqwe=="0":
+                        wqwe=szxza[0:2]
+                        if wqwe=="00":
                             raise SystemExit
                         zzaax=""
                         szx=""  
