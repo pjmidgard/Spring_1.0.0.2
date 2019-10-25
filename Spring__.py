@@ -239,7 +239,9 @@ with open(name, "rb") as binary_file:
                         aaqq=""
                         d=1
                         a=0
-                        da=0        
+                        da=0
+                        aaqw=""
+                        aaqw=aaqw+"0"
                         while p<1:
                                     
                             aaqq=szx[a:d]
@@ -276,7 +278,7 @@ with open(name, "rb") as binary_file:
                         d=d-1       
                         aaad="0"
                         
-                        aasqq=+"0"+aaqw
+                        aasqq=aaqw
                         
                         aasqq=str(aasqq)
                         szx=szx[d:]
@@ -318,8 +320,8 @@ with open(name, "rb") as binary_file:
                         
                         lenf=len(szx)
                         wqwe=""
-                        wqwe=szxza[0:2]
-                        if wqwe=="00":
+                        wqwe=szxza[0:1]
+                        if wqwe=="1":
                             raise SystemExit
                         zzaax=""
                         szx=""  
