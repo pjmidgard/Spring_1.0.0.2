@@ -231,7 +231,7 @@ with open(name, "rb") as binary_file:
                             
                      
                            
-                    if lenfa>=14319:
+                    if lenfa>=14318:
                         saqaq=""
                         saqaq=szx[1:2]
                         szx=szx[2:]
@@ -332,12 +332,12 @@ with open(name, "rb") as binary_file:
                         zzaax=""
                         szx=""  
                             
-                    if lenfa<=14318:
+                    if lenfa<=14317:
                         szx=szx[1:]
                         szx="0"+szx
-                        xc=14319-lenfa
+                        xc=14318-lenfa
                         z=0
-                        if xc!=14319:
+                        if xc!=14318:
                             while z<xc:
                                 szx="1"+szx
                                 z=z+1
