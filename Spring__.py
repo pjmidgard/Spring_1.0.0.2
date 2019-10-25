@@ -286,7 +286,7 @@ with open(name, "rb") as binary_file:
                         aaqw=""
                         zzaax=""
                         szxza=""
-                        if lenfa==14320:
+                        if aaqwss==0:
                             xc=14320-lenfa
                             z=0
                             if xc!=14320:
@@ -477,7 +477,7 @@ with open(name, "rb") as binary_file:
             qqqwz=qqqwz+1
             
             
-            if lenf1<sssssw or sssssw<=2000 or qqqwz==255:
+            if lenf1<=sssssw or sssssw<=2000 or qqqwz==255:
                 
                 szx=bin(qqqwz)[2:]
                 lenf=len(szx)
