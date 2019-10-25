@@ -297,7 +297,7 @@ with open(name, "rb") as binary_file:
                                 while z<xc:
                                     da=da+1
                                     if da==1:
-                                        aqq=0
+                                        zzaax="1"+zzaax 
                                     else:
                                         zzaax="1"+zzaax 
                                     z=z+1
