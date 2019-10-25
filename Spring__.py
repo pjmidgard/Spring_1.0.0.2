@@ -232,8 +232,8 @@ with open(name, "rb") as binary_file:
                      
                            
                     if lenfa>=14319:
-                        
-                        
+                        saqaq=""
+                        saqaq=szx[1:2]
                         szx=szx[2:]
                         wqwe=""
                         p=0
@@ -313,7 +313,7 @@ with open(name, "rb") as binary_file:
                          
                        
                         
-                        fffgjv="0"+szxza+aasqq
+                        fffgjv=saqaq+"0"+szxza+aasqq
                         
                       
                         
