@@ -233,7 +233,8 @@ with open(name, "rb") as binary_file:
                            
                     if lenfa>=14319:
                         
-                        szx=szx[1:]
+                        
+                        szx=szx[2:]
                         wqwe=""
                         p=0
                         aaqq=""
