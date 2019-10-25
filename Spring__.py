@@ -477,7 +477,7 @@ with open(name, "rb") as binary_file:
             qqqwz=qqqwz+1
             
             
-            if lenf1<=sssssw or sssssw<=2000 or qqqwz==255:
+            if lenf1<sssssw sssssw<=2000 or qqqwz==255:
                 
                 szx=bin(qqqwz)[2:]
                 lenf=len(szx)
