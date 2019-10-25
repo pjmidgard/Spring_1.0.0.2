@@ -239,23 +239,26 @@ with open(name, "rb") as binary_file:
                         aaqq=""
                         d=1
                         a=0
-                                 
+                        da=0        
                         while p<1:
                                     
                             aaqq=szx[a:d]
                                         
                             if aaqq=="1":
-                                a=a+1
-                                d=d+1
-                                aaqq=str(aaqq)
-                                aaqw=aaqw+aaqq
-                            if aaqq=="0":
-                                p=p+1
-                                if p==1:
+                                da=da+1
+                                if da==1:
+                                    a=a+1
+                                    d=d+1
+                                    aaqq=str(aaqq)
+                                    aaqw=aaqw+"0"
+                                else:
                                     a=a+1
                                     d=d+1
                                     aaqq=str(aaqq)
                                     aaqw=aaqw+aaqq
+                            if aaqq=="0":
+                                p=p+1
+                                
                                 
                                     
                                     
