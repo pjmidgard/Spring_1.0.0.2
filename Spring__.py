@@ -240,7 +240,7 @@ with open(name, "rb") as binary_file:
                         d=1
                         a=0
                                  
-                        while p<2:
+                        while p<1:
                                     
                             aaqq=szx[a:d]
                                         
