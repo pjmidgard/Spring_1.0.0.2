@@ -231,7 +231,7 @@ with open(name, "rb") as binary_file:
                             
                      
                            
-                    if lenfa>=14318:
+                    if lenfa>=14319:
                         
                         szx=szx[1:]
                         wqwe=""
@@ -250,7 +250,7 @@ with open(name, "rb") as binary_file:
                                     a=a+1
                                     d=d+1
                                    
-                                    aaqw=aaqw+"0"
+                                    aaqw=aaqw+"1"
                                 else:
                                     a=a+1
                                     d=d+1
@@ -276,7 +276,7 @@ with open(name, "rb") as binary_file:
                         d=d-1       
                         aaad="0"
                         
-                        aasqq=aaqw
+                        aasqq=+"0"+aaqw
                         
                         aasqq=str(aasqq)
                         szx=szx[d:]
@@ -293,15 +293,8 @@ with open(name, "rb") as binary_file:
                                 while z<xc:
                                     zzaax="1"+zzaax 
                                     z=z+1
-                            szxza="1"+zzaax+szx
-                        else:
-                            xc=14320-lenfa
-                            z=0
-                            if xc!=14320:
-                                while z<xc:
-                                    zzaax="1"+zzaax 
-                                    z=z+1
-                            szxza="0"+zzaax+szx
+                            szxza=zzaax+szx
+                        
                         aaqwssa=len(szxza)
                         
                         wer=wer+szxza
@@ -331,14 +324,14 @@ with open(name, "rb") as binary_file:
                         zzaax=""
                         szx=""  
                             
-                    if lenfa<=14317:
+                    if lenfa<=14318:
                         szx=szx[1:]
-                        szx="1"+szx
+                        szx="0"+szx
                         xc=14319-lenfa
                         z=0
                         if xc!=14319:
                             while z<xc:
-                                szx="0"+szx
+                                szx="1"+szx
                                 z=z+1
                         wer=wer+szx
                         lenf=len(szx)
