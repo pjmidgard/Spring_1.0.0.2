@@ -290,17 +290,15 @@ with open(name, "rb") as binary_file:
                         zzaax=""
                         szxza=""
                         da=0
-                        if aaqwss==0:
-                            xc=14320-lenfa
-                            z=0
-                            if xc!=14320:
-                                while z<xc:
-                                    da=da+1
-                                    if da==1:
-                                        zzaax="1"+zzaax 
-                                    else:
-                                        zzaax="1"+zzaax 
-                                    z=z+1
+                        
+                        xc=14320-lenfa
+                        z=0
+                        if xc!=14320:
+                            while z<xc:
+                                    
+                                    
+                                zzaax="1"+zzaax 
+                                z=z+1
                             
                             
                         aaqwssa=len(szxza)
@@ -311,11 +309,11 @@ with open(name, "rb") as binary_file:
                         vvvb=len(aasqq)
                         
                          
-                       
+                        
                         
                         fffgjv="0"+zzaax+aasqq
                         
-                        print(fffgjv)
+                        
                         
                         
                         
