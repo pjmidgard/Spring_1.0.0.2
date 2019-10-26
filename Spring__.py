@@ -231,10 +231,10 @@ with open(name, "rb") as binary_file:
                             
                      
                            
-                    if lenfa>=14318:
-                        saqaq=""
-                        saqaq=szx[1:2]
-                        szx=szx[2:]
+                    if lenfa>=14319:
+                        
+                        
+                     
                         wqwe=""
                         p=0
                         aaqq=""
@@ -242,7 +242,7 @@ with open(name, "rb") as binary_file:
                         a=0
                         da=0
                         aaqw=""
-                        aaqw=aaqw+"0"
+                        
                         while p<1:
                                     
                             aaqq=szx[a:d]
@@ -253,7 +253,7 @@ with open(name, "rb") as binary_file:
                                     a=a+1
                                     d=d+1
                                     aaqq=str(aaqq)
-                                    aaqw=aaqw+"1"
+                                    aaqw=aaqw+"0"
                                 else:
                                     a=a+1
                                     d=d+1
@@ -332,7 +332,7 @@ with open(name, "rb") as binary_file:
                         zzaax=""
                         szx=""  
                             
-                    if lenfa<=14317:
+                    if lenfa<=14318:
                         szx=szx[1:]
                         szx="0"+szx
                         xc=14318-lenfa
