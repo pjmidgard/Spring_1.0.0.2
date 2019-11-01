@@ -421,7 +421,7 @@ if namez=="c":
                 aasd=len(fffgjv)
                 if aasd>0:
                     raise SystemExit
-                wer="1"+wer+"1"+"0"+fffgjv+"1"
+                wer="1"+wer+"1"
                 lenf=len(wer)
                 xc=8-lenf%8
                 z=0
