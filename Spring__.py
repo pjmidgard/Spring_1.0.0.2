@@ -366,8 +366,7 @@ if namez=="c":
                             
                             lenf=len(szx)
                             szx=""
-                        if lenfa<=((blockw*8)-40):
-                            raise SystemExit
+                        
                             
                             
                         
@@ -418,9 +417,11 @@ if namez=="c":
                 
                 
                 
-               
                 
-                wer="1"+wer+"1"+"0000000000000000000000000000000000000000"+fffgjv+"1"
+                aasd=len(fffgjv)
+                if aasd>0:
+                    raise SystemExit
+                wer="1"+wer+"1"+"0"+fffgjv+"1"
                 lenf=len(wer)
                 xc=8-lenf%8
                 z=0
