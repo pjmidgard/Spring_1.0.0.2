@@ -310,7 +310,13 @@ if namez=="c":
                                 
                                 
                             aaqwssa=len(szxza)
-                            
+                            asss1=len(szx)
+                            asss2=asss1-1
+                            qqw=szx[asss2]
+                            if qqw=="1":
+                                szx=szx+zzaax
+                            if qqw=="0":
+                                szx=szx+zzaax1
                             wer=wer+szx
                             
                            
@@ -319,8 +325,8 @@ if namez=="c":
                              
                             
                             
-                            fffgjv=fffgjv1+zzaax+aaaq
-                            fffgjv1=fffgjv1+zzaax1+aaaq1
+                            fffgjv=fffgjv1+aaaq
+                            fffgjv1=fffgjv1+aaaq1
                             
                             
                             
