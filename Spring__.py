@@ -2,6 +2,7 @@ import os
 import binascii
 fffgjv=""
 fffgjv1=""
+zzaax1=""
 qqqs=0
 a=0
 blockw=5
@@ -293,7 +294,7 @@ if namez=="c":
                             szzs=0
                             
                             zzaax=""
-                            zzaax1=""
+                            
                             szxza=""
                             da=0
                             qqw1=0
@@ -364,6 +365,7 @@ if namez=="c":
                             szx=""
                             fffgjv1=""
                             fffgjv=""
+                            zzaax1=""
                             
                             lenf=len(szx)
                             szx=""
