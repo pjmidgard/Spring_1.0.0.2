@@ -251,6 +251,8 @@ if namez=="c":
                             da=0
                             aaqw=""
                             aaqw1=""
+                            fffgjv=""
+                            fffgjv1=""
                             while p<1:
                                         
                                 aaqq=szx[a:d]
@@ -324,13 +326,14 @@ if namez=="c":
                             
                             
                             
-                            
-                            
-                            
-                            
-                            
+                            aaqws=aaqws+fffgjv
                             
                             fffgjv=""
+                            
+                            
+                            
+                            
+                            fffgjv1=""
                               
                             
                             lenf=len(szx)
@@ -357,9 +360,9 @@ if namez=="c":
                             asss2=asss1-1
                             qqw=szx[asss2]
                             if qqw=="1":
-                                szx=szx+fffgjv
+                                szx=szx
                             if qqw=="0":
-                                szx=szx+fffgjv1
+                                szx=szx
                             wer=wer+szx
                             lenf=len(szx)
                             szx=""
@@ -402,9 +405,9 @@ if namez=="c":
                         asss2=asss1-1
                         qqw=szx[asss2]
                         if qqw=="1":
-                            szx=szx+fffgjv
+                            szx=szx
                         if qqw=="0":
-                            szx=szx+fffgjv1
+                            szx=szx
                         wer=wer+szx
                         lenf=len(szx)
                         szx=""
@@ -421,11 +424,37 @@ if namez=="c":
                 
                 
                 
+                dd=len(aaqws)
                 
-                aasd=len(fffgjv)
-                if aasd>0:
-                    raise SystemExit
-                wer="1"+wer+"1"
+                
+                szxzzz=""
+                szxzzz=bin(dd)[2:]
+                dd=len(szxzzz)
+                xc=8-dd%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzzz="0"+szxzzz
+                        z=z+1
+                
+                dd=len(szxzzz)
+                
+                
+                
+                szxz=bin(dd)[2:]
+                dd=len(szxz)
+                xc=8-dd%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxz="0"+szxz
+                        z=z+1
+                        
+                dd=len(szxz)
+                szxzz=""
+                
+                
+                wer="1"+wer+aaqws+"1"
                 lenf=len(wer)
                 xc=8-lenf%8
                 z=0
@@ -434,13 +463,12 @@ if namez=="c":
                         szx="0"+szx
                         z=z+1
                
-                wer=wer+szx
+                wer=wer+szx+szxzzz+szxz
                 szx=""
-                aaqws=""
+                
                 n = int(wer, 2)
                 jl=binascii.unhexlify('%x' % n)
-                if qqqs==0:
-                    data=jl
+                data=jl
                 sssssw=len(jl)
                 qqqwz=qqqwz+1
                
