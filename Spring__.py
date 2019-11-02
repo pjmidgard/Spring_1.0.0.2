@@ -309,20 +309,13 @@ if namez=="c":
                                     z=z+1
                                 
                                 
-                            aaqwssa=len(szxza)
-                            asss1=len(szx)
-                            asss2=asss1-1
-                            qqw=szx[asss2]
-                            if qqw=="1":
-                                szx=szx+zzaax
-                            if qqw=="0":
-                                szx=szx+zzaax1
+                          
                             wer=wer+szx
                             
                            
                             
                             
-                             
+                            zzaax1="0"+zzaax1
                             
                             
                             fffgjv=fffgjv1+aaaq
@@ -347,8 +340,10 @@ if namez=="c":
                             zzaax=""
                             szx=""  
                                 
-                        if lenfa<=((blockw*8)-3):
+                        if lenfa<=((blockw*8)-5):
                             szx=szx[1:]
+                            szx="0"+szx
+                            szx=zzaax1+szx
                             szx="0"+szx
                             xc=((blockw*8)-2)-lenfa
                             z=0
@@ -374,7 +369,8 @@ if namez=="c":
                             szx=""
                         
                             
-                            
+                        zzaax=""
+                        zzaax1=""    
                         
                         sdaa=""
                         a=0
