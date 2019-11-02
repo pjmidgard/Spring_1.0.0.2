@@ -344,7 +344,7 @@ if namez=="c":
                             zzaax=""
                             szx=""  
                                 
-                        if lenfa<=((blockw*8)-6):
+                        if lenfa<=((blockw*8)-5):
                             szx=szx[1:]
                             szx="0"+szx
                             szx=zzaax1+szx
