@@ -260,8 +260,8 @@ if namez=="c":
                                         a=a+1
                                         d=d+1
                                         aaqq=str(aaqq)
-                                        aaqw=aaqw+"1"
-                                        aaqw1=aaqw1+"0"
+                                        aaqw=aaqw+"0"
+                                        aaqw1=aaqw1+"1"
                                     else:
                                         a=a+1
                                         d=d+1
