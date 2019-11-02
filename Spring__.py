@@ -354,9 +354,9 @@ if namez=="c":
                             else:
                                 szx=zzaax1+szx
                             szx="0"+szx
-                            xc=((blockw*8)-2)-lenfa
+                            xc=((blockw*8)-5)-lenfa
                             z=0
-                            if xc!=((blockw*8)-2):
+                            if xc!=((blockw*8)-5):
                                 while z<xc:
                                     szx="1"+szx
                                     z=z+1
