@@ -310,7 +310,7 @@ if namez=="c":
                                 
                                 
                           
-                            wer=wer+szx
+                            wer=wer+szx+zzaax
                             
                            
                             
