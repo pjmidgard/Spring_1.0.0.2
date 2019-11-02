@@ -401,6 +401,9 @@ if namez=="c":
                     if s!=blockw1:
                         
                         szx=sdaa
+                        szx="0"+szx
+                        szx=zzaax1+szx
+                        szx="0"+szx
                         asss1=len(szx)
                         asss2=asss1-1
                         qqw=szx[asss2]
@@ -416,14 +419,16 @@ if namez=="c":
                             
                         lenf=len(szx)
                         szx=""
-                                
+                        zzaax1=""        
                          
                         
                 a=0
                 szx=""
                 
                 
-                
+                aqqd1=len(zzaax1)
+                if aqqd1>0:
+                    raise SystemExit    
                 dd=len(aaqws)
                 
                 
