@@ -347,7 +347,11 @@ if namez=="c":
                         if lenfa<=((blockw*8)-6):
                             szx=szx[1:]
                             szx="0"+szx
-                            szx=zzaax1+szx
+                            aqqd1=len(zzaax1)
+                            if aqqd1==0:
+                                szx="0"+szx
+                            else:
+                                szx=zzaax1+szx
                             szx="0"+szx
                             xc=((blockw*8)-2)-lenfa
                             z=0
@@ -477,7 +481,7 @@ if namez=="c":
                 sssssw=len(jl)
                 qqqwz=qqqwz+1
                
-                #print(sssssw)
+                print(sssssw)
                 if blockw==6:
                    blockw=5
                    blockw1=4
