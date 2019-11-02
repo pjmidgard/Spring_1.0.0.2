@@ -348,6 +348,7 @@ if namez=="c":
                             szx=szx[1:]
                             szx="0"+szx
                             aqqd1=len(zzaax1)
+                            szx=zzaax1+szx
                             if aqqd1==0:
                                 szx="0"+szx
                             else:
@@ -406,7 +407,10 @@ if namez=="c":
                         
                         szx=sdaa
                         szx="0"+szx
-                        szx=zzaax1+szx
+                        if aqqd1==0:
+                            szx="0"+szx
+                        else:
+                            szx=zzaax1+szx
                         szx="0"+szx
                         asss1=len(szx)
                         asss2=asss1-1
