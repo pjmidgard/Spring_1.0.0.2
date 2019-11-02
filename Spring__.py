@@ -481,7 +481,7 @@ if namez=="c":
                 sssssw=len(jl)
                 qqqwz=qqqwz+1
                
-                print(sssssw)
+                #print(sssssw)
                 if blockw==6:
                    blockw=5
                    blockw1=4
