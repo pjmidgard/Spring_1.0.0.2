@@ -477,18 +477,33 @@ if namez=="c":
                 sssssw=len(jl)
                 qqqwz=qqqwz+1
                
-               
+                print(sssssw)
                 if blockw==6:
                    blockw=5
                    blockw1=4
-                if lenf1<=sssssw or sssssw<=20 or qqqwz==1:
+                if lenf1<=sssssw or sssssw<=20 or qqqwz==2**30:
+                
+                    szx=bin(qqqwz)[2:]
+                    lenf=len(szx)
+                    xc=32-lenf%32
+                    z=0
+                    if xc!=0:
+                        while z<xc:
+                            szx="0"+szx
+                            z=z+1
+                    zsaqq=zsaqq+szx
                     
-                 
+                    szx=""
+                    wer=wer+zsaqq
+                
+                    n = int(wer, 2)
+                    
+                    jlz=binascii.unhexlify('%x' % n)
+                    
                     assx=10
                     if assx==10:
-                        f2.write(jl)
-                   
-                
+                        f2.write(jlz)
+                    
                      
                     
                 
