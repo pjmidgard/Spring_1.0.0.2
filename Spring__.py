@@ -399,6 +399,8 @@ if namez=="c":
                             szx=""  
                                 
                         if lenfa<=((blockw*8)-6):
+                            if lenfa==0:
+                                szx="0"+szx
                             szx=szx[1:]
                             szx="0"+szx
                             aqqd1=len(zzaax1)
