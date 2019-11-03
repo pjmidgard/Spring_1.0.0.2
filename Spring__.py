@@ -400,6 +400,7 @@ if namez=="c":
                                 
                         if lenfa<=((blockw*8)-6):
                             if lenfa==0:
+                                lenfa=1
                                 szx="0"+szx
                             szx=szx[1:]
                             szx="0"+szx
