@@ -279,7 +279,11 @@ if namez=="c":
                         da=0
                         aaqw=""
                         aaqql=""
-                            
+
+                        if szxx=="000000000000000000000000000000000000000000000000":
+                            raise SystemExit    
+                        if szxx=="111111111111111111111111111111111111111111111111":    
+                            raise SystemExit
                         while p<1:
                                         
                             aaqql=szxx[a:d]
