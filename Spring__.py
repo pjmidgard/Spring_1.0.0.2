@@ -406,7 +406,7 @@ if namez=="c":
                     if s!=blockw1:
                         
                         szx=sdaa
-                        szx="0"+szx
+                        szx="10"+szx
                         if aqqd1==0:
                             szx="0"+szx
                         else:
