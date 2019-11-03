@@ -321,7 +321,8 @@ if namez=="c":
                             zzaax1="0"+zzaax1
                             
                             
-                            fffgjv=fffgjv1+aaaq
+
+                            fffgjv=fffgjv+aaaq
                             fffgjv1=fffgjv1+aaaq1
                             
                             
