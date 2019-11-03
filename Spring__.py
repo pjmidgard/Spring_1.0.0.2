@@ -57,16 +57,8 @@ if namez=="u":
         # Read the whole file at once
         data = binary_file.read()
         s=str(data)
-        lenf1=len(data)
-        zaaq=lenf1-1
-        aqwe=""
-       
-        szx=""
         
-        aqwe=data[zaaq:lenf1]
-        for byte in aqwe:
-            print(byte)
-      
+        lenf1=len(data)
         szx=""
         sda=bin(int(binascii.hexlify(data),16))[2:]
         szx=""
@@ -116,8 +108,70 @@ if namez=="u":
             s=""
             with open(aaa2, "w") as f11:
                 f11.write(s)
+
+            #start
+            cvz=0
+            lenf1=len(data)
+            zaaq=lenf1-4
+            aqwe=""
+           
+            szx=""
+            bnks=0
+            ghjd=0
+            kl=3
+            bb=0
+            lenfw1=lenf1-5
+            lenfw=lenf1-4
+            aqwe=data[zaaq:lenf1]
+            for byte in aqwe:
+                print(byte)
+                bb=bb+1
+                if bb==1:
+                    bnks=byte
+                if bb==2:
+                    bnks=byte*256*256
+                if bb==3:
+                    bnks=byte*256
+                if bb==4:
+                    bnks=byte
+                cvz=cvz+bnks
+            print(cvz)
+            cvz1=0
+            aqwe=data[lenfw1:lenfw]
+            for byte in aqwe:
+                print(byte)
+                
+                cvz1=byte
+            print(cvz1)
+            bb=cvz1/8
+            print(bb)
             
-      
+            bba=int(bb)
+            bbs=int(bb)
+            bnks=0
+            ghjd=0
+            kl=3
+            cvz3=0
+            lenfw=lenfw-1
+            lenfw1=lenfw1-bba
+            aqwe=data[lenfw1:lenfw]
+            for byte in aqwe:
+                print(byte)
+                print(bbs)
+                if bbs>1:
+                    bnks=byte*((bbs-1)*256)
+                if bbs==1:
+                    bnks=byte
+                    print(bnks)
+                    print("bnks")
+                
+                print(bbs)
+                
+                cvz3=cvz3+bnks
+                print(cvz3)
+                bbs=bbs-1
+            print(cvz3)
+            
             
            
           
@@ -321,7 +375,6 @@ if namez=="c":
                             zzaax1="0"+zzaax1
                             
                             
-
                             fffgjv=fffgjv+aaaq
                             fffgjv1=fffgjv1+aaaq1
                             
