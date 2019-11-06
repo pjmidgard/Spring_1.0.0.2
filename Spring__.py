@@ -279,7 +279,7 @@ if namez=="c":
                         da=0
                         aaqw=""
                         aaqql=""
-
+                        
                         if szxx=="000000000000000000000000000000000000000000000000":
                             raise SystemExit    
                         if szxx=="111111111111111111111111111111111111111111111111":    
@@ -370,7 +370,7 @@ if namez=="c":
                                     z=z+1
                                 
                                 
-                          
+                            
                             wer=wer+szx+zzaax
                             
                            
@@ -378,6 +378,7 @@ if namez=="c":
                             
                             zzaax1="0"+zzaax1
                             
+                        
                             
                             fffgjv=fffgjv+aaaq
                             fffgjv1=fffgjv1+aaaq1
@@ -385,6 +386,7 @@ if namez=="c":
                             
                             
                             aaqws=aaqws+fffgjv
+                            
                             
                             fffgjv=""
                             
@@ -409,6 +411,7 @@ if namez=="c":
                             szx=szx[1:]
                             szx="0"+szx
                             aqqd1=len(zzaax1)
+                            
                             szx=zzaax1+szx
                             if aqqd1==0:
                                 szx="0"+szx
@@ -438,10 +441,10 @@ if namez=="c":
                             
                             lenf=len(szx)
                             szx=""
-                        
+                            
                             
                         zzaax=""
-                        zzaax1=""    
+                            
                         
                         sdaa=""
                         a=0
@@ -496,9 +499,7 @@ if namez=="c":
                 szx=""
                 
                 
-                aqqd1=len(zzaax1)
-                if aqqd1>0:
-                    raise SystemExit    
+                
                 dd=len(aaqws)
                 
                 
@@ -529,7 +530,17 @@ if namez=="c":
                 szxzz=""
                 
                 
-                wer="1"+wer+aaqws+"1"
+                
+                aqqd1=len(zzaax1)
+                
+                if aqqd1>0:
+                    wer="1"+wer+aaqws+"10"
+                else:
+                    wer="1"+wer+aaqws+"11"
+                    
+                
+                
+                    
                 lenf=len(wer)
                 xc=8-lenf%8
                 z=0
@@ -552,7 +563,7 @@ if namez=="c":
                    blockw=5
                    blockw1=4
                 if lenf1<=sssssw or sssssw<=20 or qqqwz==2**30:
-                
+                    
                     szx=bin(qqqwz)[2:]
                     lenf=len(szx)
                     xc=32-lenf%32
