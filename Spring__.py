@@ -468,6 +468,7 @@ if namez=="c":
                         
                         szx=sdaa
                         szx="10"+szx
+                        aqqd1=len(zzaax1)
                         if aqqd1==0:
                             szx="0"+szx
                         else:
