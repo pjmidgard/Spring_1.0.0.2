@@ -542,7 +542,7 @@ if namez=="c":
                 dd=len(szxzc)
                 szxzz=""
 
-                aqqww=1
+                aqqww=10
                 szxzl=""
                 szxzl=bin(dd)[2:]
                 dd=len(szxzl)
@@ -573,10 +573,10 @@ if namez=="c":
                         z=z+1
 
                 szxzlz=""
-                dd=len(aqqww)
-                szxzlz=bin(dd)[2:]
-                dd=len(szxzlz)
-                xc=8-dd%8
+                
+                szxzlz=bin(aqqww)[2:]
+                dds=len(szxzlz)
+                xc=8-dds%8
                 z=0
                 if xc!=0:
                     while z<xc:
