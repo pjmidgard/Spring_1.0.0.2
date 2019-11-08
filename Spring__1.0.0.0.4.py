@@ -420,7 +420,7 @@ if namez=="c":
                                 if aqqd1==0:
                                     szx="0"+szx
                                 else:
-                                    szx=zzaax1+szx
+                                    szx=szx+zzaax1
                                 xc=((blockw*8)-5)-lenfa
                                 z=0
                                 if xc!=((blockw*8)-5):
@@ -435,7 +435,7 @@ if namez=="c":
                                     szx=szx
                                 if qqw=="0":
                                     szx=szx
-                                    
+                                
                                 wer=wer+szx
                                 lenf=len(szx)
                                 szx=""
@@ -480,7 +480,7 @@ if namez=="c":
                         if aqqd1==0:
                             szx="0"+szx
                         else:
-                            szx=zzaax1+szx
+                            szx=szx+zzaax1
                         szx="10"+szx
                         asss1=len(szx)
                         asss2=asss1-1
