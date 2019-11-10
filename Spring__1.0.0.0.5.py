@@ -612,7 +612,7 @@ if namez=="c":
                 sssssw=len(jl)
                 qqqwz=qqqwz+1
                
-                print(sssssw)
+                #print(sssssw)
                 
                 
                 
