@@ -1,5 +1,7 @@
 import os
 import binascii
+ddf=0
+rw=0
 qqw1q=""
 lenfzzz=0
 fffgjv=""
@@ -72,107 +74,96 @@ if namez=="u":
                 while z<xc:
                     szx="0"+szx
                     z=z+1
-            sda=szx+sda     
-            lenf=len(sda)
-            szx=""
+        sda=szx+sda     
+        lenf=len(sda)
+        lenfaq=len(sda)
+        szx=""
             
-            adda=0
-            asss=0
-            add=0
-            qwss=""
-            for byte in data:
+        adda=0
+        asss=0
+        add=0
+        qwss=""
+        for byte in data:
                 
                
-                if byte==47:
-                    asss=1
-                    
-                    
-                    
-                if asss==0:
-                    add=add+1
-            saqqraz=byte
-            aqwe1=""
-            zaaqa=0
-            zaaqaz=0
-            zaaqa=lenf1-2
-            zaaqaz=lenf1-1
-            aqwe1=data[zaaqa:zaaqaz]
-            aaa1=""        
-            print(add)
-            with open(name, "rb") as za:     
-                dataa = za.read()
-            add=add
-            sss1=add-2
-            aaa1=dataa[0:add]
-            print(aaa1)
-            aaa2=aaa1.decode("utf-8")
-            print(aaa2)
-            s=""
-            with open(aaa2, "w") as f11:
-                f11.write(s)
+            if byte==47:
+                asss=1
+                        
+                        
+                        
+            if asss==0:
+                add=add+1
+        saqqraz=byte
+        aqwe1=""
+        zaaqa=0
+        zaaqaz=0
+        zaaqa=lenf1-2
+        zaaqaz=lenf1-1
+        aqwe1=data[zaaqa:zaaqaz]
+        aaa1=""        
+        print(add)
+        with open(name, "rb") as za:     
+            dataa = za.read()
+        add=add
+        sss1=add-2
+        aaa1=dataa[0:add]
+        print(aaa1)
+        aaa2=aaa1.decode("utf-8")
+        print(aaa2)
+        s=""
+        with open(aaa2, "w") as f11:
+            f11.write(s)
 
-            #start
-            cvz=0
-            lenf1=len(data)
-            zaaq=lenf1-4
-            aqwe=""
+        cvz=0
+        lenf1=len(data)
+        zaaq=lenf1-4
+        aqwe=""
            
-            szx=""
-            bnks=0
-            ghjd=0
-            kl=3
-            bb=0
-            lenfw1=lenf1-5
-            lenfw=lenf1-4
-            aqwe=data[zaaq:lenf1]
-            for byte in aqwe:
-                print(byte)
-                bb=bb+1
-                if bb==1:
-                    bnks=byte
-                if bb==2:
-                    bnks=byte*256*256
-                if bb==3:
-                    bnks=byte*256
-                if bb==4:
-                    bnks=byte
-                cvz=cvz+bnks
-            print(cvz)
-            cvz1=0
-            aqwe=data[lenfw1:lenfw]
-            for byte in aqwe:
-                print(byte)
+        szx=""
+        bnks=0
+        ghjd=0
+        kl=3
+        bb=0
+        lenfw1=lenf1-5
+        lenfw=lenf1-4
+        aqwe=data[zaaq:lenf1]
+        for byte in aqwe:
+            print(byte)
+            bb=bb+1
+            if bb==1:
+                bnks=byte*256*256*256
+            if bb==2:
+                bnks=byte*256*256
+            if bb==3:
+                bnks=byte*256
+            if bb==4:
+                bnks=byte
+            cvz=cvz+bnks
+        print(cvz)
                 
-                cvz1=byte
-            print(cvz1)
-            bb=cvz1/8
-            print(bb)
+        #start    
+        rw=rw+1
+        ddf=0
+        if rw==1:
+            ddf=4
+        lenfaqd=lenf1-ddf
+        lenfaqde=lenf1-1
+        aaa=0
+        
+        for byte in data:
+            sss=int(byte)
+            aaa=aaa+1
+            lenfq=lenf1-4
+            if aaa==lenfq:
+                adw=sss-10
+        print(adw)
+        
             
-            bba=int(bb)
-            bbs=int(bb)
-            bnks=0
-            ghjd=0
-            kl=3
-            cvz3=0
-            lenfw=lenfw-1
-            lenfw1=lenfw1-bba
-            aqwe=data[lenfw1:lenfw]
-            for byte in aqwe:
-                print(byte)
-                print(bbs)
-                if bbs>1:
-                    bnks=byte*((bbs-1)*256)
-                if bbs==1:
-                    bnks=byte
-                    print(bnks)
-                    print("bnks")
                 
-                print(bbs)
-                
-                cvz3=cvz3+bnks
-                print(cvz3)
-                bbs=bbs-1
-            print(cvz3)
+            
+            
+            
+            
             
             
            
@@ -263,6 +254,9 @@ if namez=="c":
             
             if lenf1<20:
                 print("This file is too small");
+                raise SystemExit
+            if lenf1>2**32:
+                print("This file is too big");
                 raise SystemExit
             with open(namea, "ab") as f2:
                 sda=bin(int(binascii.hexlify(data),16))[2:]
@@ -615,7 +609,7 @@ if namez=="c":
                
                 
                 
-                
+                #print(sssssw)
                     
                 saaq=0
                 if lenf1<=sssssw and qqqwz==1:
