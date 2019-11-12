@@ -1,6 +1,8 @@
 import os
 import binascii
+adwll1=0
 ddf=0
+cvz31=0
 rw=0
 qqw1q=""
 lenfzzz=0
@@ -153,16 +155,152 @@ if namez=="u":
         for byte in data:
             sss=int(byte)
             aaa=aaa+1
-            lenfq=lenf1-4
+            lenfq=lenf1-ddf
             if aaa==lenfq:
                 adw=sss-10
+            lenfq1=lenf1-ddf-1
+            if aaa==lenfq1:
+                llon8=sss
         print(adw)
-        
-            
+        print(llon8)
+
+        bnks=0
+        ghjd=0
+        kl=3
+        cvz3=0
+        bbs=int(llon8/8)
+        lenfq2=lenfq1-1
+        lenfq3=lenfq2-bbs
+        aqwe=data[lenfq3:lenfq2]
+        for byte in aqwe:
+            print(byte)
+            print(bbs)
+            if bbs>1:
+                bnks=byte*((bbs-1)*256)
+            if bbs==1:
+                bnks=byte
+                print(bnks)
+                print("bnks")
                 
+            print(bbs)
+                
+            cvz3=cvz3+bnks
+            print(cvz3)
+            bbs=bbs-1
+        print(cvz3)
+        aaa=0
+        for byte in data:
+            sss=int(byte)
+            aaa=aaa+1
+            lenfq=lenfq3-1
+            if aaa==lenfq:
+                adwll1=sss
+        print(adwll1)
+
+        bnks=0
+        ghjd=0
+        kl=3
+        cvz3=0
+        bbs=int(adwll1)
+        lenfq4=(lenfq2-1)*8
+        lenfq5=lenfq4-bbs
+        aqwe=sda[lenfq5:lenfq4]
+        for byte in aqwe:
+            print(byte)
+            print(bbs)
+            if bbs>1:
+                if byte=="0":
+                    byte=0
+                if byte=="1":
+                    byte=1
+                bnks=byte*((bbs-1)*2)
+            if bbs==1:
+                if byte=="0":
+                    byte=0
+                if byte=="1":
+                    byte=1
+                bnks=byte
+                print(bnks)
+                print("bnks")
+                
+            print(bbs)
+             
+            cvz31=cvz31+bnks
+            print(cvz31)
+            bbs=bbs-1
+        print(cvz31)
+            
+        bnks=0
+        ghjd=0
+        kl=3
+        cvz3=0
+        bbs=int(cvz31)
+        lenfq6=lenfq4-8-8
+        print(lenfq6)
+      
+        lenfq7=(lenfq6-bbs)
+        print(lenfq7)
+        aqwe=sda[lenfq7:lenfq6]
+        ssq1add=""
+        aa=0
+        for byte in aqwe:
+            aa=aa+1
+            
+            ssq1add=ssq1add+byte
+        print(ssq1add)
+            
+        cvz31a=0
+        bnks=0
+        ghjd=0
+        kl=3
+        cvz3=0
+        lenfq4=lenfq7
+        lenfq5=lenfq4-8
+        aqwe=sda[lenfq5:lenfq4]
+        for byte in aqwe:
+            print(byte)
+            print(bbs)
+            if bbs>1:
+                if byte=="0":
+                    byte=0
+                if byte=="1":
+                    byte=1
+                bnks=byte*((bbs-1)*2)
+            if bbs==1:
+                if byte=="0":
+                    byte=0
+                if byte=="1":
+                    byte=1
+                bnks=byte
+                print(bnks)
+                print("bnks")
+                
+            print(bbs)
+             
+            cvz31a=cvz31a+bnks
+            print(cvz31a)
+            bbs=bbs-1
+        print(cvz31a)        
             
             
+        bnks=0
+        ghjd=0
+        kl=3
+        cvz3=0
+        bbs=int(cvz31)
+        lenfq6=lenfq4-8-8-bbs-8
+        print(lenfq6)
+      
+        lenfq7=(lenfq6-cvz31a)
+        print(lenfq7)
+        aqwe=sda[lenfq7:lenfq6]
+        ssq1add=""
+        aa=0
+        for byte in aqwe:
+            aa=aa+1
             
+            ssq1add=ssq1add+byte
+        print(ssq1add)    
             
             
             
@@ -577,7 +715,7 @@ if namez=="c":
                     
                 
                 
-                    
+                aqqwwa=10    
                 lenf=len(wer)
                 xc=8-lenf%8
                 z=0
@@ -585,7 +723,7 @@ if namez=="c":
                     while z<xc:
                         szx="0"+szx
                         z=z+1
-
+                        aqqwwa=aqqwwa+1
                 szxzlz=""
                 
                 szxzlz=bin(aqqww)[2:]
@@ -596,8 +734,18 @@ if namez=="c":
                     while z<xc:
                         szxzlz="0"+szxzlz
                         z=z+1
-               
-                wer=wer+szx+szxzzz+szxz+szxzc+szxzl+szxzlz
+
+
+                szxzlz1=bin(aqqwwa)[2:]
+                dds=len(szxzlz1)
+                xc=8-dds%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzlz1="0"+szxzlz1
+                        z=z+1
+                        
+                wer=wer+szx+szxzlz1+szxzzz+szxz+szxzc+szxzl+szxzlz
                 szx=""
                 
                 n = int(wer, 2)
