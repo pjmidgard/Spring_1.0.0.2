@@ -298,7 +298,22 @@ if namez=="u":
         for byte in aqwes:
             bitcut=bitcut+byte
         print(bitcut)
-            
+
+        
+        bnks=0
+        ghjd=0
+        kl=3
+        cvz3=0
+        zzz=""
+        bbs=int(cvz31wl)
+        lenfq11=lenfq10
+        qqwww3=add+1
+        lenfq12=0+(qqwww3*8)
+        aqwes=sda[lenfq12:lenfq11]
+        bitcutake=""
+        for byte in aqwes:
+            bitcutake=bitcutake+byte
+        print(bitcutake)     
                 
    
 if namez=="c":
