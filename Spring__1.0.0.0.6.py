@@ -162,11 +162,143 @@ if namez=="u":
             if aaa==lenfq1:
                 llon8=sss
         print(adw)
-        print("adw")
+        print("ok")
         print(llon8)
-        print("llon8")
+        print("ok")
 
+        bnks=0
+        ghjd=0
+        kl=3
+        cvz3=0
+        bbs=int(llon8/8)
+        lenfq2=lenfq1-1
+        lenfq3=lenfq2-bbs
+        aqwe=data[lenfq3:lenfq2]
+        for byte in aqwe:
+            print(byte)
+            print(bbs)
+            if bbs>1:
+                bnks=byte*(256**(bbs-1))
+            if bbs==1:
+                bnks=byte
+                print(bnks)
+                print("bnks")
+                
+            print(bbs)
+                
+            cvz3=cvz3+bnks
+            print(cvz3)
+            bbs=bbs-1
+        print(cvz3)
+        print("cvz3")
+       
+
+       
+            
+
+        bnks=0
+        ghjd=0
+        kl=3
+        cvz3=0
+        zzz=""
+        cvz31w=0
+        adwll1e=8
+        bbs=int(adwll1e)
+        lenfq6=(lenfq3*8)-8
+        lenfq7=lenfq6-bbs
+        aqwes=sda[lenfq7:lenfq6]
+        for byte in aqwes:
+            print(byte)
+            print(bbs)
+            if bbs>1:
+                zzz=zzz+byte
+                if byte=="0":
+                    byte=0
+                if byte=="1":
+                    byte=1
+                bnks=byte*(2**(bbs-1))
+                
+            if bbs==1:
+                zzz=zzz+byte
+                if byte=="0":
+                    byte=0
+                if byte=="1":
+                    byte=1
+                bnks=byte
+                
+                print(bnks)
+                print("bnks")
+                
+            print(bbs)
+             
+            cvz31w=cvz31w+bnks
+            print(cvz31w)
+            bbs=bbs-1
         
+        print(cvz31w)
+        print("ok")
+        print(zzz)    
+
+        bnks=0
+        ghjd=0
+        kl=3
+        cvz3=0
+        zzz=""
+        cvz31wl=0
+        adwll1e=8
+        bbs=int(adwll1e)
+        lenfq7=lenfq7
+        lenfq8=lenfq7-8
+        aqwes=sda[lenfq8:lenfq7]
+        for byte in aqwes:
+            print(byte)
+            print(bbs)
+            if bbs>1:
+                zzz=zzz+byte
+                if byte=="0":
+                    byte=0
+                if byte=="1":
+                    byte=1
+                bnks=byte*(2**(bbs-1))
+                
+            if bbs==1:
+                zzz=zzz+byte
+                if byte=="0":
+                    byte=0
+                if byte=="1":
+                    byte=1
+                bnks=byte
+                
+                print(bnks)
+                print("bnks")
+                
+            print(bbs)
+             
+            cvz31wl=cvz31wl+bnks
+            print(cvz31wl)
+            bbs=bbs-1
+        
+        print(cvz31wl)
+        print("ok")
+        print(zzz)
+        cvz31wl=cvz31wl-10
+        print(cvz31wl)
+           
+          
+        bnks=0
+        ghjd=0
+        kl=3
+        cvz3=0
+        zzz=""
+        bbs=int(cvz31wl)
+        lenfq9=lenfq8
+        lenfq10=lenfq9-bbs
+        aqwes=sda[lenfq10:lenfq9]
+        bitcut=""
+        for byte in aqwes:
+            bitcut=bitcut+byte
+        print(bitcut)
+            
                 
    
 if namez=="c":
