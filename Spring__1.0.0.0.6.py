@@ -162,81 +162,11 @@ if namez=="u":
             if aaa==lenfq1:
                 llon8=sss
         print(adw)
+        print("adw")
         print(llon8)
+        print("llon8")
 
-        bnks=0
-        ghjd=0
-        kl=3
-        cvz3=0
-        bbs=int(llon8/8)
-        lenfq2=lenfq1-1
-        lenfq3=lenfq2-bbs
-        aqwe=data[lenfq3:lenfq2]
-        for byte in aqwe:
-            print(byte)
-            print(bbs)
-            if bbs>1:
-                bnks=byte*((bbs-1)*256)
-            if bbs==1:
-                bnks=byte
-                print(bnks)
-                print("bnks")
-                
-            print(bbs)
-                
-            cvz3=cvz3+bnks
-            print(cvz3)
-            bbs=bbs-1
-        print(cvz3)
-        aaa=0
-        for byte in data:
-            sss=int(byte)
-            aaa=aaa+1
-            lenfq=lenfq3-1
-            if aaa==lenfq:
-                adwll1=sss
-        print(adwll1)
-
-        bnks=0
-        ghjd=0
-        kl=3
-        cvz3=0
-        bbs=int(adwll1)
-        lenfq4=(lenfq2-1)*8
-        lenfq5=lenfq4-bbs
-        aqwe=sda[lenfq5:lenfq4]
-        for byte in aqwe:
-            print(byte)
-            print(bbs)
-            if bbs>1:
-                if byte=="0":
-                    byte=0
-                if byte=="1":
-                    byte=1
-                bnks=byte*((2**bbs-1))
-            if bbs==1:
-                if byte=="0":
-                    byte=0
-                if byte=="1":
-                    byte=1
-                bnks=byte
-                print(bnks)
-                print("bnks")
-                
-            print(bbs)
-             
-            cvz31=cvz31+bnks
-            print(cvz31)
-            bbs=bbs-1
-        print(cvz31)
-            
-       
-            
-            
-            
-           
-          
-
+        
                 
    
 if namez=="c":
