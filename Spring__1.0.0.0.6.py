@@ -213,7 +213,7 @@ if namez=="u":
                     byte=0
                 if byte=="1":
                     byte=1
-                bnks=byte*((bbs-1)*2)
+                bnks=byte*((2**bbs-1))
             if bbs==1:
                 if byte=="0":
                     byte=0
@@ -230,77 +230,7 @@ if namez=="u":
             bbs=bbs-1
         print(cvz31)
             
-        bnks=0
-        ghjd=0
-        kl=3
-        cvz3=0
-        bbs=int(cvz31)
-        lenfq6=lenfq4-8-8
-        print(lenfq6)
-      
-        lenfq7=(lenfq6-bbs)
-        print(lenfq7)
-        aqwe=sda[lenfq7:lenfq6]
-        ssq1add=""
-        aa=0
-        for byte in aqwe:
-            aa=aa+1
-            
-            ssq1add=ssq1add+byte
-        print(ssq1add)
-            
-        cvz31a=0
-        bnks=0
-        ghjd=0
-        kl=3
-        cvz3=0
-        lenfq4=lenfq7
-        lenfq5=lenfq4-8
-        aqwe=sda[lenfq5:lenfq4]
-        for byte in aqwe:
-            print(byte)
-            print(bbs)
-            if bbs>1:
-                if byte=="0":
-                    byte=0
-                if byte=="1":
-                    byte=1
-                bnks=byte*((bbs-1)*2)
-            if bbs==1:
-                if byte=="0":
-                    byte=0
-                if byte=="1":
-                    byte=1
-                bnks=byte
-                print(bnks)
-                print("bnks")
-                
-            print(bbs)
-             
-            cvz31a=cvz31a+bnks
-            print(cvz31a)
-            bbs=bbs-1
-        print(cvz31a)        
-            
-            
-        bnks=0
-        ghjd=0
-        kl=3
-        cvz3=0
-        bbs=int(cvz31)
-        lenfq6=lenfq4-8-8-bbs-8
-        print(lenfq6)
-      
-        lenfq7=(lenfq6-cvz31a)
-        print(lenfq7)
-        aqwe=sda[lenfq7:lenfq6]
-        ssq1add=""
-        aa=0
-        for byte in aqwe:
-            aa=aa+1
-            
-            ssq1add=ssq1add+byte
-        print(ssq1add)    
+       
             
             
             
