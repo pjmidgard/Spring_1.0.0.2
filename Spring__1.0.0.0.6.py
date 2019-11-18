@@ -764,7 +764,7 @@ if namez=="c":
                
                 
                 
-                #print(sssssw)
+                print(sssssw)
                     
                 saaq=0
                 if lenf1<=sssssw and qqqwz==1:
