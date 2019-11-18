@@ -453,7 +453,7 @@ if namez=="c":
                             
                                 
                             if lenfa>=((blockw*8)-2):
-                                wer=wer+"00"
+                               
                                 wqwe=""
                                 p=0
                                 aaqq=""
@@ -523,7 +523,7 @@ if namez=="c":
                                         z=z+1
                                     
                                     
-                                
+                                szx="00"+szx
                                 wer=wer+szx+zzaax
                                 
                                
