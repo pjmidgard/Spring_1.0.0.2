@@ -581,7 +581,7 @@ if namez=="c":
                                     szx=szx
                                 if qqw=="0":
                                     szx=szx
-                                
+                                szx="01"+szx
                                 wer=wer+szx
                                 lenf=len(szx)
                                 szx=""
@@ -591,7 +591,7 @@ if namez=="c":
                                 
                                 lenf=len(szx)
                                 szx=""
-                                wer="01"+wer
+                                
                                 
                        
                             
