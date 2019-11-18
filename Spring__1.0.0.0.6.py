@@ -555,7 +555,7 @@ if namez=="c":
                                  
                                     
                             if lenfa<=((blockw*8)-6):
-                                wer=wer+"01"
+                                
                                 
                                 szx=szx[1:]
                                 
@@ -591,9 +591,9 @@ if namez=="c":
                                 
                                 lenf=len(szx)
                                 szx=""
-                        
-                        else:
-                            wer=wer+qqw1q
+                                wer="01"+wer
+                                
+                       
                             
                         zzaax=""
                         
