@@ -430,34 +430,45 @@ if namez=="c":
                         qqw1q="0"
                         if blockw==6:
                             if szxx=="000000000000000000000000000000000000000000000000":
-                                qqw1q="10"   
+                                qqw1q="10"
+                                wer=wer+"10"
                             if szxx=="111111111111111111111111111111111111111111111111":    
                                 qqw1q="11"
+                                wer=wer+"11"
                             
                         if blockw==2001:
                             xw=0
                             aqwi=0
+                            d=1
+                            a=0
+                            p=0
                             while p<2002:
                                          
                                 aaqql=szxx[a:d]
                                
                                 if aaqql=="1":
                                     xw=xw+1
+                                    a=a+1
+                                    d=d+1
                             
                                     p=p+1
                                 if aaqql=="0":
                                     aqwi=aqwi+1
-                            
+                                    a=a+1
+                                    d=d+1
                                     p=p+1
                             if xw==2001:
                                 qqw1q="11"
+                                wer=wer+"11"
                             if aqwi==2001:
                                 qqw1q="10"
+                                wer=wer+"10"
                             
-                            
+                            p=0
                             
                         if qqw1q=="0":
-                            
+                            d=1
+                            a=0
                             while p<1:
                                          
                                 aaqql=szxx[a:d]
@@ -786,7 +797,7 @@ if namez=="c":
                
                 
                 
-                print(sssssw)
+                #print(sssssw)
                     
                 saaq=0
                 if lenf1<=sssssw and qqqwz==1:
