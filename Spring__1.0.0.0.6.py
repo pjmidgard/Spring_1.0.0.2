@@ -442,7 +442,7 @@ if namez=="c":
                             d=1
                             a=0
                             p=0
-                            while p<2002:
+                            while p<8009:
                                          
                                 aaqql=szxx[a:d]
                                
@@ -457,10 +457,10 @@ if namez=="c":
                                     a=a+1
                                     d=d+1
                                     p=p+1
-                            if xw==2001:
+                            if xw==8008:
                                 qqw1q="11"
                                 wer=wer+"11"
-                            if aqwi==2001:
+                            if aqwi==8008:
                                 qqw1q="10"
                                 wer=wer+"10"
                             
