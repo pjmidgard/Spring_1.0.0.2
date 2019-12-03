@@ -832,7 +832,7 @@ if namez=="c":
                     saaq=1
                 
                     
-                if lenf1<=sssssw and saaq==0 and qqqwz>=1000 or sssssw<=9 or qqqwz==2**30:
+                if lenf1<=sssssw and saaq==0 and qqqwz>=1000 or sssssw<=40 or qqqwz==2**30:
                     
                     szx=bin(qqqwz)[2:]
                     lenf=len(szx)
