@@ -1,5 +1,9 @@
 import os
 import binascii
+zzaax=""
+szxzzzas=""
+asaaq=""
+assa=0
 adwll1=0
 ddf=0
 cvz31=0
@@ -351,6 +355,9 @@ if namez=="c":
             jlz=""
             f2.write(jlz)
             raise SystemExit
+        if lenf1<6:
+            print("This file is too small");
+            raise SystemExit
         if lenf1>2**32:
             print("This file is too big");
             raise SystemExit
@@ -393,32 +400,28 @@ if namez=="c":
             wer=""
             numberschangenotexist = []
             numbers = []
-            if blockw==5 and lenf1<100000 and lenf1>40 or blockw==2000 and lenf1<100000 and lenf1>40 or blockw==0 and lenf1>40 and lenf1<100000:
-                blockw=5
-                blockw1=4
-            if blockw==2000 and lenf1>=100000 or blockw==5 and lenf1>=100000 or blockw==0 and lenf1>=100000:
-                blockw=2000
-                blockw1=1999
-            if blockw==2000 and lenf1<=40 or blockw==5 and lenf1<=40 or blockw==0 and lenf1<=40:
-                blockw=0
-                blockw1=-1
+            assa=0
+            asaaq=""
+            szxzzzas=""
             s=""
             blockw=blockw+1
             blockw1=blockw1+1
             sdaa=""
             aas=0
+            asaaq=""
+            #print(blockw)
             
            
             with open(namea, "ab") as f2:
                 sda=bin(int(binascii.hexlify(data),16))[2:]
                 lenf=len(sda)
-                xc=8-lenf%8
+                xc=(lenf1*8)-lenf
                 z=0
                 if xc!=0:
                     while z<xc:
                         sda="0"+sda
                         z=z+1
-                        
+                      
                 for byte in sda:
                     sda=str(sda)
                     sdaa=sdaa+byte
@@ -442,53 +445,50 @@ if namez=="c":
                         da=0
                         aaqw=""
                         aaqql=""
-                       
+                        assa=assa+1
                         qqw1q="0"
+                        
                         if blockw==6:
+                            
                             if szxx=="000000000000000000000000000000000000000000000000":
                                 qqw1q="10"
-                                wer=wer+"10"
+                                
+
+                                szxzzzas=""
+                                szxzzzas=bin(assa)[2:]
+                                dd=len(szxzzzas)
+                                xc=32-dd%32
+                                z=0
+                                if xc!=0:
+                                    while z<xc:
+                                        szxzzzas="10"+szxzzzas
+                                        z=z+1
+                                
+                                
+                                asaaq=asaaq+szxzzzas
+                                #print(asaaq)
+                                
+ 				
+                                
                             if szxx=="111111111111111111111111111111111111111111111111":    
                                 qqw1q="11"
-                                wer=wer+"11"
-
-                        if blockw==1:
-                            if szxx=="00000000":
-                                qqw1q="10"
-                                wer=wer+"10"
-                            if szxx=="11111111":    
-                                qqw1q="11"
-                                wer=wer+"11"    
-                            
-                        if blockw==2001:
-                            xw=0
-                            aqwi=0
-                            d=1
-                            a=0
-                            p=0
-                            while p<8009:
-                                         
-                                aaqql=szxx[a:d]
                                
-                                if aaqql=="1":
-                                    xw=xw+1
-                                    a=a+1
-                                    d=d+1
+                                szxzzzas=""
+                                szxzzzas=bin(assa)[2:]
+                                dd=len(szxzzzas)
+                                xc=32-dd%32
+                                z=0
+                                if xc!=0:
+                                    while z<xc:
+                                        szxzzzas="11"+szxzzzas
+                                        z=z+1
+                                
+                                
+                                asaaq=asaaq+szxzzzas
+                                
+ 			        
+                                        
                             
-                                    p=p+1
-                                if aaqql=="0":
-                                    aqwi=aqwi+1
-                                    a=a+1
-                                    d=d+1
-                                    p=p+1
-                            if xw==8008:
-                                qqw1q="11"
-                                wer=wer+"11"
-                            if aqwi==8008:
-                                qqw1q="10"
-                                wer=wer+"10"
-                            
-                            p=0
                             
                         if qqw1q=="0":
                             d=1
@@ -509,8 +509,8 @@ if namez=="c":
                                 
                             
                                 
-                            if lenfa>=((blockw*8)-2):
-                               
+                            if lenfa>=((blockw*8)-5):
+                                szx=szx[1:]
                                 wqwe=""
                                 p=0
                                 aaqq=""
@@ -563,11 +563,18 @@ if namez=="c":
                                        
                                 szzs=0
                                 
-                                zzaax=""
+                                
                                 
                                 szxza=""
                                 da=0
                                 qqw1=0
+                                xc=(blockw*8)-lenfa
+                                
+                                z=0
+                                
+                                    
+                                    
+                                
                                 xc=(blockw*8)-lenfa
                                 z=0
                                 if xc!=(blockw*8):
@@ -580,13 +587,13 @@ if namez=="c":
                                         z=z+1
                                     
                                     
-                                szx="00"+szx
-                                wer=wer+szx+zzaax
+                                
+                                wer=wer+szx
                                 
                                
                                 
                                 
-                                zzaax1="0"+zzaax1
+                                zzaax="1"+zzaax
                                 
                             
                                 
@@ -612,25 +619,25 @@ if namez=="c":
                                  
                                     
                             if lenfa<=((blockw*8)-6):
-                                
+                                 
                                 
                                 szx=szx[1:]
                                 
                                 aqqd1=len(zzaax1)
                                 
                                 
-                                if aqqd1==0:
-                                    szx="0"+szx
-                                else:
-                                    szx=szx+zzaax1
-                                szx=szx+"0"    
+                                
+                               
                                 xc=((blockw*8)-5)-lenfa
                                 z=0
                                 if xc!=((blockw*8)-5):
                                     while z<xc:
                                         szx="1"+szx
                                         z=z+1
-                                
+                                if aqqd1==0:
+                                    szx=szx+"0"
+                                else:
+                                    szx=szx
                                 asss1=len(szx)
                                 asss2=asss1-1
                                 qqw=szx[asss2]
@@ -638,9 +645,10 @@ if namez=="c":
                                     szx=szx
                                 if qqw=="0":
                                     szx=szx
-                                szx="01"+szx
+                                
                                 wer=wer+szx
                                 lenf=len(szx)
+                                
                                 szx=""
                                 fffgjv1=""
                                 fffgjv=""
@@ -652,7 +660,7 @@ if namez=="c":
                                 
                        
                             
-                        zzaax=""
+                        
                         
                         
                         sdaa=""
@@ -681,9 +689,9 @@ if namez=="c":
                         szx=sdaa
                         aqqd1=len(zzaax1)
                         if aqqd1==0:
-                            szx="0"+szx
+                            szx=szx+"0"
                         else:
-                            szx=szx+zzaax1
+                            szx=szx
                         szx=szx+"0"
                         szx="10"+szx
                         asss1=len(szx)
@@ -708,10 +716,38 @@ if namez=="c":
                 szx=""
                 
                 
-                wer+wer+zzaax1+"0"
+                
                 
                 dd=len(aaqws)
+                dda=len(zzaax)
+
+
+                ddwa=len(asaaq)
                 
+                szxzzzq=""
+                szxzzzq=bin(ddwa)[2:]
+                ddwa=len(szxzzzq)
+                xc=8-ddwa%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzzzq="0"+szxzzzq
+                        z=z+1
+                
+                ddwa=len(szxzzzq)
+
+
+                szxzzzqq=""
+                szxzzzqq=bin(ddwa)[2:]
+                ddwa=len(szxzzzqq)
+                xc=8-ddwa%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzzzqq="0"+szxzzzqq
+                        z=z+1
+                
+                dd=len(aaqws)
                 
                 szxzzz=""
                 szxzzz=bin(dd)[2:]
@@ -724,7 +760,32 @@ if namez=="c":
                         z=z+1
                 
                 dd=len(szxzzz)
+
+                szxzzza=""
+                szxzzza=bin(dda)[2:]
+                dda=len(szxzzza)
+                xc=8-dda%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzzza="0"+szxzzza
+                        z=z+1
                 
+                dda=len(szxzzza)
+
+                szxz=""
+                szxzs=bin(dda)[2:]
+                dda=len(szxzs)
+                xc=8-dda%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzs="0"+szxzs
+                        z=z+1
+                        
+                dda=len(szxz)
+
+
                 
                 szxz=""
                 szxz=bin(dd)[2:]
@@ -764,22 +825,24 @@ if namez=="c":
                         z=z+1
                 
                 aqqd1=len(zzaax1)
-                if blockw==6 and lenf1>40 and lenf1<100000 or blockw==2001 and lenf1>40 and lenf1<100000 or blockw==1 and lenf1>40 and lenf1<100000:
-                    blockw=5
-                    blockw1=4
-                    wer="0"+wer
-                if blockw==2001 and lenf1>=100000 or blockw==6 and lenf1>=100000 or blockw==1 and lenf1>=100000:
-                    blockw=2000
-                    blockw1=1999
-                    wer="10"+wer
-                if blockw==2001 and lenf1<=40 or blockw==6 and lenf1<=40 or blockw==1 and lenf1<=40:
-                    blockw=0
-                    blockw1=-1
-                    wer="11"+wer
+
+                szxzzz=""
+                szxzzz=bin(dd)[2:]
+                dd=len(szxzzz)
+                xc=8-dd%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzzz="0"+szxzzz
+                        z=z+1
+                
+                dd=len(szxzzz)
+               
                 if aqqd1>0:
-                    wer="1"+wer+aaqws+"10"
+                    wer="1"+wer+aaqws+zzaax+asaaq+"10"
                 else:
-                    wer="1"+wer+aaqws+"11"
+                    wer="1"+wer+aaqws+zzaax+asaaq+"11"
+                zzaax=""
                     
                 
                 
@@ -813,7 +876,7 @@ if namez=="c":
                         szxzlz1="0"+szxzlz1
                         z=z+1
                         
-                wer=wer+szx+szxzlz1+szxzzz+szxz+szxzc+szxzl+szxzlz
+                wer=wer+szx+szxzlz1+szxzzz+szxz+szxzc+szxzl+szxzlz+szxzzza+szxzs+szxzzzq+szxzzzqq
                 szx=""
                 
                 n = int(wer, 2)
@@ -821,9 +884,12 @@ if namez=="c":
                 data=jl
                 sssssw=len(jl)
                 qqqwz=qqqwz+1
-               
+                szxzzza=""
+                szxzs=""
                
                 
+                blockw=5
+                blockw1=4
                 
                 #print(sssssw)
                     
@@ -832,8 +898,7 @@ if namez=="c":
                     saaq=1
                 
                     
-                if lenf1<=sssssw and saaq==0 and qqqwz>=1000 or sssssw<=40 or qqqwz==2**30:
-                    
+                if lenf1<=sssssw and saaq==0 and qqqwz==2**29 or sssssw<=1300 or qqqwz==2**30:
                     szx=bin(qqqwz)[2:]
                     lenf=len(szx)
                     xc=32-lenf%32
@@ -842,7 +907,8 @@ if namez=="c":
                         while z<xc:
                             szx="0"+szx
                             z=z+1
-                    zsaqq=zsaqq+szx
+                    zsaqq=zsaqq+szx  
+                    
                     
                     szx=""
                     wer=wer+zsaqq
