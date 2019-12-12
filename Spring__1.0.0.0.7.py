@@ -635,7 +635,7 @@ if namez=="c":
                                         szx="1"+szx
                                         z=z+1
                                 if aqqd1==0:
-                                    szx=szx+"0"
+                                    szx=szx+""
                                 else:
                                     szx=szx
                                 asss1=len(szx)
@@ -692,8 +692,8 @@ if namez=="c":
                             szx=szx+"0"
                         else:
                             szx=szx
-                        szx=szx+"0"
-                        szx="10"+szx
+                        szx=szx+""
+                        szx=""+szx
                         asss1=len(szx)
                         asss2=asss1-1
                         qqw=szx[asss2]
@@ -839,9 +839,9 @@ if namez=="c":
                 dd=len(szxzzz)
                
                 if aqqd1>0:
-                    wer="1"+wer+aaqws+zzaax+asaaq+"10"
+                    wer="1"+wer+aaqws+zzaax+asaaq+"1"
                 else:
-                    wer="1"+wer+aaqws+zzaax+asaaq+"11"
+                    wer="1"+wer+aaqws+zzaax+asaaq+"1"
                 zzaax=""
                     
                 
@@ -891,14 +891,14 @@ if namez=="c":
                 blockw=5
                 blockw1=4
                 
-                #print(sssssw)
+                print(sssssw)
                     
                 saaq=0
                 if lenf1<=sssssw and qqqwz==1:
                     saaq=1
                 
                     
-                if lenf1<=sssssw and saaq==0 and qqqwz==2**29 or sssssw<=1300 or qqqwz==2**30:
+                if lenf1<=sssssw and saaq==0 and qqqwz==2**29 or sssssw<=1000 or qqqwz==2**30:
                     szx=bin(qqqwz)[2:]
                     lenf=len(szx)
                     xc=32-lenf%32
