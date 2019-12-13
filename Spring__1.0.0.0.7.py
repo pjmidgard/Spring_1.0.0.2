@@ -326,8 +326,8 @@ if namez=="c":
     namem=name+"/"
     namema="?"
     namemas="<"
-    blockw=5
-    blockw1=4
+    blockw=4
+    blockw1=3
     
     s=""
     if name=="file.Angel":
@@ -448,9 +448,9 @@ if namez=="c":
                         assa=assa+1
                         qqw1q="0"
                         
-                        if blockw==6:
+                        if blockw==5:
                             
-                            if szxx=="000000000000000000000000000000000000000000000000":
+                            if szxx=="0000000000000000000000000000000000000000":
                                 qqw1q="10"
                                 
 
@@ -470,7 +470,7 @@ if namez=="c":
                                 
  				
                                 
-                            if szxx=="111111111111111111111111111111111111111111111111":    
+                            if szxx=="1111111111111111111111111111111111111111":    
                                 qqw1q="11"
                                
                                 szxzzzas=""
@@ -889,8 +889,8 @@ if namez=="c":
                 szxzs=""
                
                 
-                blockw=5
-                blockw1=4
+                blockw=4
+                blockw1=3
                 
                 #print(sssssw)
                     
@@ -899,7 +899,7 @@ if namez=="c":
                     saaq=1
                 
                     
-                if lenf1<=sssssw and saaq==0 and qqqwz==2**29 or sssssw<=1300 or qqqwz==2**30:
+                if lenf1<=sssssw and saaq==0 and qqqwz==2**29 or sssssw<=1024 or qqqwz==2**30:
                     szx=bin(qqqwz)[2:]
                     lenf=len(szx)
                     xc=32-lenf%32
