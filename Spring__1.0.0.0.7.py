@@ -630,6 +630,7 @@ if namez=="c":
                                
                                 xc=((blockw*8)-5)-lenfa
                                 z=0
+                                szx="0"+szx
                                 if xc!=((blockw*8)-5):
                                     while z<xc:
                                         szx="1"+szx
@@ -689,7 +690,7 @@ if namez=="c":
                         szx=sdaa
                         aqqd1=len(zzaax1)
                         if aqqd1==0:
-                            szx=szx+"0"
+                            szx=szx+""
                         else:
                             szx=szx
                         szx=szx+""
