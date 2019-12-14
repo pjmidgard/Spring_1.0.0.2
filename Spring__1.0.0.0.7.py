@@ -751,7 +751,7 @@ if namez=="c":
                 dd=len(aaqws)
                 ddwa=len(szxzzzqq)
                 szxzzzqqz=""
-                szxzzzqqz=bin(dd)[2:]
+                szxzzzqqz=bin(ddwa)[2:]
                 
                 xc=8-ddwa%8
                 z=0
