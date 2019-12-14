@@ -813,17 +813,17 @@ if namez=="c":
                 
                 dda=len(szxzzza)
 
-                szxz=""
-                szxz=bin(dda)[2:]
-                dda=len(szxz)
+                szxzs=""
+                szxzs=bin(dda)[2:]
+                dda=len(szxzs)
                 xc=8-dda%8
                 z=0
                 if xc!=0:
                     while z<xc:
-                        szxz="0"+szxz
+                        szxzs="0"+szxzs
                         z=z+1
                         
-                dda=len(szxz)
+                dda=len(szxzs)
                 szxzff=""
                 szxzff=bin(dda)[2:]
                 dda=len(szxzff)
@@ -838,17 +838,7 @@ if namez=="c":
 
 
                 
-                szxz=""
-                szxz=bin(dd)[2:]
-                dd=len(szxz)
-                xc=8-dd%8
-                z=0
-                if xc!=0:
-                    while z<xc:
-                        szxz="0"+szxz
-                        z=z+1
-                        
-                dd=len(szxz)
+                
 
                 szxzas=""
                 szxzas=bin(dd)[2:]
@@ -900,6 +890,18 @@ if namez=="c":
                         z=z+1
                 
                 dd=len(szxzzz)
+
+                szxz=""
+                szxz=bin(dd)[2:]
+                dd=len(szxz)
+                xc=8-dd%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxz="0"+szxz
+                        z=z+1
+                        
+                dd=len(szxz)
                
                 if aqqd1>0:
                     wer="1"+wer+aaqws+zzaax+asaaq+"1"
@@ -939,7 +941,7 @@ if namez=="c":
                         szxzlz1="0"+szxzlz1
                         z=z+1
                         
-                wer=wer+szx+szxzlz1+szxzzz+szxz+szxzas+szxzc+szxzl+szxzlz+szxzzza+szxzff+szxzzzq+szxzzzqq+szxzzzqqz
+                wer=wer+szx+szxzlz1+szxzzz+szxz+szxzas+szxzc+szxzl+szxzlz+szxzzza+szxzs+szxzff+szxzzzq+szxzzzqq+szxzzzqqz
                 szx=""
                 
                 n = int(wer, 2)
