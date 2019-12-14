@@ -945,7 +945,7 @@ if namez=="c":
                             szxzzzqqax="0"+szxzzzqqax
                             z=z+1
                     
-                    dd=lenszxzzzqqax)
+                    dd=len(szxzzzqqax)
                     szxzzzqq=""
                     szxzzzqq=bin(dd)[2:]
                     dd=len(szxzzzqq)
