@@ -748,11 +748,11 @@ if namez=="c":
                         szxzzzqq="0"+szxzzzqq
                         z=z+1
                 
-                dd=len(aaqws)
-                ddwa=len(szxzzzqq)
+                dd=len(szxzzzqq)
+
                 szxzzzqqz=""
-                szxzzzqqz=bin(ddwa)[2:]
-                
+                szxzzzqqz=bin(dd)[2:]
+                ddwa=len(szxzzzqqz)
                 xc=8-ddwa%8
                 z=0
                 if xc!=0:
@@ -772,7 +772,7 @@ if namez=="c":
                         szxzzzqqzz="0"+szxzzzqqzz
                         z=z+1
 
-                dd=len(szxzzzqqzz)
+                dd=len(szxzzzqqz)
 
                 szxzzzqqzza=""
                 szxzzzqqzza=bin(dd)[2:]
@@ -936,7 +936,7 @@ if namez=="c":
                         szxzlz1="0"+szxzlz1
                         z=z+1
                         
-                wer=wer+szx+szxzlz1+szxzzz+szxz+szxzas+szxzc+szxzl+szxzlz+szxzzza+szxzs+szxzff+szxzzzq+szxzzzqq+szxzzzqqz+szxzzzqqzz+szxzzzqqzza
+                wer=wer+szx+szxzlz1+szxzzz+szxz+szxzas+szxzc+szxzl+szxzlz+szxzzza+szxzs+szxzff+szxzzzq+szxzzzqq+szxzzzqqz
                 szx=""
                 
                 n = int(wer, 2)
@@ -958,7 +958,7 @@ if namez=="c":
                     saaq=1
                 
                     
-                if lenf1<=sssssw and saaq==0 and qqqwz==2**256 or sssssw<=1700 or qqqwz==2**256:
+                if lenf1<=sssssw and saaq==0 and qqqwz==2**256 or sssssw<=1600 or qqqwz==2**256:
                     szxzzzqqax=""
                     szxzzzqqax=bin(qqqwz)[2:]
                     dd=len(szxzzzqqax)
