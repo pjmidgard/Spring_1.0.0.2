@@ -749,10 +749,10 @@ if namez=="c":
                         z=z+1
                 
                 dd=len(aaqws)
-
+                ddwa=len(szxzzzqq)
                 szxzzzqqz=""
                 szxzzzqqz=bin(dd)[2:]
-                ddwa=len(szxzzzqq)
+                
                 xc=8-ddwa%8
                 z=0
                 if xc!=0:
