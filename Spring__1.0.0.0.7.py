@@ -762,27 +762,7 @@ if namez=="c":
 
                 dd=len(szxzzzqqz)
 
-                szxzzzqqzz=""
-                szxzzzqqzz=bin(dd)[2:]
-                ddwa=len(szxzzzqqzz)
-                xc=8-ddwa%8
-                z=0
-                if xc!=0:
-                    while z<xc:
-                        szxzzzqqzz="0"+szxzzzqqzz
-                        z=z+1
-
-                dd=len(szxzzzqqz)
-
-                szxzzzqqzza=""
-                szxzzzqqzza=bin(dd)[2:]
-                ddwa=len(szxzzzqqzza)
-                xc=8-ddwa%8
-                z=0
-                if xc!=0:
-                    while z<xc:
-                        szxzzzqqzza="0"+szxzzzqqzza
-                        z=z+1
+               
                 
                 dd=len(aaqws)
                 
