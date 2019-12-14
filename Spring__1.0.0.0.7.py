@@ -751,7 +751,7 @@ if namez=="c":
                 dd=len(aaqws)
 
                 szxzzzqqz=""
-                szxzzzqqz=bin(ddwa)[2:]
+                szxzzzqqz=bin(dd)[2:]
                 ddwa=len(szxzzzqqz)
                 xc=8-ddwa%8
                 z=0
@@ -935,17 +935,17 @@ if namez=="c":
                 
                     
                 if lenf1<=sssssw and saaq==0 and qqqwz==2**256 or sssssw<=1300 or qqqwz==2**256:
-                    szxzax=""
-                    szxzax=bin(qqqwz)[2:]
-                    dd=len(szxzax)
+                    szxzzzqqax=""
+                    szxzzzqqax=bin(qqqwz)[2:]
+                    dd=len(szxzzzqqax)
                     xc=8-dd%8
                     z=0
                     if xc!=0:
                         while z<xc:
-                            szxzax="0"+szxzax
+                            szxzzzqqax="0"+szxzzzqqax
                             z=z+1
                     
-                    dd=len(szxzzzqq)
+                    dd=lenszxzzzqqax)
                     szxzzzqq=""
                     szxzzzqq=bin(dd)[2:]
                     dd=len(szxzzzqq)
@@ -956,7 +956,7 @@ if namez=="c":
                             szxzzzqq="0"+szxzzzqq
                             z=z+1
                     zsaqq=""
-                    zsaqq=zsaqq+szxzax+szxzzzqq 
+                    zsaqq=zsaqq+szxzzzqqax+szxzzzqq 
                     
                     
                     szx=""
