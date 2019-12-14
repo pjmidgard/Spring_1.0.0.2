@@ -927,7 +927,7 @@ if namez=="c":
                 blockw=4
                 blockw1=3
                 
-                #print(sssssw)
+                print(sssssw)
                     
                 saaq=0
                 if lenf1<=sssssw and qqqwz==1:
@@ -945,9 +945,9 @@ if namez=="c":
                             szxzax="0"+szxzax
                             z=z+1
                     
-
+                    dd=len(szxzzzqq)
                     szxzzzqq=""
-                    szxzzzqq=bin(szxzax)[2:]
+                    szxzzzqq=bin(dd)[2:]
                     dd=len(szxzzzqq)
                     xc=8-dd%8
                     z=0
