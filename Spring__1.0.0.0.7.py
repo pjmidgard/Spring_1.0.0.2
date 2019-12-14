@@ -457,15 +457,26 @@ if namez=="c":
                                 szxzzzas=""
                                 szxzzzas=bin(assa)[2:]
                                 dd=len(szxzzzas)
-                                xc=32-dd%32
+                                xc=8-dd%8
                                 z=0
                                 if xc!=0:
                                     while z<xc:
                                         szxzzzas="10"+szxzzzas
                                         z=z+1
+                                        
+                                dd=len(szxzzzas)
+                                szxzzzasaa=""
+                                szxzzzasaa=bin(dd)[2:]
+                                dd=len(szxzzzasaa)
+                                xc=8-dd%8
+                                z=0
+                                if xc!=0:
+                                    while z<xc:
+                                        szxzzzasaa=""+szxzzzasaa
+                                        z=z+1
                                 
                                 
-                                asaaq=asaaq+szxzzzas
+                                asaaq=asaaq+szxzzzas+szxzzzasaa
                                 #print(asaaq)
                                 
  				
@@ -476,15 +487,27 @@ if namez=="c":
                                 szxzzzas=""
                                 szxzzzas=bin(assa)[2:]
                                 dd=len(szxzzzas)
-                                xc=32-dd%32
+                                xc=8-dd%8
                                 z=0
                                 if xc!=0:
                                     while z<xc:
                                         szxzzzas="11"+szxzzzas
                                         z=z+1
                                 
+                                dd=len(szxzzzas)
+                                szxzzzasaa=""
+                                szxzzzasaa=bin(dd)[2:]
+                                dd=len(szxzzzasaa)
+                                xc=8-dd%8
+                                z=0
+                                if xc!=0:
+                                    while z<xc:
+                                        szxzzzasaa=""+szxzzzasaa
+                                        z=z+1
                                 
-                                asaaq=asaaq+szxzzzas
+                                
+                                asaaq=asaaq+szxzzzas+szxzzzasaa
+                                
                                 
  			        
                                         
