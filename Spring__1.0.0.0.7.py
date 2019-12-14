@@ -861,9 +861,9 @@ if namez=="c":
                         z=z+1
                 
                 aqqd1=len(zzaax)
-                dd=len(aqqd1)
+                
                 szxzzz=""
-                szxzzz=bin(dd)[2:]
+                szxzzz=bin(aqqd1)[2:]
                 dd=len(szxzzz)
                 xc=8-dd%8
                 z=0
