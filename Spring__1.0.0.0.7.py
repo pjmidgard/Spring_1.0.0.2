@@ -927,7 +927,7 @@ if namez=="c":
                 blockw=4
                 blockw1=3
                 
-                print(sssssw)
+                #print(sssssw)
                     
                 saaq=0
                 if lenf1<=sssssw and qqqwz==1:
