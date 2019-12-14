@@ -861,7 +861,7 @@ if namez=="c":
                         z=z+1
                 
                 aqqd1=len(zzaax1)
-
+                dd=len(aqqww)
                 szxzzz=""
                 szxzzz=bin(dd)[2:]
                 dd=len(szxzzz)
