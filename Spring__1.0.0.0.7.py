@@ -358,7 +358,7 @@ if namez=="c":
         if lenf1<6:
             print("This file is too small");
             raise SystemExit
-        if lenf1>2**32:
+        if lenf1>2**256:
             print("This file is too big");
             raise SystemExit
 
@@ -749,6 +749,18 @@ if namez=="c":
                         z=z+1
                 
                 dd=len(aaqws)
+
+                szxzzzqqz=""
+                szxzzzqqz=bin(ddwa)[2:]
+                ddwa=len(szxzzzqqz)
+                xc=8-ddwa%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzzzqqz="0"+szxzzzqqz
+                        z=z+1
+                
+                dd=len(aaqws)
                 
                 szxzzz=""
                 szxzzz=bin(dd)[2:]
@@ -785,6 +797,17 @@ if namez=="c":
                         z=z+1
                         
                 dda=len(szxz)
+                szxzff=""
+                szxzff=bin(dda)[2:]
+                dda=len(szxzff)
+                xc=8-dda%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzff="0"+szxzff
+                        z=z+1
+
+                
 
 
                 
@@ -799,6 +822,18 @@ if namez=="c":
                         z=z+1
                         
                 dd=len(szxz)
+
+                szxzas=""
+                szxzas=bin(dd)[2:]
+                dda=len(szxzas)
+                xc=8-dda%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzas="0"+szxzas
+                        z=z+1
+
+                
                 szxzz=""
                 szxzc=""
                 szxzc=bin(lenfzzz)[2:]
@@ -877,7 +912,7 @@ if namez=="c":
                         szxzlz1="0"+szxzlz1
                         z=z+1
                         
-                wer=wer+szx+szxzlz1+szxzzz+szxz+szxzc+szxzl+szxzlz+szxzzza+szxzs+szxzzzq+szxzzzqq
+                wer=wer+szx+szxzlz1+szxzzz+szxz+szxzas+szxzc+szxzl+szxzlz+szxzzza+szxzs+szxzff+szxzzzq+szxzzzqq+szxzzzqqz
                 szx=""
                 
                 n = int(wer, 2)
@@ -899,16 +934,29 @@ if namez=="c":
                     saaq=1
                 
                     
-                if lenf1<=sssssw and saaq==0 and qqqwz==2**29 or sssssw<=1024 or qqqwz==2**30:
-                    szx=bin(qqqwz)[2:]
-                    lenf=len(szx)
-                    xc=32-lenf%32
+                if lenf1<=sssssw and saaq==0 and qqqwz==2**256 or sssssw<=1300 or qqqwz==2**256:
+                    szxzax=""
+                    szxzax=bin(qqqwz)[2:]
+                    dd=len(szxzax)
+                    xc=8-dd%8
                     z=0
                     if xc!=0:
                         while z<xc:
-                            szx="0"+szx
+                            szxzax="0"+szxzax
                             z=z+1
-                    zsaqq=zsaqq+szx  
+                    
+
+                    szxzzzqq=""
+                    szxzzzqq=bin(szxzax)[2:]
+                    dd=len(szxzzzqq)
+                    xc=8-dd%8
+                    z=0
+                    if xc!=0:
+                        while z<xc:
+                            szxzzzqq="0"+szxzzzqq
+                            z=z+1
+                    zsaqq=""
+                    zsaqq=zsaqq+szxzax+szxzzzqq 
                     
                     
                     szx=""
