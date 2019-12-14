@@ -814,13 +814,13 @@ if namez=="c":
                 dda=len(szxzzza)
 
                 szxz=""
-                szxzs=bin(dda)[2:]
-                dda=len(szxzs)
+                szxz=bin(dda)[2:]
+                dda=len(szxz)
                 xc=8-dda%8
                 z=0
                 if xc!=0:
                     while z<xc:
-                        szxzs="0"+szxzs
+                        szxz="0"+szxzs
                         z=z+1
                         
                 dda=len(szxz)
