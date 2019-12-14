@@ -840,15 +840,7 @@ if namez=="c":
                 
                 
 
-                szxzas=""
-                szxzas=bin(dd)[2:]
-                dda=len(szxzas)
-                xc=8-dda%8
-                z=0
-                if xc!=0:
-                    while z<xc:
-                        szxzas="0"+szxzas
-                        z=z+1
+                
 
                 
                 szxzz=""
@@ -902,6 +894,16 @@ if namez=="c":
                         z=z+1
                         
                 dd=len(szxz)
+
+                szxzas=""
+                szxzas=bin(dd)[2:]
+                dda=len(szxzas)
+                xc=8-dda%8
+                z=0
+                if xc!=0:
+                    while z<xc:
+                        szxzas="0"+szxzas
+                        z=z+1
                
                 if aqqd1>0:
                     wer="1"+wer+aaqws+zzaax+asaaq+"1"
