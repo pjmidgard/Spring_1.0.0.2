@@ -820,7 +820,7 @@ if namez=="c":
                 z=0
                 if xc!=0:
                     while z<xc:
-                        szxz="0"+szxzs
+                        szxz="0"+szxz
                         z=z+1
                         
                 dda=len(szxz)
