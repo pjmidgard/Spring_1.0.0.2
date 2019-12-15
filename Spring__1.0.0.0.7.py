@@ -446,7 +446,7 @@ if namez=="c":
                         aaqw=""
                         aaqql=""
                         assa=assa+1
-                        if assa=(2**32)-1:
+                        if assa==(2**32)-1:
                            assaz="0"
                            assa="0"
                            asaaq=asaaq+assaz
@@ -969,7 +969,7 @@ if namez=="c":
                     saaq=1
                 
                     
-                if lenf1<=sssssw and saaq==0 and qqqwz==(2**256)-1: or sssssw<=1400 or qqqwz==(2**256)-1:
+                if lenf1<=sssssw and saaq==0 and qqqwz==(2**256)-1 or sssssw<=1400 or qqqwz==(2**256)-1:
                     szxzzzqqax=""
                     szxzzzqqax=bin(qqqwz)[2:]
                     dd=len(szxzzzqqax)
