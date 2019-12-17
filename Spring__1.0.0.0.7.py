@@ -875,15 +875,7 @@ if namez=="c":
                 
                 aqqd1=len(zzaax)
                 
-                szxzzz=""
-                szxzzz=bin(aqqd1)[2:]
-                dd=len(szxzzz)
-                xc=8-dd%8
-                z=0
-                if xc!=0:
-                    while z<xc:
-                        szxzzz="0"+szxzzz
-                        z=z+1
+               
                 
                 dd=len(szxzzz)
 
@@ -946,7 +938,7 @@ if namez=="c":
                     while z<xc:
                         szxzlz1="0"+szxzlz1
                         z=z+1
-                        
+                 
                 wer=wer+szx+szxzlz1+szxzzz+szxz+szxzas+szxzc+szxzl+szxzlz+szxzzza+szxzs+szxzff+szxzzzq+szxzzzqq+szxzzzqqz
                 szx=""
                 
