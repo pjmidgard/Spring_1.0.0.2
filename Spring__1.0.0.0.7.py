@@ -954,14 +954,14 @@ if namez=="c":
                 blockw=4
                 blockw1=3
                 
-                #print(sssssw)
+                print(sssssw)
                     
                 saaq=0
                 if lenf1<=sssssw and qqqwz==1:
                     saaq=1
                 
                     
-                if lenf1<=sssssw and saaq==0 and qqqwz==(2**256)-1 or sssssw<=2000 or qqqwz==(2**256)-1:
+                if lenf1<=sssssw and saaq==0 and qqqwz==300 or sssssw<=2000 or qqqwz==(2**256)-1:
                     szxzzzqqax=""
                     szxzzzqqax=bin(qqqwz)[2:]
                     dd=len(szxzzzqqax)
