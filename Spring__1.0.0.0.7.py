@@ -907,7 +907,7 @@ if namez=="c":
                     wer="1"+wer+aaqws+zzaax+asaaq+"1"
                 zzaax=""
                     
-                
+                # wer="1"+wer+aaqwsmovefirst0111+moveafter1000+asaaq1110006+"1"
                 
                 aqqwwa=10    
                 lenf=len(wer)
@@ -919,8 +919,10 @@ if namez=="c":
                         z=z+1
                         aqqwwa=aqqwwa+1
                 szxzlz=""
+
                 
-                szxzlz=bin(aqqww)[2:]
+                ddd=len(szxzl)
+                szxzlz=bin(ddd)[2:]
                 dds=len(szxzlz)
                 xc=8-dds%8
                 z=0
@@ -941,6 +943,15 @@ if namez=="c":
                  
                 wer=wer+szx+szxzlz1+szxzzz+szxz+szxzas+szxzc+szxzl+szxzlz+szxzzza+szxzs+szxzff+szxzzzq+szxzzzqq+szxzzzqqz
                 szx=""
+				
+				#szxzzz 0111 one
+				#szxz 0111 two
+			    #szxzas 0111 three
+				#szxzc lastbitblocksize one
+				#szxzl lastbitblocksize two
+				#szxzlz lastbitblocksize tree
+				#szxzzza+szxzs+szxzff 1000
+			    #szxzzzq+szxzzzqq+szxzzzqqz 11110000 6
                 
                 n = int(wer, 2)
                 jl=binascii.unhexlify('%x' % n)
@@ -954,7 +965,7 @@ if namez=="c":
                 blockw=5
                 blockw1=4
                 
-                print(sssssw)
+                #print(sssssw)
                     
                 saaq=0
                 if lenf1<=sssssw and qqqwz==1:
