@@ -56,7 +56,7 @@ k = []
 wer=""
 numberschangenotexist = []
 numbers = []
-namez = input("c for compress u for unpack? ")
+namez = input("c for compress u for extract? ")
 if namez=="u":
     name = input("What is name of file? ")
     namea="file.Spring"
