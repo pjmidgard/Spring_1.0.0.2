@@ -972,7 +972,7 @@ if namez=="c":
                     saaq=1
                 
                     
-                if lenf1<=sssssw and saaq==1 and qqqwz==10000 or sssssw<=2000 or qqqwz==(2**256)-1:
+                if lenf1<=sssssw and saaq==1 and qqqwz==(2**255)-1 or sssssw<=2000 or qqqwz==(2**256)-1:
                     szxzzzqqax=""
                     szxzzzqqax=bin(qqqwz)[2:]
                     dd=len(szxzzzqqax)
