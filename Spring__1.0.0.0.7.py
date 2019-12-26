@@ -482,7 +482,34 @@ if namez=="c":
                                 
                                 asaaq=asaaq+szxzzzas+szxzzzasaa
                                 #print(asaaq)
+                            if szxx=="000001111111111111111111111111111111111111111111":
+                                qqw1q="10"
                                 
+
+                                szxzzzas=""
+                                szxzzzas=bin(assa)[2:]
+                                dd=len(szxzzzas)
+                                xc=8-dd%8
+                                z=0
+                                if xc!=0:
+                                    while z<xc:
+                                        szxzzzas="1110"+szxzzzas
+                                        z=z+1
+                                        
+                                dd=len(szxzzzas)
+                                szxzzzasaa=""
+                                szxzzzasaa=bin(dd)[2:]
+                                dd=len(szxzzzasaa)
+                                xc=8-dd%8
+                                z=0
+                                if xc!=0:
+                                    while z<xc:
+                                        szxzzzasaa=""+szxzzzasaa
+                                        z=z+1
+                                
+                                
+                                asaaq=asaaq+szxzzzas+szxzzzasaa
+                                #print(asaaq)    
                             if szxx=="000011111111111111111111111111111111111111111111":
                                 qqw1q="10"
                                 
