@@ -465,7 +465,7 @@ if namez=="c":
                                 z=0
                                 if xc!=0:
                                     while z<xc:
-                                        szxzzzas="10"+szxzzzas
+                                        szxzzzas="1000"+szxzzzas
                                         z=z+1
                                         
                                 dd=len(szxzzzas)
@@ -483,8 +483,118 @@ if namez=="c":
                                 asaaq=asaaq+szxzzzas+szxzzzasaa
                                 #print(asaaq)
                                 
- 				
+                            if szxx=="000011111111111111111111111111111111111111111111":
+                                qqw1q="10"
                                 
+
+                                szxzzzas=""
+                                szxzzzas=bin(assa)[2:]
+                                dd=len(szxzzzas)
+                                xc=8-dd%8
+                                z=0
+                                if xc!=0:
+                                    while z<xc:
+                                        szxzzzas="1001"+szxzzzas
+                                        z=z+1
+                                        
+                                dd=len(szxzzzas)
+                                szxzzzasaa=""
+                                szxzzzasaa=bin(dd)[2:]
+                                dd=len(szxzzzasaa)
+                                xc=8-dd%8
+                                z=0
+                                if xc!=0:
+                                    while z<xc:
+                                        szxzzzasaa=""+szxzzzasaa
+                                        z=z+1
+                                
+                                
+                                asaaq=asaaq+szxzzzas+szxzzzasaa
+                                #print(asaaq)
+                            if szxx=="000111111111111111111111111111111111111111111111":
+                                qqw1q="10"
+                                
+
+                                szxzzzas=""
+                                szxzzzas=bin(assa)[2:]
+                                dd=len(szxzzzas)
+                                xc=8-dd%8
+                                z=0
+                                if xc!=0:
+                                    while z<xc:
+                                        szxzzzas="1011"+szxzzzas
+                                        z=z+1
+                                        
+                                dd=len(szxzzzas)
+                                szxzzzasaa=""
+                                szxzzzasaa=bin(dd)[2:]
+                                dd=len(szxzzzasaa)
+                                xc=8-dd%8
+                                z=0
+                                if xc!=0:
+                                    while z<xc:
+                                        szxzzzasaa=""+szxzzzasaa
+                                        z=z+1
+                                
+                                
+                                asaaq=asaaq+szxzzzas+szxzzzasaa
+                                #print(asaaq)	
+                            if szxx=="001111111111111111111111111111111111111111111111":
+                                qqw1q="10"
+                                
+
+                                szxzzzas=""
+                                szxzzzas=bin(assa)[2:]
+                                dd=len(szxzzzas)
+                                xc=8-dd%8
+                                z=0
+                                if xc!=0:
+                                    while z<xc:
+                                        szxzzzas="1100"+szxzzzas
+                                        z=z+1
+                                        
+                                dd=len(szxzzzas)
+                                szxzzzasaa=""
+                                szxzzzasaa=bin(dd)[2:]
+                                dd=len(szxzzzasaa)
+                                xc=8-dd%8
+                                z=0
+                                if xc!=0:
+                                    while z<xc:
+                                        szxzzzasaa=""+szxzzzasaa
+                                        z=z+1
+                                
+                                
+                                asaaq=asaaq+szxzzzas+szxzzzasaa
+                                #print(asaaq)
+                            if szxx=="011111111111111111111111111111111111111111111111":
+                                qqw1q="10"
+                                
+
+                                szxzzzas=""
+                                szxzzzas=bin(assa)[2:]
+                                dd=len(szxzzzas)
+                                xc=8-dd%8
+                                z=0
+                                if xc!=0:
+                                    while z<xc:
+                                        szxzzzas="1101"+szxzzzas
+                                        z=z+1
+                                        
+                                dd=len(szxzzzas)
+                                szxzzzasaa=""
+                                szxzzzasaa=bin(dd)[2:]
+                                dd=len(szxzzzasaa)
+                                xc=8-dd%8
+                                z=0
+                                if xc!=0:
+                                    while z<xc:
+                                        szxzzzasaa=""+szxzzzasaa
+                                        z=z+1
+                                
+                                
+                                asaaq=asaaq+szxzzzas+szxzzzasaa
+                                #print(asaaq)	    
                             if szxx=="111111111111111111111111111111111111111111111111":    
                                 qqw1q="11"
                                
@@ -495,7 +605,7 @@ if namez=="c":
                                 z=0
                                 if xc!=0:
                                     while z<xc:
-                                        szxzzzas="11"+szxzzzas
+                                        szxzzzas="1010"+szxzzzas
                                         z=z+1
                                 
                                 dd=len(szxzzzas)
@@ -537,6 +647,7 @@ if namez=="c":
                             
                                 
                             if lenfa>=((blockw*8)-5):
+                                
                                 szx=szx[1:]
                                 wqwe=""
                                 p=0
@@ -600,13 +711,13 @@ if namez=="c":
                                 z=0
                                 
                                     
-                                    
-                                
+                                   
+                                         
+                                        
                                 xc=(blockw*8)-lenfa
                                 z=0
                                 if xc!=(blockw*8):
                                     while z<xc:
-                                            
                                         
                                         
                                         zzaax="0"+zzaax
@@ -617,7 +728,6 @@ if namez=="c":
                                 
                                 wer=wer+szx
                                 
-                               
                                 
                                 
                                 zzaax="1"+zzaax
@@ -646,7 +756,7 @@ if namez=="c":
                                  
                                     
                             if lenfa<=((blockw*8)-6):
-                                 
+                               
                                 
                                 szx=szx[1:]
                                 
@@ -676,6 +786,7 @@ if namez=="c":
                                 
                                 wer=wer+szx
                                 lenf=len(szx)
+                              
                                 
                                 szx=""
                                 fffgjv1=""
@@ -940,10 +1051,10 @@ if namez=="c":
                     while z<xc:
                         szxzlz1="0"+szxzlz1
                         z=z+1
-                 
+                
                 wer=wer+szx+szxzlz1+szxzzz+szxz+szxzas+szxzc+szxzl+szxzlz+szxzzza+szxzs+szxzff+szxzzzq+szxzzzqq+szxzzzqqz
                 szx=""
-				
+		
 				#szxzzz 0111 one
 				#szxz 0111 two
 			    #szxzas 0111 three
@@ -971,7 +1082,7 @@ if namez=="c":
                 if lenf1<=sssssw and qqqwz==1:
                     saaq=1
                 
-                    
+               
                 if lenf1<=sssssw and saaq==1 and qqqwz==(2**255)-1 or sssssw<=2000 or qqqwz==(2**256)-1:
                     szxzzzqqax=""
                     szxzzzqqax=bin(qqqwz)[2:]
